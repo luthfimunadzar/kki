@@ -1,0 +1,80 @@
+.btn-primary {
+  border-radius: 0px;
+  text-decoration: none;
+  box-shadow: none !important;
+  position: relative;
+  span {
+    position: relative;
+    display: block;
+    padding: 13px 26px;
+    font-size: 17px;
+    color: $t !important;
+    background-color: $wt;
+    border: 2px solid $fiv !important;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: translate(6px, 6px);
+    background-color: $fiv;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &:disabled {
+    span {
+      background-color: $fiv !important;
+      border-color: $fiv !important;
+      color: $wt !important;
+      outline: none !important;
+    }
+    &::before {
+      transform: translate(0, 0);
+    }
+  }
+  &.red {
+    span {
+      color: $pri !important;
+      border-color: $pri !important;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+      span {
+        background-color: $pri !important;
+        border-color: $pri !important;
+        color: $wt !important;
+      }
+    }
+  }
+  &.yellow {
+    span {
+      color: $bl !important;
+      background-color: $sec !important;
+      border-color: $wt !important;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+      span {
+        background-color: $sec !important;
+        border-color: $sec !important;
+        color: $bl !important;
+      }
+    }
+  }
+}
+
+.v-btn:not(.v-btn--round).v-size--default {
+  padding: 0;
+}

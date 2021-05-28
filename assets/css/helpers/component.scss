@@ -1,0 +1,41 @@
+.v-navigation-drawer {
+  background-color: #fff !important;
+  .v-list {
+    .v-list-item-group {
+      .v-list-item {
+        .v-list-item__title {
+          color: $t !important;
+        }
+      }
+    }
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.vue-scroll-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: $fiv;
+  z-index: 99;
+  text-align: center;
+  color: $wt !important;
+  font-size: 15px !important;
+  display: flex;
+  flex-direction: column;
+  .v-icon {
+    display: block;
+    margin-bottom: -5px;
+    margin-top: 3px;
+  }
+  @media screen and (max-width: 599px) {
+    bottom: 15px;
+    right: 15px;
+  }
+}

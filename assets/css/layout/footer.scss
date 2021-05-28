@@ -1,0 +1,61 @@
+footer.v-footer {
+  background-color: #f1f2f2 !important;
+  padding: 45px 0 35px 0;
+  position: relative !important;
+  @media screen and (max-width: 599px) {
+    padding: 20px 0 15px 0;
+    text-align: center;
+  }
+  h5 {
+    font-family: $b;
+    color: $t;
+    font-size: 20px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 599px) {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+  .sitemap {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      a {
+        display: inline-block;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: $t;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        @media screen and (max-width: 599px) {
+          font-size: 14px;
+        }
+        &:hover,
+        &:focus {
+          color: $pri;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .socmed {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: $pri;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    .v-icon {
+      font-size: 20px;
+    }
+    &:hover,
+    &:focus {
+      background-color: $sec;
+    }
+  }
+}

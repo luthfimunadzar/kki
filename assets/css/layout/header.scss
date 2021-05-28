@@ -1,0 +1,60 @@
+header {
+  background-color: $wt;
+  position: relative;
+  .toggle {
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+    i {
+      font-size: 40px !important;
+      &:before {
+        color: $pri;
+      }
+    }
+  }
+  .logo {
+    margin: 45px 0 33px 0;
+    @media screen and (max-width: 991px) {
+      margin: 25px 0 20px 0;
+    }
+    @media screen and (max-width: 767px) {
+      width: 250px;
+    }
+  }
+  .main-menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 15px 40px;
+        color: $t;
+        font-size: 16px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        @media screen and (max-width: 1199px) {
+          padding: 15px 20px;
+        }
+        @media screen and (max-width: 991px) {
+          padding: 15px 15px;
+        }
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          color: $pri;
+        }
+      }
+    }
+  }
+}

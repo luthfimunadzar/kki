@@ -1,0 +1,835 @@
+.hero {
+  width: 100%;
+  height: 600px;
+  background-image: url('/bg-hero.jpg');
+  background-position: left center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 991px) {
+    height: 400px;
+  }
+  h2 {
+    font-size: 40px;
+    color: $wt;
+    font-family: $b;
+    font-weight: normal;
+    width: 70%;
+    margin-bottom: 0;
+    line-height: 1.3;
+    @media screen and (max-width: 991px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 599px) {
+      width: 90%;
+    }
+  }
+  .go-quiz {
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    right: 0;
+    display: block;
+    @media screen and (max-width: 991px) {
+      bottom: -80px;
+      left: 20px;
+      right: 20px;
+    }
+    p {
+      position: relative;
+      margin: 0;
+      color: $bl;
+      background-color: $wt;
+      font-size: 17px;
+      padding: 10px 25px;
+      z-index: 2;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 599px) {
+        padding: 10px 10px;
+      }
+    }
+    span {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: $fiv;
+      color: $wt;
+      font-family: $b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      z-index: 3;
+      transition: all 0.3s ease;
+      @media screen and (max-width: 599px) {
+        right: 0px;
+        width: 50px;
+        height: 50px;
+        font-size: 13px;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      transform: translate(6px, 6px);
+      background-color: $sec;
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+    &:hover,
+    &:focus {
+      span {
+        background-color: $sec;
+      }
+      &::before {
+        transform: translate(0px, 0px);
+      }
+    }
+  }
+}
+.quiz {
+  height: 600px;
+  background-color: $sec;
+  overflow: hidden;
+  position: relative;
+  @media screen and (max-width: 991px) {
+    height: 400px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    background-color: $fiv;
+  }
+  .item-quiz {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    h3 {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      @media screen and (max-width: 1199px) {
+        top: 40px;
+      }
+      @media screen and (max-width: 991px) {
+        width: 80%;
+      }
+      @media screen and (max-width: 599px) {
+        top: 20px;
+      }
+      span {
+        display: block;
+        font-size: 26px;
+        text-align: center;
+        font-family: $b;
+        color: $t;
+        background-color: $wt;
+        padding: 10px 20px;
+        @media screen and (max-width: 991px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 599px) {
+          font-size: 16px;
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        transform: translate(6px, 6px);
+        background-color: #19c792;
+        z-index: -1;
+        transition: all 0.3s ease;
+      }
+    }
+    p.count {
+      color: $wt;
+      font-size: 16px;
+      position: absolute;
+      bottom: 70px;
+      right: 10%;
+      margin-bottom: 0;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+        bottom: 30px;
+        right: 5%;
+      }
+    }
+    a.prev {
+      font-size: 16px;
+      color: $t;
+      position: absolute;
+      bottom: 70px;
+      left: 10%;
+      text-decoration: none;
+      z-index: 3;
+      transition: all 0.3s ease;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+        bottom: 30px;
+        left: 5%;
+      }
+      i {
+        color: $t;
+        margin-right: 5px;
+      }
+      &:hover,
+      &:focus {
+        color: $pri;
+        i {
+          color: $pri;
+        }
+      }
+    }
+    a.step {
+      position: absolute;
+      width: 50%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-family: $b;
+      font-weight: normal;
+      color: $t;
+      font-size: 26px;
+      padding: 0 150px;
+      @media screen and (max-width: 1199px) {
+        padding: 0 50px;
+      }
+      @media screen and (max-width: 991px) {
+        font-size: 20px;
+        padding: 0px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 16px;
+      }
+      h4 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 35px auto;
+        font-weight: normal;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        border: 1px dashed $t;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+      &.right {
+        left: auto;
+        right: 0;
+        h4 {
+          color: $wt;
+        }
+      }
+      &.active {
+        .circle {
+          background-color: $pri;
+          border: 1px solid $pri;
+          background-image: url('/check.png');
+          background-size: auto;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+  }
+  .result {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color: $t, $alpha: 0.8);
+    }
+    .result-wrap {
+      background-color: $sec;
+      text-align: center;
+      width: 800px;
+      position: absolute;
+      padding: 50px;
+      border-radius: 25px;
+      top: 20px;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 991px) {
+        width: 75%;
+        padding: 25px;
+      }
+      @media screen and (max-width: 599px) {
+        width: 95%;
+      }
+      h5 {
+        font-family: $b;
+        font-weight: normal;
+        color: $bl;
+        font-size: 26px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 991px) {
+          font-size: 20px;
+          margin-bottom: 0px;
+        }
+      }
+      h2 {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: $b;
+        font-weight: normal;
+        color: $pri;
+        margin-bottom: 20px;
+        @media screen and (max-width: 991px) {
+          font-size: 30px;
+          margin-bottom: 0px;
+        }
+      }
+      p {
+        line-height: 1.5;
+        color: $bl;
+        font-size: 16px;
+        display: block;
+        width: 60%;
+        margin: 0 auto 10px auto;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+          margin: 0 auto 5px auto;
+          width: 100%;
+        }
+      }
+      .link-retake {
+        color: $bl;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        display: inline-block;
+        font-weight: 600;
+        margin-top: 15px;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+          margin: 0 auto 10px auto;
+        }
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+      .btn-more {
+        display: inline-block;
+        span {
+          @media screen and (max-width: 991px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hyper-wrap {
+  padding: 40px 0;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
+  h3 {
+    font-size: 43px;
+    font-family: $b;
+    color: $bl;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 26px;
+    }
+  }
+  .v-tabs {
+    .v-tabs-bar {
+      height: auto;
+      background-color: $wt !important;
+      border: 2px solid $bl;
+      .v-slide-group__prev {
+        display: none !important;
+      }
+      .v-tabs-bar__content {
+        .v-tabs-slider-wrapper {
+          display: none;
+        }
+        .v-tab {
+          margin-left: 0 !important;
+          width: 20%;
+          text-align: center;
+          font-size: 102px;
+          text-transform: uppercase;
+          font-family: $b;
+          border-right: 2px solid $bl;
+          @media screen and (max-width: 991px) {
+            font-size: 72px;
+          }
+          @media screen and (max-width: 599px) {
+            font-size: 54px;
+          }
+          &:nth-last-of-type(5) {
+            color: $pri;
+          }
+          &:nth-last-of-type(4) {
+            color: $fiv;
+          }
+          &:nth-last-of-type(3) {
+            color: $for;
+          }
+          &:nth-last-of-type(2) {
+            color: $sec;
+          }
+          &:last-of-type {
+            border-right: none;
+            color: $ter;
+          }
+          &.v-tab--active {
+            color: $wt;
+            &:nth-last-of-type(5) {
+              background-color: $pri;
+            }
+            &:nth-last-of-type(4) {
+              background-color: $fiv;
+            }
+            &:nth-last-of-type(3) {
+              background-color: $for;
+            }
+            &:nth-last-of-type(2) {
+              background-color: $sec;
+            }
+            &:last-of-type {
+              background-color: $ter;
+            }
+          }
+        }
+      }
+    }
+  }
+  .v-tabs-items {
+    background-color: $wt !important;
+    border: 2px solid $bl;
+    border-top: none;
+    .v-sheet {
+      background-color: $wt !important;
+      .v-card__text {
+        padding: 32px 16px;
+        h5 {
+          color: $pri;
+          font-size: 32px;
+          font-family: $b;
+          text-transform: uppercase;
+          margin-bottom: 22px;
+          background-color: transparent !important;
+          @media screen and (max-width: 991px) {
+            font-size: 24px;
+            margin-bottom: 15px;
+          }
+          &.blue {
+            color: $fiv;
+          }
+          &.cyan {
+            color: $for;
+          }
+          &.yellow {
+            color: $sec;
+          }
+          &.green {
+            color: $ter;
+          }
+        }
+        p {
+          font-size: 17px;
+          color: $bl;
+          margin-bottom: 15px;
+          @media screen and (max-width: 991px) {
+            font-size: 14px;
+          }
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.founder-wrap {
+  padding: 40px 0 0 0;
+  background-color: $t;
+  background-image: url('/bg-founders.png');
+  background-repeat: no-repeat;
+  background-position: bottom 100px center;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0 0 0;
+  }
+  h3 {
+    font-size: 43px;
+    font-family: $b;
+    color: $sec;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 26px;
+    }
+  }
+  .v-carousel {
+    @media screen and (max-width: 991px) {
+      height: 350px !important;
+    }
+    @media screen and (max-width: 599px) {
+      height: auto !important;
+    }
+    .v-carousel__item {
+      position: relative;
+      @media screen and (max-width: 991px) {
+        height: 350px !important;
+      }
+      @media screen and (max-width: 599px) {
+        height: auto !important;
+        text-align: center;
+        margin-bottom: -7px;
+      }
+      img {
+        position: absolute;
+        right: 80px;
+        bottom: 0;
+        @media screen and (max-width: 1199px) {
+          height: 400px;
+          right: 40px;
+        }
+        @media screen and (max-width: 991px) {
+          height: 350px;
+        }
+        @media screen and (max-width: 599px) {
+          bottom: auto;
+          height: 250px;
+          right: auto;
+          position: relative;
+          margin-top: 15px;
+        }
+      }
+      h4 {
+        color: $wt;
+        font-size: 34px;
+        font-weight: normal;
+        font-family: $b;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        width: 50%;
+        @media screen and (max-width: 991px) {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        @media screen and (max-width: 599px) {
+          width: 100%;
+          font-size: 20px;
+          margin-top: 0;
+        }
+      }
+      p {
+        color: $wt;
+        font-size: 18px;
+        margin-bottom: 25px;
+        width: 50%;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+        @media screen and (max-width: 599px) {
+          width: 100%;
+        }
+      }
+      a {
+        color: #e13227;
+        font-size: 18px;
+        display: inline-block;
+        position: relative;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+        }
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background-color: #e13227;
+          transition: all 0.3s ease;
+        }
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          &:after {
+            bottom: 5px;
+          }
+        }
+      }
+    }
+    .v-carousel__controls {
+      background: transparent !important;
+      width: 0;
+      right: 0 !important;
+      top: 50% !important;
+      left: auto !important;
+      bottom: auto;
+      transform: translateY(-50%);
+      width: 50px;
+      height: auto !important;
+      .v-carousel__controls__item {
+        height: 35px;
+        &:before {
+          display: none !important;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 1px;
+          background-color: rgba($color: $wt, $alpha: 0.1);
+          z-index: -1;
+        }
+        &:first-child {
+          &:after {
+            top: 50%;
+          }
+        }
+        &:last-child {
+          &:after {
+            bottom: 50%;
+          }
+        }
+        .v-btn__content {
+          .v-icon {
+            opacity: 1;
+            &:before {
+              content: '';
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              background-color: #6d6e71;
+              z-index: 2;
+            }
+          }
+        }
+        &.v-item--active {
+          .v-btn__content {
+            .v-icon {
+              &:before {
+                background-color: $wt;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.program-wrap {
+  padding: 40px 0;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
+  h3 {
+    font-size: 43px;
+    font-family: $b;
+    color: $pri;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 26px;
+    }
+  }
+  h4 {
+    color: $bl;
+    font-weight: normal;
+    font-family: $b;
+    margin-bottom: 20px;
+    font-size: 32px;
+    @media screen and (max-width: 991px) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  .item-programs {
+    text-align: center;
+    padding-bottom: 20px;
+    @media screen and (max-width: 599px) {
+      padding-bottom: 0px;
+    }
+    p {
+      color: $bl;
+      margin: 20px auto 0 auto;
+      font-size: 18px;
+      width: 80%;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+        width: 90%;
+      }
+    }
+    &.w-border {
+      border-left: 1px solid rgba($color: #000000, $alpha: 0.4);
+      @media screen and (max-width: 599px) {
+        border-left: none;
+      }
+    }
+  }
+  .item-service {
+    border-radius: 20px;
+    padding: 30px 20px;
+    background-color: $pri;
+    min-height: 340px;
+    position: relative;
+    @media screen and (max-width: 991px) {
+      min-height: 200px;
+    }
+    h5 {
+      color: $wt;
+      font-weight: normal;
+      font-family: $b;
+      font-size: 20px;
+      margin-bottom: 0;
+      width: 80%;
+      @media screen and (max-width: 1199px) {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+    }
+    &.second {
+      background-color: $sec;
+    }
+    &.third {
+      background-color: $ter;
+    }
+    &.four {
+      background-color: $for;
+    }
+  }
+  .btn-primary.red {
+    span {
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.contact-wrap {
+  padding: 40px 0;
+  background-color: $t;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
+  h3 {
+    font-size: 43px;
+    font-family: $b;
+    color: $sec;
+    margin-bottom: 40px;
+    font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 26px;
+    }
+  }
+  h5 {
+    font-size: 20px;
+    font-family: $b;
+    font-weight: normal;
+    color: $wt;
+    margin-bottom: 10px;
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+    }
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+    }
+  }
+  a {
+    color: $wt;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+    }
+    .v-icon {
+      font-size: 16px;
+      margin-right: 5px;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: $sec;
+    }
+  }
+  .btn-primary.yellow {
+    span {
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
