@@ -1,6 +1,7 @@
 header {
   background-color: $wt;
   position: relative;
+  border-bottom: 3px solid $pri;
   .toggle {
     display: none;
     position: absolute;
@@ -52,6 +53,9 @@ header {
         &:hover,
         &:focus {
           text-decoration: none;
+          color: $pri;
+        }
+        &.nuxt-link-exact-active {
           color: $pri;
         }
       }

@@ -39,3 +39,30 @@
     right: 15px;
   }
 }
+
+.main-menu-sidebar {
+  margin: 15px 0;
+  padding: 0 !important;
+  li {
+    padding: 0;
+    list-style: none;
+    a {
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+      color: $bl;
+      &.nuxt-link-exact-active {
+        background-color: rgba($color: $pri, $alpha: 0.2);
+        color: $pri;
+      }
+    }
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+}

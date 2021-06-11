@@ -1,55 +1,52 @@
 <template>
   <v-app dark>
     <v-navigation-drawer v-model="drawer" left absolute temporary>
-      <v-list nav dense>
-        <v-list-item-group
-          v-model="group"
-          active-class="red--text text--darken-4"
-        >
-          <v-list-item>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Programs & Services</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Portofolio</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Manifesto</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Proﬁle</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Contact Us</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
+      <ul class="main-menu-sidebar">
+        <li>
+          <nuxt-link to="/">Home</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="#">Programs & Services</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="#">Portofolio</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="#">Manifesto</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/profile">Proﬁle</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="#">Contact Us</nuxt-link>
+        </li>
+      </ul>
     </v-navigation-drawer>
     <header>
       <a class="toggle" @click.stop="drawer = !drawer">
         <v-icon> mdi-menu </v-icon>
       </a>
-      <img src="/logo.png" alt="" class="d-block mx-auto logo" />
+      <nuxt-link to="/">
+        <img src="/logo.png" alt="" class="d-block mx-auto logo" />
+      </nuxt-link>
       <ul class="main-menu">
         <li>
-          <a href="#">Home</a>
+          <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
-          <a href="#">Programs & Services</a>
+          <nuxt-link to="#">Programs & Services</nuxt-link>
         </li>
         <li>
-          <a href="#">Portofolio</a>
+          <nuxt-link to="#">Portofolio</nuxt-link>
         </li>
         <li>
-          <a href="#">Manifesto</a>
+          <nuxt-link to="#">Manifesto</nuxt-link>
         </li>
         <li>
-          <a href="#">Proﬁle</a>
+          <nuxt-link to="/profile">Proﬁle</nuxt-link>
         </li>
         <li>
-          <a href="#">Contact Us</a>
+          <nuxt-link to="#">Contact Us</nuxt-link>
         </li>
       </ul>
     </header>

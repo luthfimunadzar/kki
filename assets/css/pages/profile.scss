@@ -1,0 +1,198 @@
+.founder-one-wrap {
+  padding: 40px 0;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
+  h3 {
+    font-family: $b;
+    font-size: 43px;
+    margin-bottom: 20px;
+    color: $pri;
+    font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  .item-founders {
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba($color: #000000, $alpha: 0.13);
+    @media screen and (max-width: 767px) {
+      padding: 20px;
+    }
+    img {
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+    h4 {
+      color: $bl;
+      font-family: $b;
+      font-size: 34px;
+      margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+    }
+    p {
+      color: $bl;
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+    .socmed {
+      display: inline-block;
+      margin-right: 8px;
+      text-decoration: none;
+      i {
+        color: $pri;
+        font-size: 18px;
+        transition: all 0.3s ease;
+      }
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        i {
+          color: $bl;
+        }
+      }
+    }
+  }
+}
+
+.family-wrap {
+  padding: 40px 0;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
+  h3 {
+    font-family: $b;
+    font-size: 43px;
+    margin-bottom: 40px;
+    color: $pri;
+    text-align: center;
+    font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .other-title {
+    font-family: $b;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: $pri;
+    text-align: center;
+    font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0px;
+    }
+  }
+  .item-family {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    .image {
+      height: 135px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h5 {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: $bl;
+      font-weight: normal;
+    }
+    p {
+      font-size: 16px;
+      color: $bl;
+      margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.cta-services {
+  padding: 50px 0;
+  background-color: $pri;
+  text-align: center;
+  position: relative;
+  @media screen and (max-width: 991px) {
+    padding: 25px 0;
+  }
+  &:before {
+    content: '';
+    background-image: url('/dream1.png');
+    background-repeat: no-repeat;
+    width: 232px;
+    height: 186px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 1199px) {
+      left: 3%;
+    }
+    @media screen and (max-width: 991px) {
+      left: -10%;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &:after {
+    content: '';
+    background-image: url('/dream2.png');
+    background-repeat: no-repeat;
+    width: 215px;
+    height: 163px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 1199px) {
+      right: 3%;
+    }
+    @media screen and (max-width: 991px) {
+      right: -10%;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  h2 {
+    font-family: $b;
+    font-size: 43px;
+    margin-bottom: 20px;
+    color: $wt;
+    font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 40px !important;
+    display: block;
+    color: $wt;
+    font-weight: normal;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 30px !important;
+    }
+  }
+}
