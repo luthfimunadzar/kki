@@ -247,7 +247,11 @@ export default {
           content:
             'Empowering HYPER Founders to build enduring great business that influence positive change for humanity.',
         },
-        { hid: 'og:title', name: 'og:title', content: 'Deta Decon' },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Kolaborasi.co | Manifesto',
+        },
         {
           hid: 'keywords',
           name: 'keywords',
