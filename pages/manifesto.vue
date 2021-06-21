@@ -1,106 +1,96 @@
 <template>
   <div>
-    <div class="founder-one-wrap">
-      <v-container>
-        <v-row>
-          <v-col md="10" offset-md="1" cols="12" class="pb-0">
-            <h3>Hyper Founders</h3>
-            <v-row>
-              <v-col
-                v-for="founder in founders"
-                :key="founder.id"
-                sm="6"
-                cols="12"
-              >
-                <div class="item-founders">
-                  <img :src="founder.img" alt="" class="img-fluid" />
-                  <h4>{{ founder.name }}</h4>
-                  <p>
-                    {{ founder.desc }}
-                  </p>
-
-                  <a :href="founder.linkedin" class="socmed">
-                    <v-icon> fab fa-linkedin </v-icon>
-                  </a>
-                  <a :href="founder.ig" class="socmed">
-                    <v-icon> fab fa-instagram </v-icon>
-                  </a>
-                  <a :href="founder.twitter" class="socmed">
-                    <v-icon> fab fa-twitter </v-icon>
-                  </a>
-                </div>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <div class="family-wrap">
-      <v-container>
-        <v-row>
-          <v-col md="10" offset-md="1" cols="12" class="pb-0">
-            <h3>Our Family</h3>
-            <v-row class="justify-content-center">
-              <v-col
-                v-for="family in familys"
-                :key="family.id"
-                sm="3"
-                cols="12"
-              >
-                <a :href="family.link" target="_blank" class="item-family">
-                  <div class="image">
-                    <img :src="family.img" alt="" class="img-fluid" />
-                  </div>
-                  <h5>{{ family.name }}</h5>
-                  <p>{{ family.desc }}</p>
-                </a>
-              </v-col>
-              <v-col cols="12">
-                <h5 class="other-title">
-                  Our family from Venture Builder program
-                </h5>
-              </v-col>
-              <v-col v-for="build in builders" :key="build.id" sm="3" cols="12">
-                <a :href="build.link" target="_blank" class="item-family">
-                  <div class="image">
-                    <img :src="build.img" alt="" class="img-fluid" />
-                  </div>
-                  <h5>{{ build.name }}</h5>
-                  <p>{{ build.desc }}</p>
-                </a>
-              </v-col>
-              <v-col cols="12">
-                <h5 class="other-title">
-                  Our family from SIAP Advancement Program
-                </h5>
-              </v-col>
-              <v-col v-for="siap in siaps" :key="siap.id" sm="3" cols="12">
-                <a :href="siap.link" target="_blank" class="item-family">
-                  <div class="image">
-                    <img :src="siap.img" alt="" class="img-fluid" />
-                  </div>
-                  <h5>{{ siap.name }}</h5>
-                  <p>{{ siap.desc }}</p>
-                </a>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-
-    <div class="cta-services">
-      <v-container>
-        <v-row>
-          <v-col md="6" offset-md="3" sm="8" offset-sm="2" cols="12">
-            <h2>Now, are you ready to build your dream?</h2>
-            <p>Check out our program and pick the one that suit you!</p>
-            <a class="btn btn-primary d-inline-block red"
-              ><span>All Programs & Services</span></a
-            >
-          </v-col>
-        </v-row>
-      </v-container>
+    <div class="manifesto-wrap">
+      <div class="intro">
+        <div class="container">
+          <v-row>
+            <v-col md="10" offset-md="1" cols="12" class="py-0">
+              <h4>Manifesto</h4>
+              <p>
+                We all share and use the web, just as we all share and live on
+                this planet. This manifesto is a public declaration of a shared
+                commitment to create a sustainable internet.
+              </p>
+            </v-col>
+          </v-row>
+        </div>
+      </div>
+      <div class="collapse-wrap red-bg">
+        <div class="container">
+          <v-row>
+            <v-col md="10" offset-md="1" cols="12" class="py-0">
+              <v-expansion-panels>
+                <v-expansion-panel>
+                  <v-expansion-panel-header disable-icon-rotate>
+                    Clean
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    The services we provide and services we use will be powered
+                    by renewable energy.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+            </v-col>
+          </v-row>
+        </div>
+      </div>
+      <div class="collapse-wrap blue-bg">
+        <div class="container">
+          <v-row>
+            <v-col md="10" offset-md="1" cols="12" class="py-0">
+              <v-expansion-panels>
+                <v-expansion-panel>
+                  <v-expansion-panel-header disable-icon-rotate>
+                    Efficient
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    The services we provide and services we use will be powered
+                    by renewable energy.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+            </v-col>
+          </v-row>
+        </div>
+      </div>
+      <div class="collapse-wrap yellow-bg">
+        <div class="container">
+          <v-row>
+            <v-col md="10" offset-md="1" cols="12" class="py-0">
+              <v-expansion-panels>
+                <v-expansion-panel>
+                  <v-expansion-panel-header disable-icon-rotate>
+                    Open
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    The services we provide and services we use will be powered
+                    by renewable energy.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+            </v-col>
+          </v-row>
+        </div>
+      </div>
+      <div class="collapse-wrap red-bg">
+        <div class="container">
+          <v-row>
+            <v-col md="10" offset-md="1" cols="12" class="py-0">
+              <v-expansion-panels>
+                <v-expansion-panel>
+                  <v-expansion-panel-header disable-icon-rotate>
+                    Honest
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    The services we provide and services we use will be powered
+                    by renewable energy.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+            </v-col>
+          </v-row>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -248,7 +238,7 @@ export default {
   },
   head() {
     return {
-      title: 'Kolaborasi.co | Profile',
+      title: 'Kolaborasi.co | Manifesto',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {

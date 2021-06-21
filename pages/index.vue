@@ -396,6 +396,33 @@ export default {
       ],
     }
   },
+  head() {
+    return {
+      title: 'Kolaborasi.co',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Empowering HYPER Founders to build enduring great business that influence positive change for humanity.',
+        },
+        { hid: 'og:title', name: 'og:title', content: 'Deta Decon' },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            'kolaborasi, kolaborasi kapital indonesia, startup, incubator',
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content:
+            'Empowering HYPER Founders to build enduring great business that influence positive change for humanity.',
+        },
+      ],
+    }
+  },
   methods: {
     pickQuiz(index, value) {
       Vue.set(this.answer, index, value)

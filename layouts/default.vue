@@ -12,7 +12,7 @@
           <nuxt-link to="#">Portofolio</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Manifesto</nuxt-link>
+          <nuxt-link to="/manifesto">Manifesto</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/profile">Proﬁle</nuxt-link>
@@ -40,7 +40,7 @@
           <nuxt-link to="#">Portofolio</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Manifesto</nuxt-link>
+          <nuxt-link to="/manifesto">Manifesto</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/profile">Proﬁle</nuxt-link>
@@ -62,22 +62,22 @@
                 <h5>Sitemap</h5>
                 <ul class="sitemap">
                   <li>
-                    <a href="">Contact Us</a>
+                    <nuxt-link to="">Contact Us</nuxt-link>
                   </li>
                   <li>
-                    <a href="">Home</a>
+                    <nuxt-link to="/">Home</nuxt-link>
                   </li>
                   <li>
-                    <a href="">Portofolio</a>
+                    <nuxt-link to="">Portofolio</nuxt-link>
                   </li>
                   <li>
-                    <a href="">Manifesto</a>
+                    <nuxt-link to="/manifesto">Manifesto</nuxt-link>
                   </li>
                   <li>
-                    <a href="">Proﬁle</a>
+                    <nuxt-link to="/profile">Proﬁle</nuxt-link>
                   </li>
                   <li>
-                    <a href="">Programs & Services</a>
+                    <nuxt-link to="">Programs & Services</nuxt-link>
                   </li>
                 </ul>
               </v-col>
