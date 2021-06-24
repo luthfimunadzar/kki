@@ -4,7 +4,7 @@
       <v-container>
         <v-row>
           <v-col md="10" offset-md="1" cols="12" class="pb-0">
-            <h3>Hyper Founders</h3>
+            <h3>KOLABORASI FOUNDERS</h3>
             <v-row>
               <v-col
                 v-for="founder in founders"
@@ -93,8 +93,8 @@
       <v-container>
         <v-row>
           <v-col md="6" offset-md="3" sm="8" offset-sm="2" cols="12">
-            <h2>Now, are you ready to build your dream?</h2>
-            <p>Check out our program and pick the one that suit you!</p>
+            <h2>Ready to begin your journey with us?</h2>
+            <p>Check our programs and pick the one that suits you best.</p>
             <a class="btn btn-primary d-inline-block red"
               ><span>All Programs & Services</span></a
             >
@@ -113,8 +113,8 @@ export default {
         {
           id: 1,
           img: '/people1.png',
-          name: 'John Doe',
-          desc: 'John Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
+          name: 'Adryan - CEO',
+          desc: 'Expertise ranging from product development, innovation management, leadership, to multiple  roles in mobile legend. Energetic but loving, Pushing but protecting, Innovative but wise. Adryan is the man with many solutions.',
           linkedin: '#',
           ig: '#',
           twitter: '#',
@@ -122,17 +122,17 @@ export default {
         {
           id: 2,
           img: '/people2.png',
-          name: 'John Doe',
-          desc: 'John Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
+          name: 'Ulaan - Partner',
+          desc: 'Expertise ranging from Joyous but governing, organized but playful, modest but infectiously positive Ulaan is the man behind most guns.',
           linkedin: '#',
           ig: '#',
           twitter: '#',
         },
         {
           id: 3,
-          img: '/people3.png',
-          name: 'Jane Doe',
-          desc: 'Jane Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
+          img: '/people1.png',
+          name: 'Sutan - Partner',
+          desc: 'Expertise ranging from copywriting, branding, to action figure collecting. Aggressive but fun-loving, practical but philosophical, sharp but charismatic. Sutan is the creative force of the team.',
           linkedin: '#',
           ig: '#',
           twitter: '#',
@@ -140,8 +140,17 @@ export default {
         {
           id: 4,
           img: '/people4.png',
-          name: 'Jane Doe',
-          desc: 'Jane Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
+          name: 'Moon - Partner',
+          desc: 'Expertise ranging from Calm but enthused, systematic but explorative, polite but decisive. Moon is the neat mother with a nerd soul.',
+          linkedin: '#',
+          ig: '#',
+          twitter: '#',
+        },
+        {
+          id: 5,
+          img: '/people2.png',
+          name: 'Al - Partner',
+          desc: 'Expertise ranging from Thorough but casual, analytical but charming, critical but knowledgeable. Al is the trailblazer to our next step.',
           linkedin: '#',
           ig: '#',
           twitter: '#',
@@ -150,24 +159,24 @@ export default {
       familys: [
         {
           id: 1,
-          img: '/partner1.png',
-          name: 'Crowde',
-          desc: 'Revolutionise agriculture industry through financial & agri-tech innovation',
-          link: 'https://crowde.co/',
+          img: '/partner3.png',
+          name: 'Cityplan',
+          desc: 'Cityplan is a Software + Service that helps businesses to collect, visualise, manage, and analyse their spatial data. They help stakeholders to make business decisions easier, related to business expansion & optimisation based on the geographical data.',
+          link: 'http://cityplan.id/',
         },
         {
           id: 2,
-          img: '/partner2.png',
-          name: 'Lingkaran',
-          desc: 'Bridging gap between formal education & industry through alternative education & digital content',
-          link: 'http://lingkaran.co/',
+          img: '/partner1.png',
+          name: 'Crowde',
+          desc: "CROWDE is an agriculture technology startup aiming to increase farmer's welfare by empowering farmers to be Agropreneurs, creating an efficient agriculture ecosystem, and being the trusted crowd-investment platform. CROWDE strives to solve Indonesia’s farming Industry problems such as complicated bureaucracy in getting working capital loans and selling farm produce, and land owning.",
+          link: 'https://crowde.co/',
         },
         {
           id: 3,
-          img: '/partner3.png',
-          name: 'City Plan',
-          desc: 'Supporting govt & industry build a better cities through spatial data intelligence solutions',
-          link: 'http://cityplan.id/',
+          img: '/partner2.png',
+          name: 'Lingkaran',
+          desc: 'Lingkaran is a leading creative education platform in Indonesia. They provide entrepreneurial development programs and in-demand skills training for those seeking relevance in today’s fast-changing industry. Their purpose is to empower the community of creative founders and talents to maximize their circle of potential and get them to meet their next possibilities.',
+          link: 'http://lingkaran.co/',
         },
         {
           id: 4,
@@ -219,7 +228,7 @@ export default {
           id: 1,
           img: '/partner10.png',
           name: 'Menjadi Manusia',
-          desc: 'Social platform to share the alternative perspective in the form of video content & activation',
+          desc: "Menjadi Manusia is Indonesia's leading media platform for youth focusing on life journey topics. They produce high quality content in multiple channels including (but not limited to) Youtube, Website, Spotify, Instagram, TikTok, etc. They also work and partner up with corporations (Tokopedia, Sampoerna, CIMB, etc) to tailor their brand message into engaging content with our platform and communities.",
           link: 'https://www.youtube.com/channel/UCJ6JnLmidOIP1sFeK8hRspA',
         },
         {

@@ -1,77 +1,31 @@
 <template>
   <div>
-    <div v-if="!quiz" class="hero">
+    <div class="hero">
       <v-container>
         <v-row>
           <v-col cols="12" md="10" offset-md="1" class="position-relative">
-            <h2>
-              We help founders build their dream through venture building
-              program
-            </h2>
-            <a class="go-quiz" @click="showQuiz()">
-              <p>Do you have what it takes to be a HYPER Founder?</p>
-              <span>Start</span>
-            </a>
+            <v-carousel :hide-delimiters="true" :cycle="true">
+              <v-carousel-item v-for="headline in headlines" :key="headline.id">
+                <h2>
+                  {{ headline.text }}
+                </h2>
+              </v-carousel-item>
+            </v-carousel>
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <div v-if="quiz" class="quiz">
-      <div
-        v-for="(item, index) in question"
-        :key="item.id"
-        :class="['item-quiz', { 'd-none': hiddenQestion[index] === 'hide' }]"
-      >
-        <h3>
-          <span>{{ item.quiz }}</span>
-        </h3>
-        <a
-          :class="['step', 'left', { active: answer[index] === 'a' }]"
-          @click="pickQuiz(index, 'a')"
-        >
-          <div class="wrap">
-            <h4>{{ item.answer_a }}</h4>
-            <div class="clearfix"></div>
-            <span class="circle"></span>
-          </div>
-        </a>
-        <a
-          :class="['step', 'right', { active: answer[index] === 'b' }]"
-          @click="pickQuiz(index, 'b')"
-        >
-          <div class="wrap">
-            <h4>{{ item.answer_b }}</h4>
-            <div class="clearfix"></div>
-            <span class="circle"></span>
-          </div>
-        </a>
-        <a v-if="hiddenQestion[0]" class="prev" @click="quizBack(index)">
-          <v-icon> fas fa-angle-left </v-icon> Previous question</a
-        >
-        <p class="count">Question {{ index + 1 }}/{{ question.length }}</p>
-      </div>
-      <div v-if="result" class="result">
-        <div class="result-wrap">
-          <div class="wrap">
-            <h5>Congrats! You are a...</h5>
-            <h2>HYPER FOUNDER!</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              finibus mattis turpis, at tempus justo malesuada in.
-            </p>
-            <p>
-              Sed ante lectus, fermentum id elit et, convallis lacinia purus.
-              Aliquam erat volutpat. Vivamus ultrices diam in lorem sodales, a
-              placerat enim suscipit.
-            </p>
-            <a class="link-retake" @click="resetTest()">RETAKE THE TEST</a>
-            <div class="clearfix"></div>
-            <a href="" class="btn btn-primary btn-more"
-              ><span>See what KOLABORASI can do for you</span></a
-            >
-          </div>
-        </div>
-      </div>
+    <div class="quiz-wrap">
+      <v-container>
+        <v-row>
+          <v-col md="10" offset-md="1" cols="12">
+            <nuxt-link class="go-quiz" to="/quiz">
+              <p>Do you have what it takes to be a HYPER Founder?</p>
+              <span>Start the Quiz!</span>
+            </nuxt-link>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
     <div class="hyper-wrap">
       <v-container>
@@ -88,15 +42,13 @@
               <v-tab-item>
                 <v-card flat>
                   <v-card-text>
-                    <h5>HELPFUL</h5>
+                    <h5>High Conviction</h5>
                     <p>
-                      Specialists in this rapidly evolving industry, we have an
-                      innate understanding of the media sector because we choose
-                      to immerse ourselves in it. Our team is actively involved
-                      in the media industry and are board members of, or
-                      advisors to, various industry organisations: Women in Film
-                      and Television, NZ Tech Industry Association and the NZ
-                      Game Developers Association.
+                      High Conviction founders are willing to take risks, make
+                      tough decisions and go the distance to the company's
+                      vision and values. Their conviction also makes them calm
+                      in facing problems, faithfully advance through each
+                      milestone, and firmly believe in the process.
                     </p>
                   </v-card-text>
                 </v-card>
@@ -104,15 +56,13 @@
               <v-tab-item>
                 <v-card flat>
                   <v-card-text>
-                    <h5 class="blue">YLPFUL</h5>
+                    <h5 class="blue">Youthful Spirit</h5>
                     <p>
-                      Specialists in this rapidly evolving industry, we have an
-                      innate understanding of the media sector because we choose
-                      to immerse ourselves in it. Our team is actively involved
-                      in the media industry and are board members of, or
-                      advisors to, various industry organisations: Women in Film
-                      and Television, NZ Tech Industry Association and the NZ
-                      Game Developers Association.
+                      Age is just a number. Founders with youthful spirit are
+                      always eager to learn something new, always open-minded,
+                      can keep things fun, and know when to be playful. Such
+                      demeanors will likely make people more open to them,
+                      making the team can safely express themselves.
                     </p>
                   </v-card-text>
                 </v-card>
@@ -120,15 +70,13 @@
               <v-tab-item>
                 <v-card flat>
                   <v-card-text>
-                    <h5 class="cyan">PFUL</h5>
+                    <h5 class="cyan">Persuasive Leadership</h5>
                     <p>
-                      Specialists in this rapidly evolving industry, we have an
-                      innate understanding of the media sector because we choose
-                      to immerse ourselves in it. Our team is actively involved
-                      in the media industry and are board members of, or
-                      advisors to, various industry organisations: Women in Film
-                      and Television, NZ Tech Industry Association and the NZ
-                      Game Developers Association.
+                      With the charisma to “move” people, the persuasive leader
+                      is not necessarily the most skillful or the most senior of
+                      the team. Through many or little words, the founder is
+                      able to communicate their belief and messages in ways that
+                      inspire action, invoke spirit, and even rally support.
                     </p>
                   </v-card-text>
                 </v-card>
@@ -136,15 +84,14 @@
               <v-tab-item>
                 <v-card flat>
                   <v-card-text>
-                    <h5 class="yellow">EFUL</h5>
+                    <h5 class="yellow">Entrepreneurial</h5>
                     <p>
-                      Specialists in this rapidly evolving industry, we have an
-                      innate understanding of the media sector because we choose
-                      to immerse ourselves in it. Our team is actively involved
-                      in the media industry and are board members of, or
-                      advisors to, various industry organisations: Women in Film
-                      and Television, NZ Tech Industry Association and the NZ
-                      Game Developers Association.
+                      With high initiative and ability to see opportunities in
+                      various situations, Entrepreneurial founders focus on
+                      multiplying values through deep understanding of the
+                      industry. Entrepreneurial founders are alo resourceful,
+                      able to survive in dire situations, and know when to rely
+                      on a team.
                     </p>
                   </v-card-text>
                 </v-card>
@@ -152,15 +99,14 @@
               <v-tab-item>
                 <v-card flat>
                   <v-card-text>
-                    <h5 class="green">REFUL</h5>
+                    <h5 class="green">Rational</h5>
                     <p>
-                      Specialists in this rapidly evolving industry, we have an
-                      innate understanding of the media sector because we choose
-                      to immerse ourselves in it. Our team is actively involved
-                      in the media industry and are board members of, or
-                      advisors to, various industry organisations: Women in Film
-                      and Television, NZ Tech Industry Association and the NZ
-                      Game Developers Association.
+                      Foresee the future, act for the present. With a solid grip
+                      on reality and analytical thinking, Rational founders can
+                      break down their vision into actionable tasks. They know
+                      the importance of building the fundamentals and solve
+                      current problems before focusing on the future they are
+                      trying to build.
                     </p>
                   </v-card-text>
                 </v-card>
@@ -199,8 +145,9 @@
                   <h4>What we do</h4>
                   <img src="/what-we-do.png" alt="" />
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    consectetur dolor in lacinia placerat. In id cursus lorem.
+                    Sure, we provide mentorship, access to resources, strategic
+                    decisions, and other “high level” tasks. But we also work
+                    with you. Like actually working with you.
                   </p>
                 </div>
               </v-col>
@@ -209,35 +156,48 @@
                   <h4>What will you get</h4>
                   <img src="/what-will-you-get.png" alt="" />
                   <p>
-                    Nam eu dui dapibus, finibus felis quis, malesuada libero.
-                    Curabitur tempus enim suscipit sagittis rutrum.
+                    Partners who know ways around the potholes and how to reach
+                    the pots of gold. Together we’ll seize opportunities while
+                    having some laughs along the way.
                   </p>
                 </div>
               </v-col>
               <v-col cols="12">
-                <h4 class="text-center">Our Services</h4>
+                <h4 class="text-center">Our Specialties</h4>
                 <v-row>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service">
-                      <h5>Pitch Deck Making</h5>
+                      <h5>
+                        Incubation<br />
+                        Join the club
+                      </h5>
                       <img src="/service-1.png" alt="" />
                     </div>
                   </v-col>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service second">
-                      <h5>Content Marketing & Wordsmithing</h5>
+                      <h5>
+                        Phantom<br />
+                        Back end assistance
+                      </h5>
                       <img src="/service-2.png" alt="" />
                     </div>
                   </v-col>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service third">
-                      <h5>Financial Planning & Structuring</h5>
+                      <h5>
+                        Telepath<br />
+                        Go to market
+                      </h5>
                       <img src="/service-3.png" alt="" />
                     </div>
                   </v-col>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service four">
-                      <h5>Graphic Design</h5>
+                      <h5>
+                        Metamorph<br />
+                        Product development
+                      </h5>
                       <img src="/service-4.png" alt="" />
                     </div>
                   </v-col>
@@ -260,26 +220,26 @@
             <h3>Contact Us</h3>
             <v-row>
               <v-col cols="12" md="6">
-                <h5>Our Home Base</h5>
+                <h5>Bandung Home Base</h5>
                 <p>
-                  Komplek Kampung Padi B11<br />
-                  Dago Pojok, Bandung<br />
-                  West Java, Indonesia<br />
-                  40132
+                  Freenovation Dago<br />
+                  Perumahan Kampung Padi B11<br />
+                  Dago Pojok, Bandung, West Java,<br />
+                  Indonesia 40135
                 </p>
-                <h5>For Fast Response</h5>
+                <h5>Say something nice</h5>
                 <a href="mailto:contact@kolaborasi.co"
-                  ><v-icon>far fa-envelope</v-icon> contact@kolaborasi.co</a
+                  ><v-icon>far fa-envelope</v-icon> Contact@kolaborasi.co</a
                 >
                 <div class="clearfix"></div>
                 <a href="http://wa.link/pmub9a"
-                  ><v-icon>fab fa-whatsapp</v-icon> 0818 0944 2483</a
+                  ><v-icon>fab fa-whatsapp</v-icon> 087828469295</a
                 >
               </v-col>
               <v-col cols="12" md="6">
                 <h5>Send Us a Message</h5>
                 <validation-observer ref="observer">
-                  <form @submit.prevent="submit">
+                  <form id="contactForm" @submit.prevent="submit">
                     <validation-provider
                       v-slot="{ errors }"
                       name="Your Name"
@@ -289,6 +249,7 @@
                         v-model="form.name"
                         :error-messages="errors"
                         label="Your Name"
+                        name="name"
                         required
                       ></v-text-field>
                     </validation-provider>
@@ -301,6 +262,7 @@
                         v-model="form.email"
                         :error-messages="errors"
                         label="Your E-mail"
+                        name="email"
                         required
                       ></v-text-field>
                     </validation-provider>
@@ -313,6 +275,7 @@
                         v-model="form.message"
                         :error-messages="errors"
                         label="Your Message"
+                        name="message"
                         required
                         auto-grow
                       ></v-textarea>
@@ -348,6 +311,28 @@ export default {
       tabItems: ['H', 'Y', 'P', 'E', 'R'],
       answer: [],
       hiddenQestion: [],
+      headlines: [
+        {
+          id: 1,
+          text: 'We help founders build their dream through venture building program',
+        },
+        {
+          id: 2,
+          text: 'Unleashing the HYPER in you.',
+        },
+        {
+          id: 3,
+          text: 'We guide founders.',
+        },
+        {
+          id: 4,
+          text: 'We grow founders.',
+        },
+        {
+          id: 5,
+          text: 'We work with founders.',
+        },
+      ],
       question: [
         {
           id: 1,
@@ -378,20 +363,50 @@ export default {
         {
           id: 1,
           img: '/people.png',
-          name: 'John Doe Long Name',
-          desc: 'John Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise, surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
+          name: 'Rizky Fadhilah - Rational',
+          desc: 'Rizky sees opportunity amidst the chaotic nature of city development. Equipped with his engineering skill in urban planning, he creates solutions & new business ecosystems to help government & business plan the city better with technology.',
         },
         {
           id: 2,
           img: '/people.png',
-          name: 'Jean Doe Long Name',
-          desc: 'Jean Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise, surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
+          name: 'Yohanes S. - High Conviction',
+          desc: 'Yohanes “Oyong” believes that farmers are the leftovers & victims of economic development. He envision a future where empowered farmer become a significant player in the industry by equipping them with technology & entrepreneurial skills',
         },
         {
           id: 3,
           img: '/people.png',
-          name: 'Jean Doe Long Name',
-          desc: 'Jean Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise, surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
+          name: 'Wendy Pratama - Youthful spirit',
+          desc: 'As an architecture graduate, he built his company like he built his home. Started by building his team, as the foundation. He built a family where people can have fun, pursue their passion, do things that they want to, while achieving the common goals of providing an alternative education program for people to upgrade their life & career.',
+        },
+        {
+          id: 4,
+          img: '/people.png',
+          name: 'Ivan Lalamentik - Entrepreneurial',
+          desc: 'As a lawyer, Ivan understands the legal industry is full of intrigue yet strictly regulated. but with his entrepreneurial point of view he found new business opportunities and swiftly pioneered a solution to the problem faced by the emerging market of legal services.',
+        },
+        {
+          id: 5,
+          img: '/people.png',
+          name: 'Rhaka - Youthful spirit',
+          desc: 'Rhaka is able to convert his trauma of addiction and dropping out of college into a positive energy to move forward. So he understands at heart, that business is not only about money, but more a meaningful and fulfilling way of living while helping other people to become a better person',
+        },
+        {
+          id: 6,
+          img: '/people.png',
+          name: 'Firman - Entrepreneurial',
+          desc: 'Firman is a resilient and resourceful educator/technocrat. He is able to withstand the ups and downs of Robonesia and able to fill multiple strategic roles to grow Robonesia. His ability to nimbly overcome many challenges further proves his spirit and versatility.',
+        },
+        {
+          id: 7,
+          img: '/people.png',
+          name: 'Nuwi - Persuasive Leadership',
+          desc: 'With experience in social enterprise, knowledge about economic development, and ability as a fluent public speaker. She is able to persuade and move stakeholders from government, private investors, to local business owners and give back to the village by co-establishing a social enterprise locally owned by the village community.',
+        },
+        {
+          id: 8,
+          img: '/people.png',
+          name: 'Aisha - High Conviction',
+          desc: 'Aisha believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion of visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
         },
       ],
     }
@@ -443,6 +458,25 @@ export default {
     },
     showQuiz() {
       this.quiz = true
+    },
+    submit() {
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzDrSU-4RLB7h0-lRQE_WLYRzHyqevnyUw4nF_Ft1B_QgsTU4wsQXjufGZkNDrDr1_Diw/exec'
+      // const contactForm = document.getElementById('contactForm')
+      // console.log(contactForm)
+      const sendingData = new FormData()
+      sendingData.append('name', this.form.name)
+      sendingData.append('email', this.form.email)
+      sendingData.append('message', this.form.message)
+
+      // fetch(scriptURL, { method: 'POST', body: new FormData(sendingData) })
+      //   .then((response) => console.log('Success!', response))
+      //   .catch((error) => console.error('Error!', error.message))
+
+      this.$axios
+        .$post(scriptURL, sendingData)
+        .then((response) => console.log('Success!', response))
+        .catch((error) => console.error('Error!', error.message))
     },
   },
 }

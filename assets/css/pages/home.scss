@@ -14,87 +14,65 @@
     color: $wt;
     font-family: $b;
     font-weight: normal;
-    width: 70%;
+    width: 85%;
     margin-bottom: 0;
     line-height: 1.3;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 90px;
     @media screen and (max-width: 991px) {
       font-size: 32px;
     }
     @media screen and (max-width: 599px) {
-      width: 90%;
+      font-size: 26px;
+      width: 100%;
+      padding: 0 60px;
     }
   }
-  .go-quiz {
-    position: absolute;
-    bottom: -150px;
-    left: 0;
-    right: 0;
-    display: block;
-    @media screen and (max-width: 991px) {
-      bottom: -80px;
-      left: 20px;
-      right: 20px;
-    }
-    p {
-      position: relative;
-      margin: 0;
-      color: $bl;
-      background-color: $wt;
-      font-size: 17px;
-      padding: 10px 25px;
-      z-index: 2;
-      @media screen and (max-width: 991px) {
-        font-size: 14px;
+  // arrow
+  .v-window__prev {
+    opacity: 0.4;
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    .v-btn {
+      &::before {
+        background-color: transparent !important;
       }
-      @media screen and (max-width: 599px) {
-        padding: 10px 10px;
-        font-size: 13px;
+      .v-btn__content {
+        i {
+          font-size: 80px !important;
+          @media screen and (max-width: 599px) {
+            font-size: 40px !important;
+          }
+        }
       }
-    }
-    span {
-      position: absolute;
-      right: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 68px;
-      height: 68px;
-      border-radius: 50%;
-      background-color: $fiv;
-      color: $wt;
-      font-family: $b;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      z-index: 3;
-      transition: all 0.3s ease;
-      @media screen and (max-width: 599px) {
-        right: 0px;
-        width: 50px;
-        height: 50px;
-        font-size: 13px;
-      }
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      transform: translate(6px, 6px);
-      background-color: $sec;
-      z-index: 1;
-      transition: all 0.3s ease;
     }
     &:hover,
     &:focus {
-      span {
-        background-color: $sec;
-      }
+      opacity: 1;
+    }
+  }
+  .v-window__next {
+    opacity: 0.4;
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    .v-btn {
       &::before {
-        transform: translate(0px, 0px);
+        background-color: transparent !important;
       }
+      .v-btn__content {
+        i {
+          font-size: 80px !important;
+          @media screen and (max-width: 599px) {
+            font-size: 40px !important;
+          }
+        }
+      }
+    }
+    &:hover,
+    &:focus {
+      opacity: 1;
     }
   }
 }
@@ -483,6 +461,94 @@
             margin-bottom: 0px;
           }
         }
+      }
+    }
+  }
+}
+
+.quiz-wrap {
+  padding: 50px 0;
+  background-image: url('/bg-quiz.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @media screen and (max-width: 767px) {
+    padding: 25px 0;
+  }
+  .go-quiz {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    @media screen and (max-width: 991px) {
+    }
+    p {
+      position: relative;
+      margin: 0;
+      color: $bl;
+      background-color: $wt;
+      font-size: 29px;
+      padding: 50px 35px;
+      z-index: 2;
+      @media screen and (max-width: 991px) {
+        font-size: 22px;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+    }
+    span {
+      position: absolute;
+      right: -110px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 165px;
+      height: 165px;
+      border-radius: 50%;
+      background-image: url('/star.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: $wt;
+      font-family: $b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 20px;
+      z-index: 3;
+      transition: all 0.3s ease;
+      @media screen and (max-width: 991px) {
+        right: -12px;
+      }
+      @media screen and (max-width: 767px) {
+        right: -7px;
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      transform: translate(16px, 16px);
+      background-color: $sec;
+      z-index: 1;
+      transition: all 0.3s ease;
+      @media screen and (max-width: 991px) {
+        transform: translate(6px, 16px);
+      }
+      @media screen and (max-width: 767px) {
+        transform: translate(6px, 6px);
+      }
+    }
+    &:hover,
+    &:focus {
+      &::before {
+        transform: translate(0px, 0px);
       }
     }
   }
