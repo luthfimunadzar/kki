@@ -461,22 +461,35 @@ export default {
     },
     submit() {
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbzDrSU-4RLB7h0-lRQE_WLYRzHyqevnyUw4nF_Ft1B_QgsTU4wsQXjufGZkNDrDr1_Diw/exec'
-      // const contactForm = document.getElementById('contactForm')
-      // console.log(contactForm)
+        'https://script.google.com/macros/s/AKfycbyCXTRmP2pouGHRnULKJteXrHv7gHNqz0-aPj8sS4C_cBLOxSarSs__8fm5UWPMaIA53g/exec'
       const sendingData = new FormData()
       sendingData.append('name', this.form.name)
       sendingData.append('email', this.form.email)
       sendingData.append('message', this.form.message)
 
-      // fetch(scriptURL, { method: 'POST', body: new FormData(sendingData) })
-      //   .then((response) => console.log('Success!', response))
-      //   .catch((error) => console.error('Error!', error.message))
-
-      this.$axios
-        .$post(scriptURL, sendingData)
-        .then((response) => console.log('Success!', response))
-        .catch((error) => console.error('Error!', error.message))
+      fetch(scriptURL, { method: 'POST', body: sendingData })
+        .then(
+          () =>
+            this.$swal.fire({
+              type: 'success',
+              title: 'Message Sent!',
+              text: 'Thank you for contacting kolaborasi, we will contact you very soon.',
+            }),
+          this.reset()
+        )
+        .catch(() =>
+          this.$swal.fire({
+            type: 'error',
+            title: 'Oops',
+            text: 'Theres something error please try again later, or contacting us via social media.',
+          })
+        )
+    },
+    reset() {
+      this.form.name = null
+      this.form.email = null
+      this.form.message = null
+      this.$refs.observer.reset()
     },
   },
 }
