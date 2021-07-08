@@ -1,106 +1,94 @@
 <template>
   <div>
-    <div class="manifesto-wrap">
-      <div class="intro">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <h4>Manifesto</h4>
-              <p>
-                We all share and use the web, just as we all share and live on
-                this planet. This manifesto is a public declaration of a shared
-                commitment to create a sustainable internet.
-              </p>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div class="collapse-wrap red-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    We empower founders
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    In any startup, founders come first. Ideas can be changed,
-                    skills can be gained, expertise can be hired, money can be
-                    raised. But the core team; their chemistry, resilience,
-                    faith, and characters, determines whether a business can
-                    survive for the next 100 years or 100 days.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div class="collapse-wrap blue-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    Enduring, great business.
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    Some businesses play fundamental roles in a society. These
-                    businesses last for decades because they play vital roles in
-                    the ecosystem, even able to generate an ecosystem of their
-                    own. We aim to discover, build, and take part in these
-                    enduring, great businesses.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div class="collapse-wrap yellow-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    Influence positive change.
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    Humanity can no longer focus solely on profit, but also on
-                    people and the planet. By becoming a platform for
-                    innovation, we can enable new businesses to consider all
-                    three aspects, change the industry and leave lasting legacy.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div class="collapse-wrap red-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    True to our values
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    Learn humbly, explore with courage, act with kindness and
-                    inspire perseverance are the four guiding principles. These
-                    principles help us to keep growing, stay ahead of the
-                    current, build loyal teams, and move people.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
+    <div class="programs-wrap">
+      <v-container>
+        <v-row>
+          <v-col md="10" offset-md="1">
+            <h3>Programs & Services</h3>
+            <v-row>
+              <v-col md="6" class="text-center">
+                <img src="/what-we-do.png" alt="" class="max-width" />
+              </v-col>
+              <v-col md="6">
+                <h5>What we do</h5>
+                <p>
+                  Sure, we provide mentorship, access to resources, strategic
+                  decisions, and other “high level” tasks. But we also work with
+                  you. Like actually working with you.
+                </p>
+              </v-col>
+            </v-row>
+            <v-row class="mt-10">
+              <v-col md="6">
+                <h5 class="text-right">What will you get</h5>
+                <p class="text-right">
+                  Partners who know ways around the potholes and how to reach
+                  the pots of gold. Together we’ll seize opportunities while
+                  having some laughs along the way.
+                </p>
+              </v-col>
+              <v-col md="6" class="text-center">
+                <img src="/what-will-you-get.png" alt="" class="max-width" />
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="12">
+                <h5 class="text-center mt-10">Our Specialties</h5></v-col
+              >
+              <v-col md="3">
+                <img src="/what-will-you-get.png" alt="" class="max-width" />
+                <div class="item-program red-color">
+                  <h6>Early business Development</h6>
+                  <p>
+                    For early business development, join our incubation program.
+                    We offer 4 services in exchange for 5% equity each. Send us
+                    your deck, we’ll get in touch if we’re interested ;)
+                  </p>
+                </div>
+              </v-col>
+              <v-col md="3">
+                <img src="/what-will-you-get.png" alt="" class="max-width" />
+                <div class="item-program yellow-color">
+                  <h6>Content Marketing & Visuals</h6>
+                  <p>
+                    Capitalize on low hanging fruit to identify a ballpark value
+                    added activity to beta test. Override the digital divide
+                    with additional clickthroughs from DevOps. Nanotechnology
+                    immersion along the information highway will close the loop
+                    on focusing solely on the bottom line.
+                  </p>
+                </div>
+              </v-col>
+              <v-col md="3">
+                <img src="/what-will-you-get.png" alt="" class="max-width" />
+                <div class="item-program green-color">
+                  <h6>Financial structuring and strategy</h6>
+                  <p>
+                    Capitalize on low hanging fruit to identify a ballpark value
+                    added activity to beta test. Override the digital divide
+                    with additional clickthroughs from DevOps. Nanotechnology
+                    immersion along the information highway will close the loop
+                    on focusing solely on the bottom line.
+                  </p>
+                </div>
+              </v-col>
+              <v-col md="3">
+                <img src="/what-will-you-get.png" alt="" class="max-width" />
+                <div class="item-program teal-color">
+                  <h6>Product Development</h6>
+                  <p>
+                    Capitalize on low hanging fruit to identify a ballpark value
+                    added activity to beta test. Override the digital divide
+                    with additional clickthroughs from DevOps. Nanotechnology
+                    immersion along the information highway will close the loop
+                    on focusing solely on the bottom line.
+                  </p>
+                </div>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>

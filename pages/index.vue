@@ -4,11 +4,28 @@
       <v-container>
         <v-row>
           <v-col cols="12" md="10" offset-md="1" class="position-relative">
-            <v-carousel :hide-delimiters="true" :cycle="true">
-              <v-carousel-item v-for="headline in headlines" :key="headline.id">
+            <v-carousel
+              :hide-delimiters="true"
+              :show-arrows="false"
+              :cycle="true"
+            >
+              <v-carousel-item>
                 <h2>
-                  {{ headline.text }}
+                  We help founders build their dream through venture building
+                  program
                 </h2>
+              </v-carousel-item>
+              <v-carousel-item>
+                <h2>Unleashing the HYPER in you.</h2>
+              </v-carousel-item>
+              <v-carousel-item>
+                <h2>We <em>guide</em> founders.</h2>
+              </v-carousel-item>
+              <v-carousel-item>
+                <h2>We <em>grow</em> founders.</h2>
+              </v-carousel-item>
+              <v-carousel-item>
+                <h2>We <em>work</em> with founders.</h2>
               </v-carousel-item>
             </v-carousel>
           </v-col>
@@ -167,37 +184,25 @@
                 <v-row>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service">
-                      <h5>
-                        Incubation<br />
-                        Join the club
-                      </h5>
+                      <h5>Early business Development</h5>
                       <img src="/service-1.png" alt="" />
                     </div>
                   </v-col>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service second">
-                      <h5>
-                        Phantom<br />
-                        Back end assistance
-                      </h5>
+                      <h5>Content Marketing & Visuals</h5>
                       <img src="/service-2.png" alt="" />
                     </div>
                   </v-col>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service third">
-                      <h5>
-                        Telepath<br />
-                        Go to market
-                      </h5>
+                      <h5>Financial structuring and strategy</h5>
                       <img src="/service-3.png" alt="" />
                     </div>
                   </v-col>
                   <v-col md="3" sm="6" cols="12">
                     <div class="item-service four">
-                      <h5>
-                        Metamorph<br />
-                        Product development
-                      </h5>
+                      <h5>Product Development</h5>
                       <img src="/service-4.png" alt="" />
                     </div>
                   </v-col>
@@ -406,7 +411,7 @@ export default {
           id: 8,
           img: '/people.png',
           name: 'Aisha - High Conviction',
-          desc: 'Aisha believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion of visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
+          desc: 'Aisha believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
         },
       ],
     }

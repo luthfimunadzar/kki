@@ -1,0 +1,29 @@
+.yellow-wrap {
+  background-color: $sec;
+  padding: 50px 0;
+  color: #1e1e1e;
+  h3 {
+    color: $fiv;
+  }
+  h5 {
+    color: $pri;
+  }
+  a {
+    color: #1e1e1e;
+    .v-icon {
+      color: #1e1e1e;
+    }
+  }
+  .theme--dark.v-input input,
+  .theme--dark.v-input textarea {
+    color: #1e1e1e;
+  }
+  label.v-label {
+    color: #1e1e1e;
+  }
+  .theme--dark.v-text-field > .v-input__control > .v-input__slot {
+    &:before {
+      border-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.portfolio-wrap {
+  padding: 70px 0;
+  background-color: #1e1e1e;
+  @media screen and (max-width: 991px) {
+    padding: 40px 0;
+  }
+  h3 {
+    font-size: 43px;
+    font-family: $b;
+    color: $sec;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 26px;
+    }
+  }
+  .v-carousel {
+    .v-carousel__item {
+      text-align: center;
+      padding-bottom: 100px;
+      @media screen and (max-width: 991px) {
+        padding-bottom: 70px;
+      }
+      img {
+        max-width: 100%;
+        margin-bottom: 15px;
+        @media screen and (max-width: 991px) {
+          max-width: 80%;
+        }
+      }
+      h4 {
+        font-size: 32px;
+        font-family: $b;
+        color: #fff;
+        margin-bottom: 20px;
+        @media screen and (max-width: 991px) {
+          font-size: 26px;
+          margin-bottom: 15px;
+        }
+      }
+      p {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 1.5;
+        @media screen and (max-width: 991px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .v-carousel__controls {
+      background-color: transparent;
+    }
+  }
+}

@@ -13,6 +13,10 @@
           :class="['step', 'left', { active: answer[index] === 'a' }]"
           @click="pickQuiz(index, 'a')"
         >
+          <div
+            :class="[{ 'd-none': !item.img_a }, 'image']"
+            :style="{ backgroundImage: `url('${item.img_a}')` }"
+          ></div>
           <div class="wrap">
             <h4>{{ item.answer_a }}</h4>
             <div class="clearfix"></div>
@@ -23,6 +27,10 @@
           :class="['step', 'right', { active: answer[index] === 'b' }]"
           @click="pickQuiz(index, 'b')"
         >
+          <div
+            :class="[{ 'd-none': !item.img_b }, 'image']"
+            :style="{ backgroundImage: `url('${item.img_b}')` }"
+          ></div>
           <div class="wrap">
             <h4>{{ item.answer_b }}</h4>
             <div class="clearfix"></div>
@@ -73,27 +81,44 @@ export default {
       question: [
         {
           id: 1,
-          quiz: 'How much risk do you like to take in life?',
-          answer_a: 'As little as possible',
-          answer_b: 'I get a buzz from taking crazy risks all the time',
+          quiz: 'How much risk do you take in life?',
+          answer_a: 'I tend to play it safe',
+          answer_b: 'I eat risk for breakfast',
+          img_a: '',
+          img_b: '',
         },
         {
           id: 2,
-          quiz: 'Nam eget ornare mauris. In ultrices augue ac leo semper?',
-          answer_a: 'vel ultricies eros cursus',
-          answer_b: 'Sed non mauris vel velit aliquam',
+          quiz: 'How do you cope with changes?',
+          answer_a: 'I expect them',
+          answer_b: 'Lie down, try not to cry, cry a lot',
+          img_a: '',
+          img_b: '/down.jpeg',
         },
         {
           id: 3,
-          quiz: 'bibendum velit at, placerat mauris?',
-          answer_a: 'porttitor eget at felis',
-          answer_b: 'Sed ut odio volutpat',
+          quiz: 'Do people look up to you?',
+          answer_a: 'Generally, yes',
+          answer_b:
+            'If I am on the second floor balcony and they’re on the street',
+          img_a: '',
+          img_b: '',
         },
         {
           id: 4,
-          quiz: 'Pellentesque iaculis, risus sed mollis tempor?',
-          answer_a: 'sapien massa auctor erat',
-          answer_b: 'a eleifend tellus odio',
+          quiz: 'How do you find business opportunities?',
+          answer_a: 'Networking events, News, Brainstorming',
+          answer_b: 'I wait for it to knock on my doors',
+          img_a: '',
+          img_b: '',
+        },
+        {
+          id: 5,
+          quiz: 'After 6 months, your startup only gained 2 users. What will you do?',
+          answer_a: 'Pivot',
+          answer_b: 'Pesugihan (Indonesian Witchcraft)',
+          img_a: '/pivot.jpg',
+          img_b: '/babi.jpg',
         },
       ],
     }

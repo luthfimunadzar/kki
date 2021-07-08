@@ -6,10 +6,10 @@
           <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Programs & Services</nuxt-link>
+          <nuxt-link to="/programs">Programs & Services</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Portofolio</nuxt-link>
+          <nuxt-link to="/portfolio">Portofolio</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/manifesto">Manifesto</nuxt-link>
@@ -18,7 +18,7 @@
           <nuxt-link to="/profile">Proﬁle</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Contact Us</nuxt-link>
+          <nuxt-link to="/contact">Contact Us</nuxt-link>
         </li>
       </ul>
     </v-navigation-drawer>
@@ -34,10 +34,10 @@
           <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Programs & Services</nuxt-link>
+          <nuxt-link to="/programs">Programs & Services</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Portofolio</nuxt-link>
+          <nuxt-link to="/portfolio">Portofolio</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/manifesto">Manifesto</nuxt-link>
@@ -46,7 +46,7 @@
           <nuxt-link to="/profile">Proﬁle</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#">Contact Us</nuxt-link>
+          <nuxt-link to="/contact">Contact Us</nuxt-link>
         </li>
       </ul>
     </header>
@@ -62,13 +62,13 @@
                 <h5>Sitemap</h5>
                 <ul class="sitemap">
                   <li>
-                    <nuxt-link to="">Contact Us</nuxt-link>
+                    <nuxt-link to="/contact">Contact Us</nuxt-link>
                   </li>
                   <li>
                     <nuxt-link to="/">Home</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link to="">Portofolio</nuxt-link>
+                    <nuxt-link to="/portfolio">Portofolio</nuxt-link>
                   </li>
                   <li>
                     <nuxt-link to="/manifesto">Manifesto</nuxt-link>
@@ -77,7 +77,7 @@
                     <nuxt-link to="/profile">Proﬁle</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link to="">Programs & Services</nuxt-link>
+                    <nuxt-link to="/programs">Programs & Services</nuxt-link>
                   </li>
                 </ul>
               </v-col>

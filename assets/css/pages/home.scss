@@ -20,14 +20,12 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding: 0 90px;
     @media screen and (max-width: 991px) {
       font-size: 32px;
     }
     @media screen and (max-width: 599px) {
       font-size: 26px;
       width: 100%;
-      padding: 0 60px;
     }
   }
   // arrow
@@ -101,6 +99,7 @@
       position: absolute;
       top: 80px;
       left: 50%;
+      z-index: 9;
       transform: translateX(-50%);
       @media screen and (max-width: 1199px) {
         top: 40px;
@@ -203,19 +202,35 @@
       @media screen and (max-width: 599px) {
         font-size: 16px;
       }
-      h4 {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto 35px auto;
-        font-weight: normal;
+      .image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 1;
+        opacity: 0.4;
       }
-      .circle {
-        width: 50px;
-        height: 50px;
-        border: 1px dashed $t;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto;
+      .wrap {
+        position: relative;
+        z-index: 2;
+        h4 {
+          width: 100%;
+          text-align: center;
+          margin: 0 auto 35px auto;
+          font-weight: normal;
+        }
+        .circle {
+          width: 50px;
+          height: 50px;
+          border: 1px dashed $t;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+        }
       }
       &.right {
         left: auto;
@@ -802,10 +817,9 @@
     h5 {
       color: $wt;
       font-weight: normal;
-      font-family: $b;
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 0;
-      width: 80%;
+      width: 100%;
       @media screen and (max-width: 1199px) {
         width: 100%;
         font-size: 16px;
