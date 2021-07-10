@@ -246,7 +246,7 @@ export default {
   },
   head() {
     return {
-      title: 'Kolaborasi.co | Manifesto',
+      title: 'Kolaborasi.co | Programs & Services',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
@@ -258,7 +258,7 @@ export default {
         {
           hid: 'og:title',
           name: 'og:title',
-          content: 'Kolaborasi.co | Manifesto',
+          content: 'Kolaborasi.co | Programs & Services',
         },
         {
           hid: 'keywords',
