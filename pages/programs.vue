@@ -86,7 +86,7 @@
                       <img src="/service-3.png" alt="" />
                     </div>
                   </v-col>
-                  <v-col md="12" sm="6" cols="12" class="pt--md-0">
+                  <v-col md="12" sm="6" cols="12" class="pt-md-0">
                     <div class="item-service four h50">
                       <h5>Product Development</h5>
                       <a href="#">Coming Soon</a>
