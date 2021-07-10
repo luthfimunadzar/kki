@@ -4,7 +4,7 @@
       <v-container>
         <v-row>
           <v-col md="10" offset-md="1">
-            <h3>Programs & Services</h3>
+            <h3>Hyper Founder Programs</h3>
             <v-row>
               <v-col md="6" class="text-center">
                 <img src="/what-we-do.png" alt="" class="max-width" />
@@ -33,57 +33,67 @@
             </v-row>
             <v-row>
               <v-col cols="12">
-                <h5 class="text-center mt-10">Our Specialties</h5></v-col
-              >
-              <v-col md="3">
-                <img src="/what-will-you-get.png" alt="" class="max-width" />
-                <div class="item-program red-color">
-                  <h6>Early business Development</h6>
-                  <p>
-                    For early business development, join our incubation program.
-                    We offer 4 services in exchange for 5% equity each. Send us
-                    your deck, we’ll get in touch if we’re interested ;)
-                  </p>
+                <div class="text-center">
+                  <nuxt-link
+                    class="btn btn-primary d-inline-block red"
+                    to="/programs"
+                    ><span>All Programs & Services</span>
+                  </nuxt-link>
                 </div>
               </v-col>
-              <v-col md="3">
-                <img src="/what-will-you-get.png" alt="" class="max-width" />
-                <div class="item-program yellow-color">
-                  <h6>Content Marketing & Visuals</h6>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+
+    <div class="program-wrap pt-0">
+      <v-container>
+        <v-row>
+          <v-col md="10" offset-md="1" cols="12" class="pb-0">
+            <h3>Our Lab Services</h3>
+            <v-row>
+              <v-col md="4" sm="6" cols="12">
+                <div class="item-service second">
+                  <h5>Early business Development</h5>
                   <p>
-                    Capitalize on low hanging fruit to identify a ballpark value
-                    added activity to beta test. Override the digital divide
-                    with additional clickthroughs from DevOps. Nanotechnology
-                    immersion along the information highway will close the loop
-                    on focusing solely on the bottom line.
+                    Leverage agile frameworks to provide a robust synopsis for
+                    high level overviews. Iterative approaches to corporate
+                    strategy.
                   </p>
+                  <a href="#">Download Proposal</a>
+                  <img src="/service-1.png" alt="" />
                 </div>
               </v-col>
-              <v-col md="3">
-                <img src="/what-will-you-get.png" alt="" class="max-width" />
-                <div class="item-program green-color">
-                  <h6>Financial structuring and strategy</h6>
+              <v-col md="4" sm="6" cols="12">
+                <div class="item-service">
+                  <h5>Content Marketing & Visuals</h5>
                   <p>
-                    Capitalize on low hanging fruit to identify a ballpark value
-                    added activity to beta test. Override the digital divide
-                    with additional clickthroughs from DevOps. Nanotechnology
-                    immersion along the information highway will close the loop
-                    on focusing solely on the bottom line.
+                    Leverage agile frameworks to provide a robust synopsis for
+                    high level overviews. Iterative approaches to corporate
+                    strategy.
                   </p>
+                  <a href="#">Download Proposal</a>
+                  <img src="/service-2.png" alt="" />
                 </div>
               </v-col>
-              <v-col md="3">
-                <img src="/what-will-you-get.png" alt="" class="max-width" />
-                <div class="item-program teal-color">
-                  <h6>Product Development</h6>
-                  <p>
-                    Capitalize on low hanging fruit to identify a ballpark value
-                    added activity to beta test. Override the digital divide
-                    with additional clickthroughs from DevOps. Nanotechnology
-                    immersion along the information highway will close the loop
-                    on focusing solely on the bottom line.
-                  </p>
-                </div>
+              <v-col md="4" sm="12" cols="12">
+                <v-row>
+                  <v-col md="12" sm="6" cols="12" class="pb-md-0">
+                    <div class="item-service third h50">
+                      <h5>Financial structuring and strategy</h5>
+                      <a href="#">Coming Soon</a>
+                      <img src="/service-3.png" alt="" />
+                    </div>
+                  </v-col>
+                  <v-col md="12" sm="6" cols="12" class="pt--md-0">
+                    <div class="item-service four h50">
+                      <h5>Product Development</h5>
+                      <a href="#">Coming Soon</a>
+                      <img src="/service-4.png" alt="" />
+                    </div>
+                  </v-col>
+                </v-row>
               </v-col>
             </v-row>
           </v-col>

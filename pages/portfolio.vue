@@ -1,15 +1,19 @@
 <template>
   <div>
-    <div class="portfolio-wrap">
-      <v-container>
+    <div class="portfolio-wrap py-0">
+      <v-container fluid>
         <v-row>
-          <v-col md="10" offset-md="1" cols="12" class="pb-0">
-            <h3>Our Portfolio</h3>
-            <v-carousel :show-arrows="false" :cycle="true" height="auto">
-              <v-carousel-item v-for="item in founders" :key="item.id">
-                <img :src="item.img" alt="" />
-                <h4>{{ item.name }}</h4>
-                <p>{{ item.desc }}</p>
+          <v-col cols="12" class="px-0 py-0">
+            <v-carousel :show-arrows="false" :cycle="true">
+              <v-carousel-item
+                v-for="item in founders"
+                :key="item.id"
+                :src="item.img"
+              >
+                <div class="wrap">
+                  <h4>{{ item.name }}</h4>
+                  <p>{{ item.desc }}</p>
+                </div>
               </v-carousel-item>
             </v-carousel>
           </v-col>

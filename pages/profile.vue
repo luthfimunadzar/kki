@@ -4,7 +4,7 @@
       <v-container>
         <v-row>
           <v-col md="10" offset-md="1" cols="12" class="pb-0">
-            <h3>KOLABORASI FOUNDERS</h3>
+            <h3>CO FOUNDERS & PARTNER</h3>
             <v-row>
               <v-col
                 v-for="founder in founders"
@@ -15,9 +15,7 @@
                 <div class="item-founders">
                   <img :src="founder.img" alt="" class="img-fluid" />
                   <h4>{{ founder.name }}</h4>
-                  <p>
-                    {{ founder.desc }}
-                  </p>
+                  <vue-markdown :source="founder.desc" />
 
                   <a :href="founder.linkedin" class="socmed">
                     <v-icon> fab fa-linkedin </v-icon>
@@ -35,7 +33,8 @@
         </v-row>
       </v-container>
     </div>
-    <div class="family-wrap">
+
+    <div class="family-wrap d-none">
       <v-container>
         <v-row>
           <v-col md="10" offset-md="1" cols="12" class="pb-0">
@@ -106,15 +105,20 @@
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'
+
 export default {
+  components: {
+    VueMarkdown,
+  },
   data() {
     return {
       founders: [
         {
           id: 1,
           img: '/people1.png',
-          name: 'Adryan - CEO',
-          desc: 'Expertise ranging from product development, innovation management, leadership, to multiple  roles in mobile legend. Energetic but loving, Pushing but protecting, Innovative but wise. Adryan is the man with many solutions.',
+          name: 'Adryan',
+          desc: '<p>Expertise ranging from product development, innovation management, leadership, to multiple roles in mobile legend. <br/> Energetic but loving, Pushing but protecting, Innovative but wise. <br/> Adryan is the man with many solutions.</p>',
           linkedin: '#',
           ig: '#',
           twitter: '#',
@@ -122,8 +126,8 @@ export default {
         {
           id: 2,
           img: '/people2.png',
-          name: 'Ulaan - Partner',
-          desc: 'Expertise ranging from Joyous but governing, organized but playful, modest but infectiously positive Ulaan is the man behind most guns.',
+          name: 'Ulaan',
+          desc: '<p>Expertise ranging from Joyous but governing, organized but playful, modest but infectiously positive Ulaan is the man behind most guns.</p>',
           linkedin: '#',
           ig: '#',
           twitter: '#',
@@ -131,8 +135,8 @@ export default {
         {
           id: 3,
           img: '/people1.png',
-          name: 'Sutan - Partner',
-          desc: 'Expertise ranging from copywriting, branding, to action figure collecting. Aggressive but fun-loving, practical but philosophical, sharp but charismatic. Sutan is the creative force of the team.',
+          name: 'Sutan',
+          desc: '<p>Expertise ranging from copywriting, branding, to action figure collecting. <br/> Aggressive but fun-loving, practical but philosophical, sharp but charismatic. <br/> Sutan is the creative force of the team.</p>',
           linkedin: '#',
           ig: '#',
           twitter: '#',
@@ -140,8 +144,8 @@ export default {
         {
           id: 4,
           img: '/people4.png',
-          name: 'Moon - Partner',
-          desc: 'Expertise ranging from Calm but enthused, systematic but explorative, polite but decisive. Moon is the neat mother with a nerd soul.',
+          name: 'Moon',
+          desc: '<p>Expertise ranging from Calm but enthused, systematic but explorative, polite but decisive. <br/> Moon is the neat mother with a nerd soul.</p>',
           linkedin: '#',
           ig: '#',
           twitter: '#',
@@ -149,8 +153,17 @@ export default {
         {
           id: 5,
           img: '/people2.png',
-          name: 'Al - Partner',
-          desc: 'Expertise ranging from Thorough but casual, analytical but charming, critical but knowledgeable. Al is the trailblazer to our next step.',
+          name: 'Al',
+          desc: '<p>Expertise ranging from Thorough but casual, analytical but charming, critical but knowledgeable. <br/> Al is the trailblazer to our next step.</p>',
+          linkedin: '#',
+          ig: '#',
+          twitter: '#',
+        },
+        {
+          id: 6,
+          img: '/people2.png',
+          name: 'Are you next?',
+          desc: '<p>Contact us to join working with us</p>',
           linkedin: '#',
           ig: '#',
           twitter: '#',

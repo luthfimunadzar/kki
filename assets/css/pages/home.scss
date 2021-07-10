@@ -350,9 +350,9 @@
 }
 
 .hyper-wrap {
-  padding: 40px 0;
+  padding: 40px 0 60px 0;
   @media screen and (max-width: 991px) {
-    padding: 20px 0;
+    padding: 20px 0 30px 0;
   }
   h3 {
     font-size: 43px;
@@ -665,6 +665,7 @@
         font-size: 18px;
         display: inline-block;
         position: relative;
+        text-decoration: none;
         @media screen and (max-width: 991px) {
           font-size: 14px;
         }
@@ -807,8 +808,8 @@
   }
   .item-service {
     border-radius: 20px;
-    padding: 30px 20px;
-    background-color: $pri;
+    padding: 20px 20px;
+    background-color: #0055a2;
     min-height: 340px;
     position: relative;
     @media screen and (max-width: 991px) {
@@ -816,13 +817,29 @@
     }
     h5 {
       color: $wt;
-      font-weight: normal;
-      font-size: 24px;
-      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 10px;
+      line-height: normal;
       width: 100%;
       @media screen and (max-width: 1199px) {
         width: 100%;
         font-size: 16px;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+      transition: all 0.3s ease;
+      &:hover,
+      &:focus {
+        padding-bottom: 0;
       }
     }
     img {
@@ -838,6 +855,13 @@
     }
     &.four {
       background-color: $for;
+    }
+    &.h50 {
+      min-height: 160px;
+      margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0px;
+      }
     }
   }
   .btn-primary.red {
@@ -904,6 +928,26 @@
     &:hover,
     &:focus {
       color: $sec;
+    }
+  }
+  .socmed {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: $pri;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    .v-icon {
+      font-size: 20px;
+      margin-right: 0;
+    }
+    &:hover,
+    &:focus {
+      background-color: $sec;
     }
   }
   .btn-primary.yellow {
