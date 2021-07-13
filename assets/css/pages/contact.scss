@@ -9,9 +9,9 @@
     color: $pri;
   }
   a {
-    color: #1e1e1e;
+    color: #1e1e1e !important;
     .v-icon {
-      color: #1e1e1e;
+      color: #1e1e1e !important;
     }
   }
   .theme--dark.v-input input,

@@ -94,8 +94,8 @@
           <v-col md="6" offset-md="3" sm="8" offset-sm="2" cols="12">
             <h2>Ready to begin your journey with us?</h2>
             <p>Check our programs and pick the one that suits you best.</p>
-            <a class="btn btn-primary d-inline-block red"
-              ><span>All Programs & Services</span></a
+            <nuxt-link to="/programs" class="btn btn-primary d-inline-block red"
+              ><span>All Programs & Services</span></nuxt-link
             >
           </v-col>
         </v-row>
