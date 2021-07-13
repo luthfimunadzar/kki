@@ -310,9 +310,15 @@
         }
       }
       img {
-        height: 250px;
+        height: 350px;
         @media screen and (max-width: 991px) {
-          height: 130px;
+          height: 200px;
+        }
+        &.height {
+          height: 350px;
+          @media screen and (max-width: 991px) {
+            height: 210px;
+          }
         }
       }
       p {

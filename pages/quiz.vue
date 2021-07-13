@@ -46,13 +46,9 @@
         <div class="result-wrap">
           <div class="wrap">
             <template v-if="success">
-              <h5>YES, YOU ARE</h5>
-              <h2>HYPER FOUNDER!</h2>
-              <img src="/choice1.jpg" alt="" />
+              <img src="/choice1.jpg" alt="" class="height" />
             </template>
             <template v-else>
-              <h5>You were supposed to be</h5>
-              <h2>the HYPER one!</h2>
               <img src="/choice2.jpg" alt="" />
             </template>
             <div class="clearfix"></div>
