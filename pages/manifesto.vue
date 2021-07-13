@@ -7,9 +7,9 @@
             <v-col md="10" offset-md="1" cols="12" class="py-0">
               <h4>Manifesto</h4>
               <p>
-                We all share and use the web, just as we all share and live on
-                this planet. This manifesto is a public declaration of a shared
-                commitment to create a sustainable internet.
+                The declaration means we take responsibility for our values and
+                aspirations, make the world as our witness and the society as
+                our allies.
               </p>
             </v-col>
           </v-row>

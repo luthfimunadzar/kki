@@ -45,22 +45,22 @@
       <div v-if="result" class="result">
         <div class="result-wrap">
           <div class="wrap">
-            <h5>Congrats! You are a...</h5>
-            <h2>HYPER FOUNDER!</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              finibus mattis turpis, at tempus justo malesuada in.
-            </p>
-            <p>
-              Sed ante lectus, fermentum id elit et, convallis lacinia purus.
-              Aliquam erat volutpat. Vivamus ultrices diam in lorem sodales, a
-              placerat enim suscipit.
-            </p>
+            <template v-if="success">
+              <h5>YES, YOU ARE</h5>
+              <h2>HYPER FOUNDER!</h2>
+              <img src="/choice1.jpg" alt="" />
+            </template>
+            <template v-else>
+              <h5>You were supposed to be</h5>
+              <h2>the HYPER one!</h2>
+              <img src="/choice2.jpg" alt="" />
+            </template>
+            <div class="clearfix"></div>
             <a class="link-retake" @click="resetTest()">RETAKE THE TEST</a>
             <div class="clearfix"></div>
-            <a href="" class="btn btn-primary btn-more"
-              ><span>See what KOLABORASI can do for you</span></a
-            >
+            <nuxt-link to="/programs" class="btn btn-primary btn-more">
+              <span>See what KOLABORASI can do for you</span>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -76,6 +76,7 @@ export default {
     return {
       result: false,
       quiz: false,
+      success: false,
       answer: [],
       hiddenQestion: [],
       question: [
@@ -156,6 +157,11 @@ export default {
       setTimeout(() => {
         Vue.set(this.hiddenQestion, index, 'hide')
         if (this.hiddenQestion[this.question.length - 1] === 'hide') {
+          let counter = 0
+          for (let i = 0; i < this.question.length; i++) {
+            if (this.answer[i] === 'a') counter = counter + 1
+          }
+          if (counter >= 3) this.success = true
           this.result = true
         }
       }, 1000)
@@ -164,6 +170,7 @@ export default {
       this.answer = []
       this.hiddenQestion = []
       this.result = false
+      this.success = false
     },
     quizBack(index) {
       Vue.set(this.hiddenQestion, index - 1, null)

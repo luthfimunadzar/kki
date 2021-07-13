@@ -94,3 +94,39 @@
     }
   }
 }
+
+.faq-wrap {
+  background-color: #f5f5f5;
+  padding: 70px 0;
+  @media screen and (max-width: 991px) {
+    padding: 25px 0 45px 0;
+  }
+  h4.faq-title {
+    font-size: 40px;
+    font-family: $b;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    @media screen and (max-width: 991px) {
+      font-size: 28px;
+    }
+  }
+  .v-expansion-panels {
+    .v-expansion-panel {
+      .v-expansion-panel-header {
+        p {
+          margin-bottom: 0;
+          font-weight: bold;
+        }
+      }
+      .v-expansion-panel-content {
+        ol {
+          padding-left: 40px;
+          li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}

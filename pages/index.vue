@@ -159,23 +159,24 @@
             <v-row>
               <v-col sm="6" cols="12">
                 <div class="item-programs">
-                  <h4>What we do</h4>
+                  <h4>Join Hyper Founder Program</h4>
                   <img src="/what-we-do.png" alt="" />
                   <p>
-                    Sure, we provide mentorship, access to resources, strategic
-                    decisions, and other “high level” tasks. But we also work
-                    with you. Like actually working with you.
+                    We act as a venture partners providing mentorship, network
+                    support & work assistance to help you get things done in
+                    exchange of a small percentage of equity for a lifetime
+                    support.
                   </p>
                 </div>
               </v-col>
               <v-col sm="6" cols="12">
                 <div class="item-programs w-border">
-                  <h4>What will you get</h4>
+                  <h4>Get Our Service</h4>
                   <img src="/what-will-you-get.png" alt="" />
                   <p>
-                    Partners who know ways around the potholes and how to reach
-                    the pots of gold. Together we’ll seize opportunities while
-                    having some laughs along the way.
+                    We provide professional agency service tailored to early
+                    stage business in Creative Marketing, Back Office &
+                    Financial Assistance with affordable monthly subscription.
                   </p>
                 </div>
               </v-col>
