@@ -41,11 +41,12 @@
             <v-row>
               <v-col cols="12">
                 <div class="text-center">
-                  <nuxt-link
+                  <a
+                    href="https://docs.google.com/forms/d/1uM3Gp2KnxjsfpArl7kMD_SvjJSgJQ3vJKuh_la0Yfts/edit"
                     class="btn btn-primary d-inline-block red"
-                    to="/programs"
+                    target="_blank"
                     ><span>Learn More</span>
-                  </nuxt-link>
+                  </a>
                 </div>
               </v-col>
             </v-row>
@@ -68,9 +69,11 @@
                     content strategy, graphic design, campaigns, and digital
                     advertising.
                   </p>
-                  <a class="btn btn-primary d-inline-block red" href="#"
-                    ><span>Get to know more</span>
-                  </a>
+                  <nuxt-link
+                    to="/contact"
+                    class="btn btn-primary d-inline-block red"
+                    ><span>Contact Us</span>
+                  </nuxt-link>
                   <img src="/service-1.png" alt="" />
                 </div>
               </v-col>
@@ -82,9 +85,11 @@
                     taxation, legal documentation, and initial hiring process at
                     a fraction of the cost.
                   </p>
-                  <a class="btn btn-primary d-inline-block red" href="#"
-                    ><span>Get to know more</span>
-                  </a>
+                  <nuxt-link
+                    to="/contact"
+                    class="btn btn-primary d-inline-block red"
+                    ><span>Contact Us</span>
+                  </nuxt-link>
                   <img src="/service-2.png" alt="" />
                 </div>
               </v-col>
