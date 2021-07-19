@@ -45,7 +45,7 @@
                     href="https://docs.google.com/forms/d/1uM3Gp2KnxjsfpArl7kMD_SvjJSgJQ3vJKuh_la0Yfts/edit"
                     class="btn btn-primary d-inline-block red"
                     target="_blank"
-                    ><span>Learn More</span>
+                    ><span>Apply Now</span>
                   </a>
                 </div>
               </v-col>
