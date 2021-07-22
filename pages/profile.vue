@@ -116,8 +116,8 @@ export default {
       founders: [
         {
           id: 1,
-          img: '/people1.png',
-          name: 'Adryan',
+          img: '/profpic-01.png',
+          name: 'Adryan Hafizh',
           desc: '<p>Expertise ranging from product development, innovation management, leadership, to multiple roles in mobile legend. <br/> Energetic but loving, Pushing but protecting, Innovative but wise. <br/> Adryan is the man with many solutions.</p>',
           linkedin: '#',
           ig: '#',
@@ -125,8 +125,8 @@ export default {
         },
         {
           id: 2,
-          img: '/people2.png',
-          name: 'Ulaan',
+          img: '/profpic-03.png',
+          name: 'Aldi Ulaan',
           desc: '<p>Expertise ranging from Joyous but governing, organized but playful, modest but infectiously positive Ulaan is the man behind most guns.</p>',
           linkedin: '#',
           ig: '#',
@@ -135,7 +135,7 @@ export default {
         {
           id: 3,
           img: '/profpic-04.png',
-          name: 'Sutan',
+          name: 'Sutansyah Marahakim',
           desc: '<p>Expertise ranging from copywriting, branding, to action figure collecting. <br/> Aggressive but fun-loving, practical but philosophical, sharp but charismatic. <br/> Sutan is the creative force of the team.</p>',
           linkedin: '#',
           ig: '#',
@@ -144,7 +144,7 @@ export default {
         {
           id: 4,
           img: '/profpic-02.png',
-          name: 'Moon',
+          name: 'Moon Marva',
           desc: '<p>Expertise ranging from Calm but enthused, systematic but explorative, polite but decisive. <br/> Moon is the neat mother with a nerd soul.</p>',
           linkedin: '#',
           ig: '#',
