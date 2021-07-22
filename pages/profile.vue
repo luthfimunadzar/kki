@@ -134,7 +134,7 @@ export default {
         },
         {
           id: 3,
-          img: '/people1.png',
+          img: '/profpic-04.png',
           name: 'Sutan',
           desc: '<p>Expertise ranging from copywriting, branding, to action figure collecting. <br/> Aggressive but fun-loving, practical but philosophical, sharp but charismatic. <br/> Sutan is the creative force of the team.</p>',
           linkedin: '#',
@@ -143,7 +143,7 @@ export default {
         },
         {
           id: 4,
-          img: '/people4.png',
+          img: '/profpic-02.png',
           name: 'Moon',
           desc: '<p>Expertise ranging from Calm but enthused, systematic but explorative, polite but decisive. <br/> Moon is the neat mother with a nerd soul.</p>',
           linkedin: '#',
