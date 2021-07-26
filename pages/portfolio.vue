@@ -111,36 +111,21 @@ export default {
         },
         {
           id: 7,
-          img: '/partner7.png',
-          link: 'https://smileconceptclinic.com/',
-        },
-        {
-          id: 8,
-          img: '/partner8.png',
-          link: 'http://freelens.id/',
-        },
-        {
-          id: 9,
           img: '/partner9.png',
           link: 'http://lexar.id/',
         },
         {
-          id: 10,
+          id: 8,
           img: '/partner10.png',
           link: 'https://www.youtube.com/channel/UCJ6JnLmidOIP1sFeK8hRspA',
         },
         {
-          id: 11,
+          id: 9,
           img: '/partner11.png',
           link: 'http://berdaya.co/',
         },
         {
-          id: 12,
-          img: '/partner12.png',
-          link: 'http://saveyourselves.id/',
-        },
-        {
-          id: 13,
+          id: 10,
           img: '/partner13.png',
           link: 'https://www.bacapibo.com/index.html',
         },
