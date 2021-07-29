@@ -2,6 +2,7 @@ header {
   background-color: $wt;
   position: relative;
   border-bottom: 3px solid $pri;
+  z-index: 2;
   .toggle {
     display: none;
     position: absolute;
