@@ -246,7 +246,7 @@ export default {
         },
         {
           id: 2,
-          img: '/people.png',
+          img: '/people9.png',
           name: 'Yohanes S.',
           title: 'CEO at CROWDE.CO',
           desc: 'Yohanes “Oyong” believes that farmers are the leftovers & victims of economic development. He envision a future where empowered farmer become a significant player in the industry by equipping them with technology & entrepreneurial skills',
@@ -254,7 +254,7 @@ export default {
         },
         {
           id: 3,
-          img: '/people.png',
+          img: '/people10.png',
           name: 'Wendy Pratama',
           title: 'CEO at Lingkaran',
           desc: 'As an architecture graduate, he built his company like he built his home. Started by building his team, as the foundation. He built a family where people can have fun, pursue their passion, do things that they want to, while achieving the common goals of providing an alternative education program for people to upgrade their life & career.',
@@ -278,7 +278,7 @@ export default {
         },
         {
           id: 6,
-          img: '/people.png',
+          img: '/people8.png',
           name: 'Firman',
           title: 'Founder & CEO Robonesia.ID',
           desc: 'Firman is a resilient and resourceful educator/technocrat. He is able to withstand the ups and downs of Robonesia and able to fill multiple strategic roles to grow Robonesia. His ability to nimbly overcome many challenges further proves his spirit and versatility.',
@@ -286,7 +286,7 @@ export default {
         },
         {
           id: 7,
-          img: '/people.png',
+          img: '/people7.png',
           name: 'Nuwi',
           title: 'Strategic Director of BerdayaKrui',
           desc: 'With experience in social enterprise, knowledge about economic development, and ability as a fluent public speaker. She is able to persuade and move stakeholders from government, private investors, to local business owners and give back to the village by co-establishing a social enterprise locally owned by the village community.',
@@ -294,7 +294,7 @@ export default {
         },
         {
           id: 8,
-          img: '/people.png',
+          img: '/people6.png',
           name: 'Aisha',
           title: 'Co-Founder of PiBo',
           desc: 'Aisha believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
