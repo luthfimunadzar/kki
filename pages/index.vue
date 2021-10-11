@@ -263,7 +263,7 @@ export default {
         {
           id: 4,
           img: '/people5.png',
-          name: 'Ivan Lalamentik',
+          name: 'Ivan',
           title: 'Managing Director of LEXAR.id',
           desc: 'As a lawyer, Ivan understands the legal industry is full of intrigue yet strictly regulated. but with his entrepreneurial point of view he found new business opportunities and swiftly pioneered a solution to the problem faced by the emerging market of legal services.',
           link: 'https://www.linkedin.com/in/ivan-lalamentik-81a04574/',
