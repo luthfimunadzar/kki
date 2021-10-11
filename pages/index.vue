@@ -238,7 +238,7 @@ export default {
       founders: [
         {
           id: 1,
-          img: '/people.png',
+          img: '/people6.png',
           name: 'Rizky Fadhilah',
           title: 'Founder and CEO at Cityplan Indonesia',
           desc: 'Rizky sees opportunity amidst the chaotic nature of city development. Equipped with his engineering skill in urban planning, he creates solutions & new business ecosystems to help government & business plan the city better with technology.',
@@ -262,7 +262,7 @@ export default {
         },
         {
           id: 4,
-          img: '/people.png',
+          img: '/people5.png',
           name: 'Ivan Lalamentik',
           title: 'Managing Director of LEXAR.id',
           desc: 'As a lawyer, Ivan understands the legal industry is full of intrigue yet strictly regulated. but with his entrepreneurial point of view he found new business opportunities and swiftly pioneered a solution to the problem faced by the emerging market of legal services.',
