@@ -294,7 +294,7 @@ export default {
         },
         {
           id: 8,
-          img: '/people6.png',
+          img: '/people.png',
           name: 'Aisha',
           title: 'Co-Founder of PiBo',
           desc: 'Aisha believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
