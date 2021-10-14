@@ -270,7 +270,7 @@ export default {
         },
         {
           id: 5,
-          img: '/people.png',
+          img: '/people12.png',
           name: 'Rhaka',
           title: 'Co Founder at Menjadi Manusia',
           desc: 'Rhaka is able to convert his trauma of addiction and dropping out of college into a positive energy to move forward. So he understands at heart, that business is not only about money, but more a meaningful and fulfilling way of living while helping other people to become a better person',
