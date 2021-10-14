@@ -294,11 +294,11 @@ export default {
         },
         {
           id: 8,
-          img: '/people.png',
-          name: 'Aisha',
-          title: 'Co-Founder of PiBo',
-          desc: 'Aisha believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
-          link: 'https://www.linkedin.com/in/aisha-habir-42799336/',
+          img: '/people11.png',
+          name: 'Mayumi',
+          title: 'Founder of PiBo',
+          desc: 'mayumi believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
+          link: 'https://www.linkedin.com/in/mayumi-haryoto-945213190/',
         },
       ],
     }
