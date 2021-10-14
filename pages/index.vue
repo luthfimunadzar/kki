@@ -297,7 +297,7 @@ export default {
           img: '/people11.png',
           name: 'Mayumi',
           title: 'Founder of PiBo',
-          desc: 'mayumi believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
+          desc: 'Mayumi believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
           link: 'https://www.linkedin.com/in/mayumi-haryoto-945213190/',
         },
       ],
