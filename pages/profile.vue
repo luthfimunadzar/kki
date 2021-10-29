@@ -152,7 +152,7 @@ export default {
         },
         {
           id: 5,
-          img: '/people2.png',
+          img: '/profpic-05.jpeg',
           name: 'Aldi Adrian',
           desc: '<p>Expertise ranging from corporate strategy, fundraising, to professional Netflix clickers. <br/> Thorough but casual, analytical but charming, critical but knowledgeable. <br/> Al is the trailblazer to our next step.</p>',
           linkedin: '#',
