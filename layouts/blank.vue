@@ -1,71 +1,5 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer v-model="drawer" left absolute temporary>
-      <ul class="main-menu-sidebar">
-        <li>
-          <nuxt-link to="/">Home</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/programs">Programs & Services</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/telepath">Telepath</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/portfolio">Portofolio</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/manifesto">Manifesto</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/profile">Proﬁle</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/contact">Contact Us</nuxt-link>
-        </li>
-      </ul>
-    </v-navigation-drawer>
-    <header>
-      <a class="toggle" @click.stop="drawer = !drawer">
-        <v-icon> mdi-menu </v-icon>
-      </a>
-      <nuxt-link to="/">
-        <img src="/logo.png" alt="" class="d-block mx-auto logo" />
-      </nuxt-link>
-      <ul class="main-menu">
-        <li>
-          <nuxt-link to="/">Home</nuxt-link>
-        </li>
-        <li>
-          <v-menu offset-y content-class="dropdown-menu">
-            <!-- eslint-disable-next-line vue/v-slot-style -->
-            <template v-slot:activator="{ on, attrs }">
-              <a href="javascript:void(0);" v-bind="attrs" v-on="on"
-                >Programs <span class="plus"></span>
-              </a>
-            </template>
-            <v-list>
-              <v-list-item link to="/programs">
-                Programs & Services
-              </v-list-item>
-              <v-list-item link to="/telepath"> Telepath </v-list-item>
-            </v-list>
-          </v-menu>
-        </li>
-        <li>
-          <nuxt-link to="/portfolio">Portofolio</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/manifesto">Manifesto</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/profile">Proﬁle</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/contact">Contact Us</nuxt-link>
-        </li>
-      </ul>
-    </header>
     <v-main>
       <nuxt />
     </v-main>
@@ -159,6 +93,10 @@
       </v-container>
     </div>
     <Top />
+    <nuxt-link to="/" class="back-to-kolaborasi">
+      <label for="">Back to </label>
+      <img src="/logo.png" alt="" />
+    </nuxt-link>
   </v-app>
 </template>
 

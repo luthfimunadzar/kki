@@ -66,3 +66,17 @@
 .img-fluid {
   max-width: 100%;
 }
+
+.back-to-kolaborasi {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  color: $t !important;
+  text-decoration: none;
+  label {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    display: block;
+  }
+}

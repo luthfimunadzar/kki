@@ -51,13 +51,81 @@ header {
         @media screen and (max-width: 991px) {
           padding: 15px 15px;
         }
+        .plus {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5px;
+          margin-top: -6px;
+          position: relative;
+          &:before,
+          &:after {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 12px;
+            background-color: $t;
+            transition: all 0.3s ease;
+          }
+          &:after {
+            position: absolute;
+            left: 0;
+            bottom: 9px;
+            transform: rotate(90deg);
+          }
+        }
+        &[aria-expanded='true'] {
+          .plus {
+            &:after {
+              transform: rotate(0deg);
+            }
+          }
+        }
         &:hover,
         &:focus {
           text-decoration: none;
           color: $pri;
+          .plus {
+            &:before,
+            &:after {
+              background-color: $pri;
+            }
+          }
         }
         &.nuxt-link-exact-active {
           color: $pri;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  .v-list {
+    padding: 0;
+    background-color: #fff !important;
+    .v-list-item {
+      color: $t !important;
+      position: relative;
+      &:not(.v-list-item--active):not(.v-list-item--disabled) {
+        color: $t !important;
+      }
+      &.v-list-item--active {
+        color: $pri !important;
+        &::before {
+          display: none;
+        }
+      }
+      & + .v-list-item {
+        &:before {
+          opacity: 0.25 !important;
+          display: block;
+          position: absolute;
+          top: 0px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 1px;
+          background-color: $t;
+          width: 85%;
         }
       }
     }
