@@ -55,7 +55,6 @@
             <h6>Or building them up into</h6>
             <div class="box">
               <h2>{{ builds[0] }}</h2>
-              <img src="/arrow.png" alt="" />
             </div>
           </v-col>
         </v-row>
