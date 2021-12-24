@@ -90,7 +90,7 @@
       </v-container>
     </div>
     <div class="work">
-      <h4>Our Works</h4>
+      <h4>Our Collective Works</h4>
       <div class="d-block text-center">
         <div
           v-for="work in works"
