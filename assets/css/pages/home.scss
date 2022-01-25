@@ -986,4 +986,10 @@
       }
     }
   }
+  &.white {
+    background-color: #fff;
+    h3 {
+      color: $pri;
+    }
+  }
 }

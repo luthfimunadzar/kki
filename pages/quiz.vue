@@ -54,8 +54,8 @@
             <div class="clearfix"></div>
             <a class="link-retake" @click="resetTest()">RETAKE THE TEST</a>
             <div class="clearfix"></div>
-            <nuxt-link to="/programs" class="btn btn-primary btn-more">
-              <span>See what KOLABORASI can do for you</span>
+            <nuxt-link to="/hyperhunt" class="btn btn-primary btn-more">
+              <span>Lets Connect!</span>
             </nuxt-link>
           </div>
         </div>

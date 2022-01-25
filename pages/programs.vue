@@ -41,12 +41,11 @@
             <v-row>
               <v-col cols="12">
                 <div class="text-center">
-                  <a
-                    href="https://docs.google.com/forms/d/1uM3Gp2KnxjsfpArl7kMD_SvjJSgJQ3vJKuh_la0Yfts/edit"
+                  <nuxt-link
+                    to="/hyperhunt"
                     class="btn btn-primary d-inline-block red"
-                    target="_blank"
                     ><span>Apply Now</span>
-                  </a>
+                  </nuxt-link>
                 </div>
               </v-col>
             </v-row>
