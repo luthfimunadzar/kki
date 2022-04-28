@@ -3,7 +3,13 @@
     <v-main>
       <nuxt />
     </v-main>
-    <div v-if="$route.fullPath.indexOf('contact') - 1" class="contact-wrap">
+    <div
+      v-if="
+        $route.fullPath.indexOf('contact') - 1 &&
+        $route.fullPath.indexOf('sbat') - 1
+      "
+      class="contact-wrap"
+    >
       <v-container>
         <v-row>
           <v-col md="10" offset-md="1" cols="12" class="pb-0">
