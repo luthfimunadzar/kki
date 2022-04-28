@@ -3,7 +3,7 @@
     <div class="hero-wrap">
       <v-container>
         <v-row>
-          <v-col md="12">
+          <v-col cols="12">
             <img
               src="/logo-sbat.png"
               alt=""
@@ -12,9 +12,9 @@
             />
             <h1>So you’re a startup founder?</h1>
           </v-col>
-          <v-col md="8" offset-md="2">
+          <v-col cols="12" lg="8" offset-lg="2">
             <v-row>
-              <v-col md="4">
+              <v-col cols="12" md="4">
                 <v-card>
                   <img src="/sbat-hero1.png" alt="" />
                   <h5>Feeling Lonely</h5>
@@ -23,7 +23,7 @@
                   <v-icon> fas fa-check </v-icon>
                 </v-card>
               </v-col>
-              <v-col md="4">
+              <v-col cols="12" md="4">
                 <v-card>
                   <img src="/sbat-hero2.png" alt="" />
                   <h5>Stuck in Tunnel Vision</h5>
@@ -32,7 +32,7 @@
                   <v-icon> fas fa-check </v-icon>
                 </v-card>
               </v-col>
-              <v-col md="4">
+              <v-col cols="12" md="4">
                 <v-card>
                   <img src="/sbat-hero3.png" alt="" />
                   <h5>Doing everything</h5>
@@ -50,10 +50,10 @@
     <div class="chill">
       <v-container>
         <v-row>
-          <v-col cols="12" class="d-flex align-center justify-center">
-            You need to chill and
+          <v-col cols="12">
+            <h5>You need to chill and</h5>
             <img src="/img-rokok.png" alt="" class="rokok" />
-            <img src="/logo-sbat.png" alt="" />
+            <img src="/logo-sbat.png" alt="" class="logo-sbat" />
           </v-col>
         </v-row>
       </v-container>
@@ -62,10 +62,10 @@
     <div class="program-inner">
       <v-container>
         <v-row class="d-flex align-center">
-          <v-col md="5">
+          <v-col cols="12" md="6">
             <h3>We will be your</h3>
           </v-col>
-          <v-col md="7">
+          <v-col cols="12" md="6">
             <div class="switch-text">
               <img
                 src="/text1.png"
@@ -96,48 +96,48 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col md="8" offset-md="2">
+          <v-col lg="8" offset-lg="2">
             <h4>10-Sessions Program consists of</h4>
-            <div class="item-program">
-              <v-row>
-                <v-col md="4">
+            <div class="item-program first">
+              <v-row class="d-flex align-center">
+                <v-col cols="12" sm="4">
                   <img
                     src="/program1.png"
                     alt=""
                     class="d-block mx-auto my-0"
                   />
                 </v-col>
-                <v-col md="8">
+                <v-col cols="12" sm="8">
                   <h5>Strategic Brainstorming And Troubleshooting</h5>
                   <p>Investigate your issues.</p>
                 </v-col>
               </v-row>
             </div>
             <div class="item-program">
-              <v-row>
-                <v-col md="4">
+              <v-row class="d-flex align-center">
+                <v-col cols="12" sm="4">
                   <img
                     src="/program2.png"
                     alt=""
                     class="d-block mx-auto my-0"
                   />
                 </v-col>
-                <v-col md="8">
+                <v-col cols="12" sm="8">
                   <h5>Sharing Burden And Tips</h5>
                   <p>Provide and execute actionable insights.</p>
                 </v-col>
               </v-row>
             </div>
             <div class="item-program">
-              <v-row>
-                <v-col md="4">
+              <v-row class="d-flex align-center">
+                <v-col cols="12" sm="4">
                   <img
                     src="/program3.png"
                     alt=""
                     class="d-block mx-auto my-0"
                   />
                 </v-col>
-                <v-col md="8">
+                <v-col cols="12" sm="8">
                   <h5>Santai Bareng Anak Tongkrongan</h5>
                   <p>Connect, share, and play.</p>
                 </v-col>
@@ -150,12 +150,12 @@
     <div class="program-output">
       <v-container>
         <v-row>
-          <v-col md="8" offset-md="2">
+          <v-col lg="8" offset-lg="2">
             <v-row>
-              <v-col md="12">
+              <v-col cols="12">
                 <h4>Program output</h4>
               </v-col>
-              <v-col md="4">
+              <v-col cols="12" sm="4">
                 <div class="output-item">
                   <img src="/program4.png" alt="" class="mb-3" />
                   <h5>
@@ -163,14 +163,14 @@
                   </h5>
                 </div>
               </v-col>
-              <v-col md="4">
+              <v-col cols="12" sm="4">
                 <div class="output-item sec">
                   <img src="/program5.png" alt="" class="mb-3" />
                   <h5>Venture build</h5>
                   <p>We take small equity and do business with you.</p>
                 </div>
               </v-col>
-              <v-col md="4">
+              <v-col cols="12" sm="4">
                 <div class="output-item thi">
                   <img src="/program6.png" alt="" class="mb-3" />
                   <h5>Service provider</h5>
@@ -185,7 +185,7 @@
     <div class="apply">
       <v-container>
         <v-row>
-          <v-col md="8" offset-md="2">
+          <v-col lg="8" offset-lg="2">
             <h4>SBAT application opens in</h4>
             <no-ssr>
               <div class="cd-wrap">
@@ -195,21 +195,21 @@
                 >
                   <template slot-scope="props">
                     <v-row>
-                      <v-col md="3">
+                      <v-col cols="3">
                         <h6>{{ props.days }}</h6>
                         <span>Days</span>
                       </v-col>
-                      <v-col md="3" class="position-relative">
+                      <v-col cols="3" class="position-relative">
                         <span class="dots">:</span>
                         <h6>{{ props.hours }}</h6>
                         <span>Hours</span>
                       </v-col>
-                      <v-col md="3" class="position-relative">
+                      <v-col cols="3" class="position-relative">
                         <span class="dots">:</span>
                         <h6>{{ props.minutes }}</h6>
                         <span>Minutes</span>
                       </v-col>
-                      <v-col md="3" class="position-relative">
+                      <v-col cols="3" class="position-relative">
                         <span class="dots">:</span>
                         <h6>{{ props.seconds }}</h6>
                         <span>Seconds</span>

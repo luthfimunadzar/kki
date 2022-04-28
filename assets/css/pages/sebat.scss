@@ -4,12 +4,19 @@
         background-size: cover;
         padding-bottom: 60px;
         background-position: center center;
+        @media screen and (max-width: 767px) {
+            padding-bottom: 20px;
+        }
         h1{
             font-size: 40px;
             margin: 50px auto 40px auto;
             text-align: center;
             font-family: $b;
             color: $t;
+            @media screen and (max-width: 991px) {
+                font-size: 32px;
+                margin: 20px auto 20px auto;
+            }
         }
         .v-card{
             padding: 30px 20px;
@@ -20,8 +27,15 @@
             border-radius: 0px !important;
             height: 100%;
             position: relative;
+            @media screen and (max-width: 767px) {
+                padding: 15px 20px;
+            }
             img{
                 margin-bottom: 20px;
+                @media screen and (max-width: 767px) {
+                    margin-bottom: 0px;
+                    height: 110px;
+                }
             }
             h5{
                 font-size: 25px;
@@ -66,17 +80,54 @@
         }
     }
     .chill{
-        color: #000;
-        font-size: 46px;
-        font-family: $b;
+        text-align: center;
+        h5{
+            color: #000;
+            font-size: 46px;
+            font-family: $b;
+            display: inline-block;
+            vertical-align: middle;
+            @media screen and (max-width: 1199px) {
+                font-size: 36px;
+            }
+            @media screen and (max-width: 991px) {
+                font-size: 28px;
+            }
+            @media screen and (max-width: 767px) {
+                display: block;
+                text-align: center;
+            }
+        }
         .rokok{
             display: inline-block;
+            vertical-align: middle;
             margin: 0 -50px;
+            @media screen and (max-width: 1199px) {
+                margin: 0 -100px;
+                height: 300px;
+            }
+            @media screen and (max-width: 767px) {
+                margin: 0;
+            }
+        }
+        .logo-sbat{
+            display: inline-block;
+            vertical-align: middle;
+            @media screen and (max-width: 991px) {
+                width: 150px;
+            }
+            @media screen and (max-width: 767px) {
+                display: block;
+                margin: 0 auto 20px auto;
+            }
         }
     }
     .program-inner{
         padding: 90px 0;
         background-color: #1e1e1e;
+        @media screen and (max-width: 991px) {
+            padding: 45px 0;
+        }
         h3{
             font-family: $b;
             font-size: 40px;
@@ -84,11 +135,21 @@
             color: #FFF;
             text-align: right;
             padding-right: 50px;
+            @media screen and (max-width: 991px) {
+                text-align: center;
+                padding-right: 0px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 32px;
+            }
         }
         .switch-text{
             width: 100%;
             height: 200px;
             position: relative;
+            @media screen and (max-width: 991px) {
+                height: 150px;
+            }
             img{
                 position: absolute;
                 left: 0%;
@@ -96,6 +157,14 @@
                 transform: translateY(-50%);
                 opacity: 0;
                 transition: all 0.3s ease;
+                @media screen and (max-width: 991px) {
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                @media screen and (max-width: 767px) {
+                    max-height: 100px;
+                    max-width: 100%;
+                }
                 &.show{
                     opacity: 1;
                 }
@@ -107,38 +176,74 @@
             margin-bottom: 50px;
             color: #e13226;
             font-size: 34px;
+            @media screen and (max-width: 991px) {
+                margin-bottom: 25px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 26px;
+            }
         }
         .item-program{
             border-bottom: 1px solid #FFF;
             padding: 25px 0;
+            @media screen and (max-width: 991px) {
+                padding: 15px 0;
+            }
             h5{
                 font-weight: bold;
                 color: #FFF;
                 font-size: 25px;
                 margin-bottom: 10px;
                 font-weight: bold;
+                @media screen and (max-width: 767px) {
+                    text-align: center;
+                }
             }   
             p{
                 margin-bottom: 0;
+                @media screen and (max-width: 767px) {
+                    text-align: center;
+                }
+            }
+            &.first{
+                border-top: 1px solid #FFF;
             }
         }
     }
     .program-output{
         padding: 90px 0;
+        @media screen and (max-width: 991px) {
+            padding: 45px 0;
+        }
         h4{
             font-size: 34px;
             font-family: $b;
             margin-bottom: 40px;
             color: #1e1e1e;
             text-align: center;
+            @media screen and (max-width: 991px) {
+                margin-bottom: 20px !important;
+            }
         }
         .output-item{
             padding: 0 20px;
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
+            img{
+                @media screen and (max-width: 991px) {
+                    margin-bottom: 0 !important;
+                }
+            }
             h5{
                 font-size: 25px;
                 margin-top: 15px;
                 font-weight: bold;
                 color: #1e1e1e !important;
+                @media screen and (max-width: 767px) {
+                    font-size: 20px;
+                    text-align: center;
+                }
             }
             p{
                 font-size: 16px;
@@ -148,10 +253,24 @@
             &.sec{
                 border-left: 1px solid #e4e4e4;
                 padding-top: 170px;
+                @media screen and (max-width: 991px) {
+                    padding-top: 110px;
+                }
+                @media screen and (max-width: 767px) {
+                    padding-top: 0px;
+                    border-left: none;
+                }
             }
             &.thi{
                 border-left: 1px solid #e4e4e4;
                 padding-top: 340px;
+                @media screen and (max-width: 991px) {
+                    padding-top: 200px;
+                }
+                @media screen and (max-width: 767px) {
+                    padding-top: 0px;
+                    border-left: none;
+                }
             }
         }
     }
@@ -160,15 +279,31 @@
         background-image: url('/bg-cd.png');
         background-position: center center;
         padding: 90px 0;
+        @media screen and (max-width: 991px) {
+            padding: 45px 0;
+        }
         h4{
             font-size: 34px;
             font-family: $b;
             margin-bottom: 40px;
             color: #1e1e1e;
             text-align: center;
+            @media screen and (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 26px;
+            }
         }
         .cd-wrap{
             position: relative;
+            @media screen and (max-width: 991px) {
+                width: 80%;
+                margin: 0 auto
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
             &::before{
                 content: "";
                 z-index: 1;
@@ -178,6 +313,14 @@
                 right: -20px;
                 bottom: -20px;
                 background-color: #0055a2;
+                @media screen and (max-width: 991px) {
+                    right: -10px;
+                    bottom: -10px;
+                }
+                @media screen and (max-width: 767px) {
+                    right: -5px;
+                    bottom: -5px;
+                }
             }
             .countdown{
                 border: 1px solid #FFF;
@@ -187,10 +330,22 @@
                 text-align: center;
                 position: relative;
                 z-index: 2;
+                @media screen and (max-width: 991px) {
+                    padding: 20px;
+                }
+                @media screen and (max-width: 767px) {
+                    padding: 20px 0;
+                }
                 h6{
                     font-size: 96px;
                     font-family: $b;
                     margin-bottom: 0px;
+                    @media screen and (max-width: 991px) {
+                        font-size: 56px;
+                    }
+                    @media screen and (max-width: 767px) {
+                        font-size: 36px;
+                    }
                 }
                 span{
                     color: #FFF;
@@ -199,7 +354,6 @@
                     text-align: center;
                 }
                 .dots{
-                    font-size: 36px;
                     font-size: 96px;
                     font-family: $b;
                     margin-bottom: 0px;
@@ -207,12 +361,25 @@
                     left: -12px;
                     top: 50%;
                     transform: translateY(-50%);
+                    @media screen and (max-width: 991px) {
+                        font-size: 54px;
+                    }
+                    @media screen and (max-width: 767px) {
+                        font-size: 36px;
+                    }
                 }
             }
         }
         .form-sbat{
             width: 800px;
             margin: 80px auto 0 auto;
+            @media screen and (max-width: 991px) {
+                width: 80%;
+                margin: 40px auto 0 auto;
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
             &::after{
                 content: "";
                 display: table;
@@ -225,6 +392,13 @@
                 margin: 0;
                 padding: 0;
                 border: 2px solid #000;
+                @media screen and (max-width: 991px) {
+                    width: 70%;
+                }
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    float: none;
+                }
                 .v-label{
                     color: #000;
                     left: 20px !important;
@@ -236,7 +410,7 @@
                 input{
                     font-size: 18px;
                     color: #000;
-                    padding: 15px 20px;
+                    padding: 14px 20px 15px 20px;
                     height: auto;
                     max-height: none !important;
                     line-height: 1 !important;
@@ -248,11 +422,21 @@
                 float: left;
                 text-align: center;
                 border-radius: 0;
+                @media screen and (max-width: 991px) {
+                    width: 30%;
+                }
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    float: none;
+                }
                 span{
                     background-color: #e13226;
                     color: #FFF !important;
                     border-color: #000 !important;
                     border-left: none !important;
+                    @media screen and (max-width: 767px) {
+                        border-left: 1px solid #000 !important;
+                    }
                 }
                 &:before{
                     display: none;
