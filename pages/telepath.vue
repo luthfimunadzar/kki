@@ -92,15 +92,17 @@
     <div class="work">
       <h4>Our Collective Works</h4>
       <div class="d-block text-center">
-        <div
+        <a
           v-for="work in works"
           :key="work.id"
+          :href="work.link"
+          target="_blank"
           class="work-warp"
           :style="{ backgroundImage: `url(${work.img})` }"
         >
           <span>{{ work.title }}</span>
           <div class="overlay">{{ work.title }}</div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -116,26 +118,31 @@ export default {
           id: 1,
           img: '/works1.png',
           title: 'Cityplan',
+          link: 'https://www.instagram.com/cityplan.id/?igshid=YmMyMTA2M2Y%3D',
         },
         {
           id: 2,
           img: '/works2.png',
           title: 'Kolaborasi',
+          link: 'https://www.instagram.com/kolaborasico/?igshid=YmMyMTA2M2Y%3D',
         },
         {
           id: 3,
           img: '/works3.png',
           title: 'Lexar',
+          link: 'https://instagram.com/lexar.id?igshid=YmMyMTA2M2Y=',
         },
         {
           id: 4,
           img: '/works4.png',
           title: 'SIAP',
+          link: 'https://instagram.com/socialinnovation.id?igshid=YmMyMTA2M2Y=',
         },
         {
           id: 5,
           img: '/works5.png',
           title: 'MGEE',
+          link: '/mgee.pdf',
         },
       ],
       builds: ['Brand Book', 'Campaign', 'Visual Activation'],
