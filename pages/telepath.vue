@@ -130,7 +130,7 @@ export default {
           id: 3,
           img: '/works3.png',
           title: 'Lexar',
-          link: 'https://instagram.com/lexar.id?igshid=YmMyMTA2M2Y=',
+          link: 'https://docs.google.com/presentation/d/15LclhLKmsCRj7qvF0f8a1MaolklbvqidY3_md2aMCaE/edit#slide=id.g161154a7003_0_111',
         },
         {
           id: 4,
