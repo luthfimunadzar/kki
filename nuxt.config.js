@@ -22,11 +22,15 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Karla:wght@400;500;600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Karla:wght@400;500;600;700&&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap',
       },
       {
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.cdnfonts.com/css/myriad-pro',
       },
       {
         rel: 'stylesheet',

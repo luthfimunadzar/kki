@@ -59,3 +59,39 @@ footer.v-footer {
     }
   }
 }
+
+.footer-new{
+  padding: 20px 0;
+  background-color: #1e1e1e;
+  h5{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #FFF;
+  }
+  .sitemap{
+    clear: both;
+    float: left;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover, &:focus{
+      text-decoration: underline;
+    }
+  }
+  .socmed{
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $pri;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover, &:focus{
+      background-color: $sec;
+    }
+  }
+}
