@@ -22,7 +22,7 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Karla:wght@400;500;600;700&&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Karla:wght@400;500;600;700&&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400&display=swap',
       },
       {
         rel: 'stylesheet',
@@ -82,9 +82,8 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
       themes: {
-        dark: {
+        light: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,

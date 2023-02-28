@@ -79,13 +79,13 @@
           </v-menu>
         </li>
         <li>
-          <nuxt-link to="">About Us</nuxt-link>
+          <nuxt-link to="/new/portfolio">About Us</nuxt-link>
         </li>
         <li>
           <nuxt-link to="">Contact Us</nuxt-link>
         </li>
       </ul>
-      <a class="toggle" @click.stop="drawer = !drawer">
+      <a class="toggle d-none" @click.stop="drawer = !drawer">
         <v-icon> mdi-menu </v-icon>
       </a>
     </div>

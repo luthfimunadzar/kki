@@ -90,6 +90,9 @@ footer.v-footer {
     margin-right: 15px;
     text-decoration: none;
     transition: all 0.3s ease;
+    .v-icon{
+      color: #FFF !important;
+    }
     &:hover, &:focus{
       background-color: $sec;
     }
