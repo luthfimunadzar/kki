@@ -44,8 +44,10 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <v-list>
-                    <v-list-item link to=""> Programs & Services </v-list-item>
+                  <v-list dark>
+                    <v-list-item link to="/new/venture-builder">
+                      Programs & Services
+                    </v-list-item>
                     <v-list-item link to=""> Telepath </v-list-item>
                   </v-list>
                 </v-col>
@@ -64,8 +66,10 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <v-list>
-                    <v-list-item link to=""> Finance </v-list-item>
+                  <v-list dark>
+                    <v-list-item link to="/new/service/finance">
+                      Finance
+                    </v-list-item>
                     <v-list-item link to=""> Marketing </v-list-item>
                     <v-list-item link to=""> Human Resource </v-list-item>
                     <v-list-item link to=""> Fundraising </v-list-item>

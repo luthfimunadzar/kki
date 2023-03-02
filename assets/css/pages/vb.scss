@@ -1,0 +1,308 @@
+.hero-vb{
+  padding: 50px 0;
+  .desc-fly{
+    padding-left: 10px;
+    border-left: 1px solid rgba($color: #1e1e1e, $alpha: 0.4);
+    span{
+      color: $pri;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: 16px;
+      display: block; 
+    }
+    &.first{
+        padding-bottom: 120px;
+    }
+    &.second{
+        padding-bottom: 60px;
+    }
+    &.third{
+        padding-top: 43px;
+    }
+    &.four{
+        padding-top: 150px;
+    }
+  } 
+  .red-slogan{
+    background-color: $pri;
+    padding: 25px 70px;
+    border-radius: 75px;
+    color: #FFF;
+    font-size: 27px;
+    font-family: $j;
+    text-align: center;
+    p{
+      font-size: 16px;
+      color: #FFF;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .underline{
+      text-decoration: underline;
+    }
+  }
+}
+
+.vb-for{
+  padding: 60px 0;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/vb-bg1.png');
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/vb-bg2.png');
+  }
+  h2{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: $pri;
+    font-family: $j;
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: normal;
+  }
+  h4{
+    font-size: 36px;
+    font-family: $j;
+    font-weight: normal;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+  h6{
+    font-size: 24px;
+    font-family: $j;
+    font-weight: normal;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.evo{
+  position: relative;
+  padding: 90px 0 40px 0;
+  &::before{
+    content: "";
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #1e1e1e;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+  }
+  h2{
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: 36px;
+    font-family: $j;
+    font-weight: normal;
+  }
+  .timeline{
+    position: relative;
+    z-index: 2;
+    &::before{
+      content: "";
+      width: 5px;
+      position: absolute;
+      left: 50%;
+      top: -15px;
+      transform: translateX(-50%);
+      height: 79%;
+      background-color: $pri;
+    }
+    &::after{
+      content: "";
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: $pri;
+      position: absolute;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item{
+      padding: 45px;
+      position: relative;
+      border-radius: 25px;
+      background-color: #FFF;
+      width: 45%;
+      margin-bottom: 140px;
+      box-shadow: 0 5px 30px rgba($color: #000000, $alpha: 0.15);
+      position: relative;
+      h6{
+        font-size: 24px;
+        font-family: $j;
+        margin-bottom: 0px;
+        font-weight: normal;
+      }
+      h4{
+        font-size: 36px;
+        font-family: $j;
+        margin-bottom: 20px;
+        font-weight: normal;
+      }
+      span.red{
+        background-color: transparent !important;
+        color: $pri;
+        display: block;
+        font-size: 16px;
+      }
+      p{
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      ul{
+        padding-left: 17px;
+        margin-bottom: 20px;
+        li{
+          font-size: 16px;
+        }
+      }
+      &::before{
+        content: "";
+        width: 40px;
+        height: 5px;
+        background-color: $pri;
+        position: absolute;
+        top: 50%;
+        right: -40px;
+        transform: translateY(-50%);
+      }
+      &::after{
+        content: "";
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $pri;
+        position: absolute;
+        top: 50%;
+        right: -75px;
+        transform: translateY(-50%);
+      }
+      &.right{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-bottom: 0;
+        &::before{
+          right: auto;
+          left: -40px;
+        }
+        &::after{
+          right: auto;
+          left: -75px;
+        }
+      }
+    }
+  }
+}
+
+.vb-ora{
+  padding: 60px 0;
+  background-image: url('/bg-ra.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.45);
+  }
+  h2{
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-family: $j;
+    font-weight: normal;
+  }
+  .ora-item{
+    background-color: #FFFF;
+    padding: 25px 35px;
+    border-radius: 35px;
+    position: relative;
+    z-index: 2;
+    .numeric{
+      font-size: 65px;
+      font-family: $j;
+      font-weight: normal;
+      position: absolute;
+      top: 5px;
+      right: 35px;
+      color: #d1d3d4;
+    }
+    img{
+      margin-bottom: 15px;
+    }
+    h4{
+      font-size: 24px;
+      font-family: $j;
+      margin-bottom: 10px;
+    }
+    ul{
+      margin-bottom: 0;
+      li{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.vb-graph{
+  padding: 70px 0;
+  h2{
+    font-weight: normal;
+    font-family: $j;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    .reded{
+      color: $pri;
+    }
+  }
+}

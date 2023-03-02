@@ -4,7 +4,7 @@
       <v-container>
         <v-row>
           <v-col cols="12" md="10" offset-md="1">
-            <div class="breadcrumb">
+            <div class="breadcrumb-new">
               About Us <span class="circle"></span> Portfolio
             </div>
             <h2>We invest in people who change the way the world works.</h2>
