@@ -12,6 +12,7 @@
     p{
       font-size: 16px;
       display: block; 
+      color: #1e1e1e;
     }
     &.first{
         padding-bottom: 120px;
@@ -90,6 +91,7 @@
     margin-bottom: 0;
     position: relative;
     z-index: 2;
+    color: #1e1e1e;
   }
   h6{
     font-size: 24px;
@@ -98,12 +100,14 @@
     margin-bottom: 25px;
     position: relative;
     z-index: 2;
+    color: #1e1e1e;
   }
   p{
     font-size: 16px;
     margin-bottom: 0;
     position: relative;
     z-index: 2;
+    color: #1e1e1e;
   }
 }
 
@@ -171,12 +175,14 @@
         font-family: $j;
         margin-bottom: 0px;
         font-weight: normal;
+        color: #1e1e1e;
       }
       h4{
         font-size: 36px;
         font-family: $j;
         margin-bottom: 20px;
         font-weight: normal;
+        color: #1e1e1e;
       }
       span.red{
         background-color: transparent !important;
@@ -187,12 +193,14 @@
       p{
         font-size: 16px;
         margin-bottom: 20px;
+        color: #1e1e1e;
       }
       ul{
         padding-left: 17px;
         margin-bottom: 20px;
         li{
           font-size: 16px;
+          color: #1e1e1e;
         }
       }
       &::before{
@@ -283,11 +291,13 @@
       font-size: 24px;
       font-family: $j;
       margin-bottom: 10px;
+      color: #1e1e1e;
     }
     ul{
       margin-bottom: 0;
       li{
         font-size: 16px;
+        color: #1e1e1e;
       }
     }
   }
@@ -301,6 +311,7 @@
     font-size: 24px;
     text-align: center;
     margin-bottom: 40px;
+    color: #1e1e1e;
     .reded{
       color: $pri;
     }

@@ -138,10 +138,12 @@
       font-size: 18px;
       margin-bottom: 10px;
       font-weight: normal;
+      color: #1e1e1e;
     }
     p{
       font-size: 16px;
       margin-bottom: 0;
+      color: #1e1e1e;
     }
   }
 }
@@ -171,6 +173,7 @@
         font-size: 28px;
         font-weight: 400;
         margin-bottom: 0;
+        color: #1e1e1e;
       }
       &:after{
         content: "";
@@ -196,6 +199,7 @@
         font-size: 20px;
         margin-bottom: 10px;
         min-height: 30px;
+        color: #1e1e1e;
         img{
           display: block;
         }
@@ -223,7 +227,7 @@
     font-size: 18px;
     display: inline-block;
     font-family: $j;
-    color: #FFF;
+    color: #FFF !important;
     text-decoration: none;
     img{
       margin-right: 10px;
