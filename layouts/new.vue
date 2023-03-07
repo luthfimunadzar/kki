@@ -68,14 +68,20 @@
                 <v-col cols="12">
                   <v-list dark>
                     <v-list-item link to="/new/service/finance">
-                      Finance
+                      Financial & Tax
                     </v-list-item>
-                    <v-list-item link to=""> Marketing </v-list-item>
-                    <v-list-item link to=""> Human Resource </v-list-item>
-                    <v-list-item link to=""> Fundraising </v-list-item>
-                    <v-list-item link to=""> Legal </v-list-item>
-                    <v-list-item link to=""> Impact Management </v-list-item>
-                    <v-list-item link to=""> Community </v-list-item>
+                    <v-list-item link to="/new/service/content-design">
+                      Content & Design
+                    </v-list-item>
+                    <v-list-item link to="/new/service/human-resources">
+                      Human Resources
+                    </v-list-item>
+                    <v-list-item link to="/new/service/impact-management">
+                      Impact Management
+                    </v-list-item>
+                    <v-list-item link to="/new/service/fundraising-preparation">
+                      Fundraising Preparation
+                    </v-list-item>
                   </v-list></v-col
                 >
               </v-row>
