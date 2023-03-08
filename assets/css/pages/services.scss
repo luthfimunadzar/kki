@@ -69,6 +69,7 @@
     padding: 10px 30px;
     border-radius: 25px;
     transition: all 0.3s ease;
+    background-color: #969696;
     h4{
       font-size: 24px;
       color: #FFF;
@@ -96,6 +97,9 @@
     &:hover, &:focus{
       cursor: pointer;
     }
+    & + .business-item{
+      margin-top: 10px;
+    }
   }
   .service-item{
     border-radius: 25px;
@@ -105,6 +109,10 @@
     position: relative;
     z-index: 2;
     background-color: #FFF;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     .image-circle{
       background-color: #2d47c9;
       border-radius: 50%;
@@ -189,9 +197,8 @@
     }
     h5{
       font-family: $j;
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 10px;
-      font-weight: normal;
       color: #1e1e1e;
     }
     p{
@@ -262,7 +269,7 @@
       padding: 0 15px;
       li{
         list-style: none;
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
         min-height: 30px;
         color: #1e1e1e;
@@ -276,10 +283,17 @@
           color: #2d47c9;
         }
       }
+      &.scope{
+        li{
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+        }
+      }
     }
     &.solo{
       ul{
-        margin-bottom: 70px;
+        margin-bottom: 40px;
       }
     }
   }
@@ -330,7 +344,7 @@
     margin-bottom: 15px;
   }
   a{
-    border: 1px solid #FFF;
+    border: none;
     border-radius: 25px;
     padding: 10px 25px;
     font-size: 18px;
@@ -338,6 +352,7 @@
     font-family: $j;
     color: #FFF !important;
     text-decoration: none;
+    background-color: #128C7E;
     img{
       margin-right: 10px;
       display: inline-block;
@@ -360,17 +375,32 @@
   text-align: center;
   a{
     display: inline-block;
-    margin: 0 10px 10px 10px  ;
+    margin: 0 10px 15px 10px  ;
     text-decoration: none;
-    border: 1px solid #1e1e1e;
+    border: none;
     border-radius: 25px;
-    padding: 10px 40px;
-    font-size: 15px;
-    color: #1e1e1e !important;
+    padding: 15px 40px;
+    font-size: 17px;
+    color: #FFF !important;
     img{
       margin-right: 10px;
       display: inline-block;
       vertical-align: middle;
+    }
+    &:nth-child(2){
+      background-color: #19c792;
+    }
+    &:nth-child(3){
+      background-color: #eb6619;
+    }
+    &:nth-child(4){
+      background-color: #dfb933;
+    }
+    &:nth-child(5){
+      background-color: #2d47c9;
+    }
+    &:nth-child(6){
+      background-color: #8f94f8;
     }
   }
 }

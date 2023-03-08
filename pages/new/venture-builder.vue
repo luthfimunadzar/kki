@@ -3,7 +3,7 @@
     <div class="hero-vb">
       <v-container>
         <v-row>
-          <v-col cols="12" md="3" offset-md="1" class="py-0">
+          <v-col cols="12" md="5" offset-md="1" class="py-0">
             <div class="desc-fly first">
               <span>Venture Building SUPPORT</span>
               <p>
@@ -14,7 +14,7 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="12" md="3" class="py-0 d-flex align-end">
+          <v-col cols="12" md="5" class="py-0 d-flex align-end">
             <div class="desc-fly second">
               <span>Backing the HYPER Founder</span>
               <p>
@@ -36,7 +36,7 @@
               ventures
             </div>
           </v-col>
-          <v-col cols="12" md="3" offset-md="5" class="py-0">
+          <v-col cols="12" md="5" offset-md="1" class="py-0">
             <div class="desc-fly third">
               <span>Risk ALIGNED Approaches</span>
               <p>
@@ -47,7 +47,7 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="12" md="3" class="py-0">
+          <v-col cols="12" md="5" class="py-0">
             <div class="desc-fly four">
               <span>INVESTABLE Venture</span>
               <p>
@@ -341,7 +341,7 @@
         <v-row>
           <v-col md="5">
             <h3>Ready to take your business to another level?</h3>
-            <a href=""><img src="/wa.png" alt="" /> Contact Us</a>
+            <a href=""><img src="/wa.png" alt="" /> Consult Now</a>
           </v-col>
         </v-row>
         <div class="image-wrap"></div>

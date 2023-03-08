@@ -14,8 +14,6 @@
             <p>
               {{ p2 }}
             </p>
-            <p>Get the Solution Now</p>
-            <img src="/phantom.png" alt="" />
           </v-col>
           <v-col cols="12" md="5">
             <div
@@ -71,7 +69,6 @@
           </v-col>
           <v-col v-for="(ser, i) in services" :key="i" cols="4">
             <div class="service-item">
-              <div class="image-circle"></div>
               <h6>{{ ser.title }}</h6>
               <vue-markdown :source="ser.list" />
             </div>
@@ -120,7 +117,7 @@
               <v-row>
                 <v-col cols="3">
                   <div class="title no-border"></div>
-                  <ul>
+                  <ul class="scope">
                     <li>First Consultation</li>
                     <li>Impact & Program Advisory</li>
                     <li>Impact Metrics Creationg</li>
@@ -139,11 +136,11 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li class="two-line">Weekly</li>
+                    <li>Weekly</li>
                     <li>6 Hours Consultation</li>
                     <li>-</li>
                     <li>1 Tools</li>
-                    <li class="two-line">-</li>
+                    <li>-</li>
                     <li>1 Visualisation</li>
                     <li>-</li>
                     <li class="text-price font-weight-bold">
@@ -158,11 +155,13 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li class="two-line">Weekly</li>
+                    <li>Weekly</li>
                     <li>10 Hours Consultation</li>
-                    <li><img src="/bcheck.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>2 Tools</li>
-                    <li class="two-line">-</li>
+                    <li>-</li>
                     <li>2 Visualisation</li>
                     <li>2 Pages report</li>
                     <li class="text-price font-weight-bold">
@@ -177,11 +176,15 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li class="two-line">Weekly</li>
+                    <li>Weekly</li>
                     <li>15 Hours Consultation</li>
-                    <li><img src="/bcheck.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>3 Tools</li>
-                    <li class="two-line"><img src="/bcheck.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>3 Visualisation</li>
                     <li>6 Pages report</li>
                     <li class="text-price font-weight-bold">
@@ -250,7 +253,7 @@
               <v-row>
                 <v-col cols="3">
                   <div class="title no-border"></div>
-                  <ul>
+                  <ul class="scope">
                     <li>First Consultation</li>
                     <li>Bookkeeping</li>
                     <li>Tax Handling</li>
@@ -269,11 +272,21 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>2 Services</li>
                     <li>1</li>
                     <li class="text-price font-weight-bold">
@@ -288,11 +301,21 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>5 Services</li>
                     <li>2</li>
                     <li class="text-price font-weight-bold">
@@ -310,8 +333,12 @@
                     <li>-</li>
                     <li>-</li>
                     <li>-</li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
-                    <li><img src="/bcheck4.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck4.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>-</li>
                     <li>1</li>
                     <li class="text-price font-weight-bold">
@@ -329,10 +356,10 @@
                   <v-row>
                     <v-col cols="4">
                       <div class="title no-border"></div>
-                      <ul>
+                      <ul class="scope">
                         <li>Employee Administration</li>
                         <li>Employee Management</li>
-                        <li class="two-line">Organization Development</li>
+                        <li>Organization Development</li>
                         <li class="text-price font-weight-bold">Pricing</li>
                       </ul>
                     </v-col>
@@ -344,7 +371,7 @@
                       <ul>
                         <li>Rp200,000/employee</li>
                         <li>Rp200,000/employee</li>
-                        <li class="two-line">Rp2,500,000/month</li>
+                        <li>Rp2,500,000/month</li>
                         <li class="text-price font-weight-bold">
                           Bundling Package : IDR300,000/pax
                           <em>(exclude Organization Development)</em>
@@ -359,7 +386,7 @@
                       <ul>
                         <li>Rp200,000/employee</li>
                         <li>Rp200,000/employee</li>
-                        <li class="two-line">Rp4,000,000/month</li>
+                        <li>Rp4,000,000/month</li>
                         <li class="text-price font-weight-bold">
                           Bundling Package : IDR300,000/pax
                           <em>(exclude Organization Development)</em>
@@ -413,7 +440,9 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>-</li>
                     <li>-</li>
                     <li>-</li>
@@ -432,10 +461,18 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>-</li>
                     <li>By request</li>
                     <li>1</li>
@@ -451,11 +488,21 @@
                   </div>
                   <ul>
                     <li>Free</li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
-                    <li><img src="/bcheck5.png" alt="" /></li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
+                    <li>
+                      <img src="/bcheck5.png" alt="" class="d-block mx-auto" />
+                    </li>
                     <li>By request</li>
                     <li>2</li>
                     <li class="text-price font-weight-bold">
@@ -474,7 +521,7 @@
         <v-row>
           <v-col md="5">
             <h3>Ready to take your business to another level?</h3>
-            <a href=""><img src="/wa.png" alt="" /> Contact Us</a>
+            <a href=""><img src="/wa.png" alt="" /> Consult Now</a>
           </v-col>
         </v-row>
         <div class="image-wrap"></div>
@@ -487,20 +534,12 @@
             <h2 class="title-service text-center">
               Explore Our Other Services
             </h2>
-            <a href="/new/service/finance"
-              ><img src="/os1.png" alt="" /> Financal & Tax</a
-            >
-            <a href="/new/service/content-design"
-              ><img src="/os4.png" alt="" /> Content & Design</a
-            >
-            <a href="/new/service/human-resources"
-              ><img src="/os7.png" alt="" /> Human Resources</a
-            >
-            <a href="/new/service/impact-management"
-              ><img src="/os2.png" alt="" /> Impact Management</a
-            >
+            <a href="/new/service/finance">Financal & Tax</a>
+            <a href="/new/service/content-design">Content & Design</a>
+            <a href="/new/service/human-resources">Human Resources</a>
+            <a href="/new/service/impact-management">Impact Management</a>
             <a href="/new/service/fundraising-preparation"
-              ><img src="/os5.png" alt="" /> Fundraising Preparation</a
+              >Fundraising Preparation</a
             >
           </v-col>
         </v-row>
