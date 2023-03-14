@@ -1015,7 +1015,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: 0.5;
+    opacity: 0.6;
   }
   .wrap{
     position: relative;
@@ -1040,6 +1040,33 @@
     left: 50%;
     bottom: 20px;
     transform: translateX(-50%);
+  }
+  &.short{
+    min-height: 500px;
+    .breadcrumb-new{
+      color: #FFF;
+      font-size: 16px;
+      margin-bottom: 20px;
+      .circle{
+        display: inline-block;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #FFF;
+        width: 5px;
+        height: 5px;
+        vertical-align: middle;
+      }
+    }
+    h1{
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 23px;
+      width: 50%;
+      margin: 0 auto;
+      font-family: $j;      
+    }
   }
 }
 

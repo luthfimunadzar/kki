@@ -93,7 +93,28 @@
           </v-menu>
         </li>
         <li>
-          <nuxt-link to="/new/portfolio">About Us</nuxt-link>
+          <v-menu offset-y content-class="dropdown-menu-new">
+            <!-- eslint-disable-next-line vue/v-slot-style -->
+            <template v-slot:activator="{ on, attrs }">
+              <a href="javascript:void(0);" v-bind="attrs" v-on="on"
+                >About Us <span class="caret"></span>
+              </a>
+            </template>
+            <v-container>
+              <v-row>
+                <v-col cols="12">
+                  <v-list dark>
+                    <v-list-item link to="/new/portfolio">
+                      Portofolio
+                    </v-list-item>
+                    <v-list-item link to="/new/manifesto">
+                      Manifesto
+                    </v-list-item>
+                  </v-list></v-col
+                >
+              </v-row>
+            </v-container>
+          </v-menu>
         </li>
         <li>
           <nuxt-link to="">Contact Us</nuxt-link>
