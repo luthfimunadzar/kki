@@ -45,13 +45,11 @@
               <v-row>
                 <v-col cols="12">
                   <v-list dark>
-                    <v-list-item link to=""> Programs & Services </v-list-item>
-                    <v-list-item link to=""> Telepath </v-list-item>
                     <v-list-item link to="/new/venture-builder">
                       Venture Builder
                     </v-list-item>
-                    <v-list-item link to="/new/venture-service">
-                      Venture Service
+                    <v-list-item link to="/new/portfolio">
+                      Portofolio
                     </v-list-item>
                   </v-list>
                 </v-col>
@@ -104,12 +102,10 @@
               <v-row>
                 <v-col cols="12">
                   <v-list dark>
-                    <v-list-item link to="/new/portfolio">
-                      Portofolio
-                    </v-list-item>
                     <v-list-item link to="/new/manifesto">
                       Manifesto
                     </v-list-item>
+                    <v-list-item link to="/new/team"> Team </v-list-item>
                   </v-list></v-col
                 >
               </v-row>

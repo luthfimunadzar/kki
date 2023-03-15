@@ -2,7 +2,7 @@
   <div>
     <div class="service-head-new">
       <v-container>
-        <v-row>
+        <v-row class="d-flex align-center">
           <v-col cols="12" md="7">
             <div class="breadcrumb-new">
               Venture services <span class="circle"></span> {{ title }}
@@ -24,6 +24,7 @@
                 { ft: $route.params.id === 'finance' },
                 { fp: $route.params.id === 'fundraising-preparation' },
               ]"
+              :style="{ backgroundImage: `url(${bgLanding})` }"
             ></div>
           </v-col>
         </v-row>
@@ -48,7 +49,10 @@
         </v-row>
         <v-row class="d-flex align-center">
           <v-col cols="12" md="4">
-            <div class="image-circle"></div>
+            <div
+              class="image-circle"
+              :style="{ backgroundImage: `url(${bgWhy})` }"
+            ></div>
           </v-col>
           <v-col cols="12" md="8">
             <div
@@ -86,7 +90,10 @@
           </v-col>
           <v-col v-for="(sub, i) in suItem" :key="i" cols="12" md="6">
             <div class="subscribe-item">
-              <div class="image-wrap"><img src="/subscribe1.png" alt="" /></div>
+              <div
+                class="image-wrap"
+                :style="{ backgroundImage: `url(${sub.img})` }"
+              ></div>
               <h5>{{ sub.title }}</h5>
               <p>
                 {{ sub.subtitle }}
@@ -524,7 +531,10 @@
             <a href=""><img src="/wa.png" alt="" /> Consult Now</a>
           </v-col>
         </v-row>
-        <div class="image-wrap"></div>
+        <div
+          class="image-wrap"
+          :style="{ backgroundImage: `url(${bgConsult})` }"
+        ></div>
       </v-container>
     </div>
     <div class="other-service">
@@ -569,6 +579,9 @@ export default {
       services: [],
       suTitle: '',
       suItem: [],
+      bgLanding: '',
+      bgConsult: '',
+      bgWhy: '',
     }
   },
   head() {
@@ -645,21 +658,27 @@ export default {
       this.suTitle = 'Benefit of outsourcing with us'
       this.suItem = [
         {
+          img: '/Impact-Management-Value-for-money-Attribute-Elzicon.png',
           title: 'Value for Money',
           subtitle:
             'Pay with the budget of fresh graduates, but get a team with 10+ years experiences in handling startup. ',
         },
         {
+          img: '/Impact-Management-Reliable-Attribute-Freepik.png',
           title: 'Reliable ',
           subtitle:
             'No sick days, no paid leaves, no bad-mood day.  Our worker consist of a professional team, that will always ready on duty to deliver high quality work.',
         },
         {
+          img: '/Impact-Management-Flexible-Attribute-Freepik.png',
           title: 'Flexible ',
           subtitle:
             'When the workload increase, you don’t have to hire new person! Just top up your subscription package and get more done. Vica versa, when the workload decrease, you can shift back to cheaper package',
         },
       ]
+      this.bgConsult = '/Consult-Now-Impact.png'
+      this.bgLanding = '/Impact-Management-Service-Landing-Page.png'
+      this.bgWhy = '/Impact-Management-Why-its-better-with-us.png'
     } else if (this.$route.params.id === 'finance') {
       this.title = 'Financal & Tax'
       this.slogan = 'Track your number accurately, make decision effectively'
@@ -701,21 +720,27 @@ export default {
       this.suTitle = 'Benefit of outsourcing with us'
       this.suItem = [
         {
+          img: '/Finance-Value-for-money-Attribute-Dinosoft.png',
           title: 'Value for Money',
           subtitle:
             'Pay with the budget of fresh graduates, but get a team with 10+ years experiences in handling startup. ',
         },
         {
+          img: '/Finance-Reliable-Attribute-Freepik.png',
           title: 'Reliable ',
           subtitle:
             'No sick days, no paid leaves, no bad-mood day.  Our worker consist of a professional team, that will always ready on duty to deliver high quality work.',
         },
         {
+          img: '/Finance-Flexible-Freepik.png',
           title: 'Flexible ',
           subtitle:
             'When the workload increase, you don’t have to hire new person! Just top up your subscription package and get more done. Vica versa, when the workload decrease, you can shift back to cheaper package',
         },
       ]
+      this.bgConsult = '/Consult-Now-Finance.png'
+      this.bgLanding = '/Finance-Service-Landing.png'
+      this.bgWhy = '/Finance-Why-its-better-with-us.png'
     } else if (this.$route.params.id === 'content-design') {
       this.title = 'Content & Design'
       this.slogan =
@@ -754,21 +779,27 @@ export default {
       this.suTitle = 'Benefit of outsourcing with us'
       this.suItem = [
         {
+          img: '/Content-Value-for-money-Attribute-Dinosoft.png',
           title: 'Value for Money',
           subtitle:
             'Pay with the budget of fresh graduates, but get a team with 10+ years experiences in handling startup. ',
         },
         {
+          img: '/Content-Reliable-Attribute-Flaticons.png',
           title: 'Reliable ',
           subtitle:
             'No sick days, no paid leaves, no bad-mood day.  Our worker consist of a professional team, that will always ready on duty to deliver high quality work.',
         },
         {
+          img: '/Content-Flexible-Monkik.png',
           title: 'Flexible ',
           subtitle:
             'When the workload increase, you don’t have to hire new person! Just top up your subscription package and get more done. Vica versa, when the workload decrease, you can shift back to cheaper package',
         },
       ]
+      this.bgConsult = '/Consult-Now-Content_Design.png'
+      this.bgLanding = '/Content-Service-Landing.png'
+      this.bgWhy = '/Content-Why-its- better-with-us.png'
     } else if (this.$route.params.id === 'human-resources') {
       this.title = 'Human Resources'
       this.slogan =
@@ -807,21 +838,27 @@ export default {
       this.suTitle = 'Benefit of outsourcing with us'
       this.suItem = [
         {
+          img: '/HR-Value-for-Money-Attribute-Iconixar.png',
           title: 'Value for Money',
           subtitle:
             'Pay with the budget of fresh graduates, but get a team with 10+ years experiences in handling startup. ',
         },
         {
+          img: '/HR-Reliable-Attribute-Juicy_Fish.png',
           title: 'Reliable ',
           subtitle:
             'No sick days, no paid leaves, no bad-mood day.  Our worker consist of a professional team, that will always ready on duty to deliver high quality work.',
         },
         {
+          img: '/HR-Flexible-Freepik.png',
           title: 'Flexible ',
           subtitle:
             'When the workload increase, you don’t have to hire new person! Just top up your subscription package and get more done. Vica versa, when the workload decrease, you can shift back to cheaper package',
         },
       ]
+      this.bgConsult = '/Consult-Now-HR.png'
+      this.bgLanding = '/HR-Service-Landing.png'
+      this.bgWhy = '/HR-Why-its-better-with-us.png'
     } else if (this.$route.params.id === 'fundraising-preparation') {
       this.title = 'Fundraising Preparation'
       this.slogan = 'Cos fundraising goes beyond pitching.'
@@ -867,21 +904,27 @@ export default {
       this.suTitle = 'Benefit of outsourcing with us'
       this.suItem = [
         {
+          img: '/Fundraising-Value-for-money-Attribute-Kiranshasty.png',
           title: 'Value for Money',
           subtitle:
             'Pay with the budget of fresh graduates, but get a team with 10+ years experiences in handling startup. ',
         },
         {
+          img: '/Fundraising-Reliable-Attribute-Parzival.png',
           title: 'Reliable ',
           subtitle:
             'No sick days, no paid leaves, no bad-mood day.  Our worker consist of a professional team, that will always ready on duty to deliver high quality work.',
         },
         {
+          img: '/Fundraising-Flexible-Attribute-Juicy_Fish.png',
           title: 'Flexible ',
           subtitle:
             'When the workload increase, you don’t have to hire new person! Just top up your subscription package and get more done. Vica versa, when the workload decrease, you can shift back to cheaper package',
         },
       ]
+      this.bgConsult = '/Consult-Fundraising.png'
+      this.bgLanding = '/Fundraising-Service-Landing.png'
+      this.bgWhy = '/Fundraising-Why-its-better-with-us.png'
     }
   },
   methods: {

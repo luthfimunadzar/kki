@@ -125,7 +125,9 @@
               Get our skins in the game and work directly with your team within
               multiple role to achieve your next growth objectives.
             </p>
-            <nuxt-link to="" class="btn-circle">Learn More</nuxt-link>
+            <nuxt-link to="/new/venture-builder" class="btn-circle"
+              >Learn More</nuxt-link
+            >
           </v-col>
         </v-row>
       </v-container>
@@ -147,7 +149,9 @@
               industries, we know exactly what needs to be done, and how to do
               it better & faster.
             </p>
-            <nuxt-link to="" class="btn-circle">Learn More</nuxt-link>
+            <nuxt-link to="/new/venture-service" class="btn-circle"
+              >Learn More</nuxt-link
+            >
           </v-col>
         </v-row>
       </v-container>

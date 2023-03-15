@@ -18,7 +18,10 @@
       <v-container>
         <v-row class="d-flex align-center">
           <v-col cols="12" md="6" order-md="2">
-            <div class="circle-img"></div>
+            <div
+              class="circle-img"
+              style="background-image: url('/Manifesto-Empower-Founder.png')"
+            ></div>
           </v-col>
           <v-col cols="12" md="6" order-md="1">
             <h2>We <span class="bg-reds">empower</span> founders</h2>
@@ -34,7 +37,10 @@
         </v-row>
         <v-row class="d-flex align-center">
           <v-col cols="12" md="6">
-            <div class="circle-img second"></div>
+            <div
+              class="circle-img second"
+              style="background-image: url('/Manifesto-Collaboration.png')"
+            ></div>
           </v-col>
           <v-col cols="12" md="6">
             <h2>We seek out <span class="bg-reds">collaboration</span></h2>
@@ -51,7 +57,10 @@
         </v-row>
         <v-row class="d-flex align-center">
           <v-col cols="12" md="6" order-md="2">
-            <div class="circle-img"></div>
+            <div
+              class="circle-img"
+              style="background-image: url('/Manifesto-Great-Vision.png')"
+            ></div>
           </v-col>
           <v-col cols="12" md="6" order-md="1">
             <h2>We focus on <span class="bg-reds">great vision</span></h2>
@@ -67,7 +76,10 @@
         </v-row>
         <v-row class="d-flex align-center">
           <v-col cols="12" md="6">
-            <div class="circle-img second"></div>
+            <div
+              class="circle-img second"
+              style="background-image: url('/Manifesto-Growth.png')"
+            ></div>
           </v-col>
           <v-col cols="12" md="6">
             <h2>We strive for <span class="bg-reds">growth</span></h2>
