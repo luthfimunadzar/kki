@@ -1,247 +1,208 @@
 <template>
   <div>
-    <div class="manifesto-wrap">
-      <div class="intro">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <h4>Manifesto</h4>
-              <p>
-                The declaration means we take responsibility for our values and
-                aspirations, make the world as our witness and the society as
-                our allies.
-              </p>
-            </v-col>
-          </v-row>
+    <div class="hero-new short">
+      <div class="wrap">
+        <div class="breadcrumb-new">
+          About Us <span class="circle"></span> Portfolio
         </div>
+        <h1>We are true to our values</h1>
+        <p>
+          We work closely with our founders to understand their needs and goals,
+          and we involve them in every step of the process, from ideation to
+          execution. We take a partnership approach, working alongside our
+          founders as a trusted and reliable resource.
+        </p>
       </div>
-      <div class="collapse-wrap red-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    We empower founders
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    In any startup, founders come first. Ideas can be changed,
-                    skills can be gained, expertise can be hired, money can be
-                    raised. But the core team; their chemistry, resilience,
-                    faith, and characters, determines whether a business can
-                    survive for the next 100 years or 100 days.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div class="collapse-wrap blue-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    Enduring, great business.
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    Some businesses play fundamental roles in a society. These
-                    businesses last for decades because they play vital roles in
-                    the ecosystem, even able to generate an ecosystem of their
-                    own. We aim to discover, build, and take part in these
-                    enduring, great businesses.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div class="collapse-wrap yellow-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    Influence positive change.
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    Humanity can no longer focus solely on profit, but also on
-                    people and the planet. By becoming a platform for
-                    innovation, we can enable new businesses to consider all
-                    three aspects, change the industry and leave lasting legacy.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div class="collapse-wrap red-bg">
-        <div class="container">
-          <v-row>
-            <v-col md="10" offset-md="1" cols="12" class="py-0">
-              <v-expansion-panels>
-                <v-expansion-panel>
-                  <v-expansion-panel-header disable-icon-rotate>
-                    True to our values
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content>
-                    Learn humbly, explore with courage, act with kindness and
-                    inspire perseverance are the four guiding principles. These
-                    principles help us to keep growing, stay ahead of the
-                    current, build loyal teams, and move people.
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
+    </div>
+    <div class="manifest-wrap">
+      <v-container>
+        <v-row class="d-flex align-center">
+          <v-col cols="12" md="6" order-md="2">
+            <div
+              class="circle-img"
+              style="background-image: url('/Manifesto-Empower-Founder.png')"
+            ></div>
+          </v-col>
+          <v-col cols="12" md="6" order-md="1">
+            <h2>We <span class="bg-reds">empower</span> founders</h2>
+            <p>
+              We are founded by entrepreneurs, for entrepreneurs. We know what
+              it takes to build a successful business, and we are dedicated to
+              helping our founders achieve their visions. We take a hands-on
+              approach, providing guidance, mentorship, and strategic support to
+              help our founders overcome challenges and capitalize on
+              opportunities.
+            </p>
+          </v-col>
+        </v-row>
+        <v-row class="d-flex align-center">
+          <v-col cols="12" md="6">
+            <div
+              class="circle-img second"
+              style="background-image: url('/Manifesto-Collaboration.png')"
+            ></div>
+          </v-col>
+          <v-col cols="12" md="6">
+            <h2>We seek out <span class="bg-reds">collaboration</span></h2>
+            <p>
+              We believe in building strong and collaborative partnerships with
+              our founders, working together as a team to achieve their goals.
+              We take the time to get to know our founders and their unique
+              needs, and we involve them in every step of the process, from
+              initial ideation to final execution. We believe that open
+              communication and collaboration is the key to success, and we are
+              committed to building long-term relationships with our founders.
+            </p>
+          </v-col>
+        </v-row>
+        <v-row class="d-flex align-center">
+          <v-col cols="12" md="6" order-md="2">
+            <div
+              class="circle-img"
+              style="background-image: url('/Manifesto-Great-Vision.png')"
+            ></div>
+          </v-col>
+          <v-col cols="12" md="6" order-md="1">
+            <h2>We focus on <span class="bg-reds">great vision</span></h2>
+            <p>
+              We take a long-term approach to venture building, focused on
+              creating sustainable and successful businesses that will stand the
+              test of time. We are not just interested in quick wins, but in
+              building enduring companies that can make a real impact in the
+              world. We believe that by taking a patient and strategic approach,
+              we can create real value for our founders and investors alike.
+            </p>
+          </v-col>
+        </v-row>
+        <v-row class="d-flex align-center">
+          <v-col cols="12" md="6">
+            <div
+              class="circle-img second"
+              style="background-image: url('/Manifesto-Growth.png')"
+            ></div>
+          </v-col>
+          <v-col cols="12" md="6">
+            <h2>We strive for <span class="bg-reds">growth</span></h2>
+            <p>
+              Our team brings a wealth of experience and network to the table,
+              having successfully built and scaled multiple companies. We
+              leverage this experience and network to help our founders overcome
+              challenges, identify opportunities, and connect with the right
+              people. We believe that the right network and experience can make
+              all the difference in the success of a startup, and we are
+              committed to sharing our knowledge and resources with our
+              founders.
+            </p>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+
 export default {
+  layout: 'new',
   data() {
     return {
+      result: false,
+      quiz: false,
+      tab: null,
+      tabItems: ['H', 'Y', 'P', 'E', 'R'],
+      answer: [],
+      hiddenQestion: [],
+      question: [
+        {
+          id: 1,
+          quiz: 'How much risk do you like to take in life?',
+          answer_a: 'As little as possible',
+          answer_b: 'I get a buzz from taking crazy risks all the time',
+        },
+        {
+          id: 2,
+          quiz: 'Nam eget ornare mauris. In ultrices augue ac leo semper?',
+          answer_a: 'vel ultricies eros cursus',
+          answer_b: 'Sed non mauris vel velit aliquam',
+        },
+        {
+          id: 3,
+          quiz: 'bibendum velit at, placerat mauris?',
+          answer_a: 'porttitor eget at felis',
+          answer_b: 'Sed ut odio volutpat',
+        },
+        {
+          id: 4,
+          quiz: 'Pellentesque iaculis, risus sed mollis tempor?',
+          answer_a: 'sapien massa auctor erat',
+          answer_b: 'a eleifend tellus odio',
+        },
+      ],
       founders: [
         {
           id: 1,
-          img: '/people1.png',
-          name: 'John Doe',
-          desc: 'John Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
-          linkedin: '#',
-          ig: '#',
-          twitter: '#',
+          img: '/people6.png',
+          name: 'Rizky Fadhilah',
+          title: 'Founder and CEO at Cityplan Indonesia',
+          desc: 'Rizky sees opportunity amidst the chaotic nature of city development. Equipped with his engineering skill in urban planning, he creates solutions & new business ecosystems to help government & business plan the city better with technology.',
+          link: 'https://www.linkedin.com/in/rizki-fadhilah-6b351979/',
         },
         {
           id: 2,
-          img: '/people2.png',
-          name: 'John Doe',
-          desc: 'John Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
-          linkedin: '#',
-          ig: '#',
-          twitter: '#',
+          img: '/people9.png',
+          name: 'Yohanes S.',
+          title: 'CEO at CROWDE.CO',
+          desc: 'Yohanes “Oyong” believes that farmers are the leftovers & victims of economic development. He envision a future where empowered farmer become a significant player in the industry by equipping them with technology & entrepreneurial skills',
+          link: 'https://www.linkedin.com/in/yohanes-sugihtononugroho-aabb8b116/',
         },
         {
           id: 3,
-          img: '/people3.png',
-          name: 'Jane Doe',
-          desc: 'Jane Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
-          linkedin: '#',
-          ig: '#',
-          twitter: '#',
+          img: '/people10.png',
+          name: 'Wendy Pratama',
+          title: 'CEO at Lingkaran',
+          desc: 'As an architecture graduate, he built his company like he built his home. Started by building his team, as the foundation. He built a family where people can have fun, pursue their passion, do things that they want to, while achieving the common goals of providing an alternative education program for people to upgrade their life & career.',
+          link: 'https://www.linkedin.com/in/wndprtm/',
         },
         {
           id: 4,
-          img: '/people4.png',
-          name: 'Jane Doe',
-          desc: 'Jane Doe is a mentor who share a love for print in a digital world. We run the studio out of our home (surprise surprise) in San Luis Obispo. We love good food, making Spotify playlists and our dog Gary.',
-          linkedin: '#',
-          ig: '#',
-          twitter: '#',
-        },
-      ],
-      familys: [
-        {
-          id: 1,
-          img: '/partner1.png',
-          name: 'Crowde',
-          desc: 'Revolutionise agriculture industry through financial & agri-tech innovation',
-          link: 'https://crowde.co/',
-        },
-        {
-          id: 2,
-          img: '/partner2.png',
-          name: 'Lingkaran',
-          desc: 'Bridging gap between formal education & industry through alternative education & digital content',
-          link: 'http://lingkaran.co/',
-        },
-        {
-          id: 3,
-          img: '/partner3.png',
-          name: 'City Plan',
-          desc: 'Supporting govt & industry build a better cities through spatial data intelligence solutions',
-          link: 'http://cityplan.id/',
-        },
-        {
-          id: 4,
-          img: '/partner4.png',
-          name: 'Brocode Barber',
-          desc: 'Bringing a new standard of customer service in a chain of barbershop',
-          link: 'https://www.brocodebarber.com/',
+          img: '/people5.png',
+          name: 'Ivan',
+          title: 'Managing Director of LEXAR.id',
+          desc: 'As a lawyer, Ivan understands the legal industry is full of intrigue yet strictly regulated. but with his entrepreneurial point of view he found new business opportunities and swiftly pioneered a solution to the problem faced by the emerging market of legal services.',
+          link: 'https://www.linkedin.com/in/ivan-lalamentik-81a04574/',
         },
         {
           id: 5,
-          img: '/partner5.png',
-          name: 'Robonesia',
-          desc: 'A robotic education program for elementary students',
-          link: 'http://robonesia.id/',
+          img: '/people12.png',
+          name: 'Rhaka',
+          title: 'Co Founder at Menjadi Manusia',
+          desc: 'Rhaka is able to convert his trauma of addiction and dropping out of college into a positive energy to move forward. So he understands at heart, that business is not only about money, but more a meaningful and fulfilling way of living while helping other people to become a better person',
+          link: 'https://www.linkedin.com/in/rhaka-ghanisatria-b0924a108/',
         },
         {
           id: 6,
-          img: '/partner6.png',
-          name: 'Freenovation',
-          desc: 'Redefining the future of work through coworking movement',
-          link: 'http://freenovation.co/',
-        },
-      ],
-      builders: [
-        {
-          id: 1,
-          img: '/partner7.png',
-          name: 'Smile Concept',
-          desc: 'A customer focused dental clinic that not only treat but educate people about oral health',
-          link: 'https://smileconceptclinic.com/',
+          img: '/people8.png',
+          name: 'Firman',
+          title: 'Founder & CEO Robonesia.ID',
+          desc: 'Firman is a resilient and resourceful educator/technocrat. He is able to withstand the ups and downs of Robonesia and able to fill multiple strategic roles to grow Robonesia. His ability to nimbly overcome many challenges further proves his spirit and versatility.',
+          link: 'https://www.linkedin.com/in/firman-alimuddin-69501a110/',
         },
         {
-          id: 2,
-          img: '/partner8.png',
-          name: 'Freelens Studio',
-          desc: 'Capturing moment & conveying message through video solution',
-          link: 'http://freelens.id/',
+          id: 7,
+          img: '/people7.png',
+          name: 'Nuwi',
+          title: 'Strategic Director of BerdayaKrui',
+          desc: 'With experience in social enterprise, knowledge about economic development, and ability as a fluent public speaker. She is able to persuade and move stakeholders from government, private investors, to local business owners and give back to the village by co-establishing a social enterprise locally owned by the village community.',
+          link: 'https://www.linkedin.com/in/safrina/',
         },
         {
-          id: 3,
-          img: '/partner9.png',
-          name: 'Lexar',
-          desc: 'Simplifying legal & corporate secretarial process for SME with tailored service & digital product',
-          link: 'http://lexar.id/',
-        },
-      ],
-      siaps: [
-        {
-          id: 1,
-          img: '/partner10.png',
-          name: 'Menjadi Manusia',
-          desc: 'Social platform to share the alternative perspective in the form of video content & activation',
-          link: 'https://www.youtube.com/channel/UCJ6JnLmidOIP1sFeK8hRspA',
-        },
-        {
-          id: 2,
-          img: '/partner11.png',
-          name: 'Berdaya Krui',
-          desc: 'Building an impactful & sustainable tourism initiatives to empower local economy',
-          link: 'http://berdaya.co/',
-        },
-        {
-          id: 3,
-          img: '/partner12.png',
-          name: 'SaveYourselves',
-          desc: 'Building platform to help people with mental health issues',
-          link: 'http://saveyourselves.id/',
-        },
-        {
-          id: 4,
-          img: '/partner13.png',
-          name: 'Baca PiBo',
-          desc: 'Creating digital pictured book library for toddler',
-          link: 'https://www.bacapibo.com/index.html',
+          id: 8,
+          img: '/people11.png',
+          name: 'Mayumi',
+          title: 'Founder of PiBo',
+          desc: 'Mayumi believes early education is the most important yet often overlooked education sector in Indonesia. Combined with her passion for visual design, she combined education & content to be accessible for parents and kids anytime, anywhere.',
+          link: 'https://www.linkedin.com/in/mayumi-haryoto-945213190/',
         },
       ],
     }
@@ -277,6 +238,35 @@ export default {
       ],
     }
   },
-  methods: {},
+  methods: {
+    pickQuiz(index, value) {
+      Vue.set(this.answer, index, value)
+      setTimeout(() => {
+        Vue.set(this.hiddenQestion, index, 'hide')
+        if (this.hiddenQestion[this.question.length - 1] === 'hide') {
+          this.result = true
+        }
+      }, 1000)
+    },
+    resetTest() {
+      this.answer = []
+      this.hiddenQestion = []
+      this.result = false
+    },
+    quizBack(index) {
+      Vue.set(this.hiddenQestion, index - 1, null)
+    },
+    showQuiz() {
+      this.quiz = true
+    },
+    scrollToElement(val) {
+      const el = this.$el.querySelector(val)
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
+    },
+  },
 }
 </script>

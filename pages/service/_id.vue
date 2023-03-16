@@ -528,7 +528,9 @@
         <v-row>
           <v-col md="5">
             <h3>Ready to take your business to another level?</h3>
-            <a href=""><img src="/wa.png" alt="" /> Consult Now</a>
+            <a href="http://wa.link/pmub9a" target="_blank"
+              ><img src="/wa.png" alt="" /> Consult Now</a
+            >
           </v-col>
         </v-row>
         <div
@@ -544,11 +546,11 @@
             <h2 class="title-service text-center">
               Explore Our Other Services
             </h2>
-            <a href="/new/service/finance">Financal & Tax</a>
-            <a href="/new/service/content-design">Content & Design</a>
-            <a href="/new/service/human-resources">Human Resources</a>
-            <a href="/new/service/impact-management">Impact Management</a>
-            <a href="/new/service/fundraising-preparation"
+            <a href="/service/finance">Financal & Tax</a>
+            <a href="/service/content-design">Content & Design</a>
+            <a href="/service/human-resources">Human Resources</a>
+            <a href="/service/impact-management">Impact Management</a>
+            <a href="/service/fundraising-preparation"
               >Fundraising Preparation</a
             >
           </v-col>
@@ -586,7 +588,7 @@ export default {
   },
   head() {
     return {
-      title: 'Kolaborasi.co',
+      title: 'Kolaborasi.co | Service',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
@@ -595,7 +597,11 @@ export default {
           content:
             'Empowering HYPER Founders to build enduring great business that influence positive change for humanity.',
         },
-        { hid: 'og:title', name: 'og:title', content: 'Kolaborasi.co' },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Kolaborasi.co | Service',
+        },
         {
           hid: 'keywords',
           name: 'keywords',

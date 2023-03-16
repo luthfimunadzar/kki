@@ -1,195 +1,157 @@
 <template>
   <div>
-    <div class="hero">
+    <div class="hero-new">
+      <div class="wrap">
+        <h1>Best Partner for Founders</h1>
+        <p>
+          Empowering founders to build enduring great <br />
+          business that inﬂuence positive change for humanity.
+        </p>
+      </div>
+      <a
+        href="javascript:void(0);"
+        class="scroll-bot"
+        @click="scrollToElement('#growth')"
+        ><img src="/arrow-bot.png" alt=""
+      /></a>
+    </div>
+    <div id="growth" class="growth-new">
       <v-container>
         <v-row>
-          <v-col cols="12" md="10" offset-md="1" class="position-relative">
-            <v-carousel
-              :hide-delimiters="true"
-              :show-arrows="false"
-              :cycle="true"
-              interval="6000"
+          <v-col md="6" offset-md="3" cols="12">
+            <h4>We are a venture builder company, offering a better</h4>
+            <h5>way to build & grow your business</h5>
+            <p>
+              Built by founders for founders. We believe founders are the
+              ultimate agents of positive and transformational change across
+              every aspect of our society & economy. Our mission is to spur this
+              progress forward. So every single aspect of our company, every
+              part of our culture, and every decision we take, is designed with
+              the ambition of helping founders succeed.
+            </p>
+            <div class="stat">
+              <h3>9+</h3>
+              <span>Years of experience</span>
+            </div>
+            <div class="stat">
+              <h3>12+</h3>
+              <span>Portfolios supported</span>
+            </div>
+            <div class="stat">
+              <h3>30+</h3>
+              <span>Cofounder involved </span>
+            </div>
+            <div class="stat big">
+              <h3>USD 10 Mio</h3>
+              <span>External investment raised in all portfolios combined</span>
+            </div>
+          </v-col>
+          <v-col cols="12">
+            <div class="portfolio-new">
+              <h5>Our Portfolios</h5>
+              <div class="portfolio-item">
+                <img src="/p1.png" alt="" />
+                <p>Menjadimanusia.id</p>
+                <span>Media + Content</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p2.png" alt="" />
+                <p>Crowde.co</p>
+                <span>Agritech + Fintech</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p3.png" alt="" />
+                <p>Lingkaran.co</p>
+                <span>Edtech</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p4.png" alt="" />
+                <p>@suneatercoven</p>
+                <span>Music Agency</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p5.png" alt="" />
+                <p>Cityplan.id</p>
+                <span>SaaS + Proptech</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p6.png" alt="" />
+                <p>Lexar.id</p>
+                <span>Regulation Technology</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p7.png" alt="" />
+                <p>@tenniskuy</p>
+                <span>Sports Community</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p8.png" alt="" />
+                <p>Brocode Barbershop</p>
+                <span>Lifestyle Service</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p9.png" alt="" />
+                <p>bacapibo.com</p>
+                <span>Edtech + Content</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p10.png" alt="" />
+                <p>Robonesia.id</p>
+                <span>Education + Robotics</span>
+              </div>
+              <div class="portfolio-item">
+                <img src="/p11.png" alt="" />
+                <p>Berdaya.co</p>
+                <span>Village Development</span>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="image-sect-new">
+      <div class="bg" style="background-image: url('/sect1.png')"></div>
+      <v-container>
+        <v-row>
+          <v-col md="6">
+            <h2>Venture Builder</h2>
+            <h5>Building Tomorrow, Today</h5>
+            <p>
+              Our signature program, where we partner up with ambitious founder,
+              the rule-breakers who want to be the leader in their category, the
+              world-shapers who want to fundamentally shift the way we live
+              today. Venture Builder Is a lifetime support for early to product
+              stage startup. We’ll act as a venture partner for your company.
+              Get our skins in the game and work directly with your team within
+              multiple role to achieve your next growth objectives.
+            </p>
+            <nuxt-link to="/venture-builder" class="btn-circle"
+              >Learn More</nuxt-link
             >
-              <v-carousel-item>
-                <h2>
-                  We help founders build their dream through venture building
-                  program
-                </h2>
-              </v-carousel-item>
-              <v-carousel-item>
-                <h2>Unleashing the HYPER in you.</h2>
-              </v-carousel-item>
-              <v-carousel-item>
-                <h2>
-                  We <em class="mr-2">guide</em> founders. <br />
-                  We <em class="mr-2">grow</em> founders.<br />
-                  We <em class="mr-2">work</em> with founders.
-                </h2>
-              </v-carousel-item>
-            </v-carousel>
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <div class="quiz-wrap">
+    <div class="image-sect-new reverse">
+      <div class="bg" style="background-image: url('/sect2.png')"></div>
       <v-container>
         <v-row>
-          <v-col md="10" offset-md="1" cols="12">
-            <nuxt-link class="go-quiz" to="/quiz">
-              <p>Do you have what it takes to be a HYPER Founder?</p>
-              <span>Start the Quiz!</span>
-            </nuxt-link>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <div class="hyper-wrap">
-      <v-container>
-        <v-row>
-          <v-col md="10" offset-md="1" cols="12">
-            <h3>What is HYPER Founder?</h3>
-            <v-tabs v-model="tab" align-with-title>
-              <v-tab v-for="item in tabItems" :key="item">
-                {{ item }}
-              </v-tab>
-            </v-tabs>
-
-            <v-tabs-items v-model="tab">
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-text>
-                    <h5>High Conviction</h5>
-                    <p>
-                      High Conviction founders are willing to take risks, make
-                      tough decisions and go the distance to the company's
-                      vision and values. Their conviction also makes them calm
-                      in facing problems, faithfully advance through each
-                      milestone, and firmly believe in the process.
-                    </p>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-text>
-                    <h5 class="blue">Youthful Spirit</h5>
-                    <p>
-                      Age is just a number. Founders with youthful spirit are
-                      always eager to learn something new, always open-minded,
-                      can keep things fun, and know when to be playful. Such
-                      demeanors will likely make people more open to them,
-                      making the team can safely express themselves.
-                    </p>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-text>
-                    <h5 class="cyan">Persuasive Leadership</h5>
-                    <p>
-                      With the charisma to “move” people, the persuasive leader
-                      is not necessarily the most skillful or the most senior of
-                      the team. Through many or little words, the founder is
-                      able to communicate their belief and messages in ways that
-                      inspire action, invoke spirit, and even rally support.
-                    </p>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-text>
-                    <h5 class="yellow">Entrepreneurial</h5>
-                    <p>
-                      With high initiative and ability to see opportunities in
-                      various situations, Entrepreneurial founders focus on
-                      multiplying values through deep understanding of the
-                      industry. Entrepreneurial founders are alo resourceful,
-                      able to survive in dire situations, and know when to rely
-                      on a team.
-                    </p>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-text>
-                    <h5 class="green">Rational</h5>
-                    <p>
-                      Foresee the future, act for the present. With a solid grip
-                      on reality and analytical thinking, Rational founders can
-                      break down their vision into actionable tasks. They know
-                      the importance of building the fundamentals and solve
-                      current problems before focusing on the future they are
-                      trying to build.
-                    </p>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-            </v-tabs-items>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <div class="founder-wrap">
-      <v-container>
-        <v-row>
-          <v-col md="10" offset-md="1" cols="12" class="pb-0">
-            <h3>Our HYPER Founders</h3>
-            <v-carousel :show-arrows="false">
-              <v-carousel-item v-for="item in founders" :key="item.id">
-                <h4 class="mb-1">{{ item.name }}</h4>
-                <p class="font-weight-bold">{{ item.title }}</p>
-                <p>{{ item.desc }}</p>
-                <a :href="item.link" target="_blank">Founders Proﬁle</a>
-                <div class="clearfix"></div>
-                <img :src="item.img" alt="" />
-              </v-carousel-item>
-            </v-carousel>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <div class="program-wrap">
-      <v-container>
-        <v-row>
-          <v-col md="10" offset-md="1" cols="12" class="pb-0">
-            <h3>Programs & Services</h3>
-            <v-row>
-              <v-col sm="6" cols="12">
-                <div class="item-programs">
-                  <h4>Join Hyper Founder Program</h4>
-                  <img src="/what-we-do.png" alt="" />
-                  <p>
-                    We act as a venture partners providing mentorship, network
-                    support & work assistance to help you get things done in
-                    exchange of a small percentage of equity for a lifetime
-                    support.
-                  </p>
-                </div>
-              </v-col>
-              <v-col sm="6" cols="12">
-                <div class="item-programs w-border">
-                  <h4>Get Our Service</h4>
-                  <img src="/what-will-you-get.png" alt="" />
-                  <p>
-                    We provide professional agency service tailored to early
-                    stage business in Creative Marketing, Back Office &
-                    Financial Assistance with affordable monthly subscription.
-                  </p>
-                </div>
-              </v-col>
-              <v-col cols="12">
-                <div class="text-center mt-8">
-                  <nuxt-link
-                    class="btn btn-primary d-inline-block red"
-                    to="/programs"
-                    ><span>All Programs & Services</span>
-                  </nuxt-link>
-                </div>
-              </v-col>
-            </v-row>
+          <v-col md="6" offset-md="6">
+            <h2>Venture Service</h2>
+            <h5>Get Things Done, Better</h5>
+            <p>
+              Our signature service, where we provide a Business Process
+              Outsourcing (BPO) service tailored to early stage business. With
+              monthly subscription scheme, you can get professional services in
+              Marketing, Finance, HR, Legal, Fundraising & Impact Management
+              tailored to your business needs. With the best practices gathered
+              from our 10 years of experiences handling businesses in various
+              industries, we know exactly what needs to be done, and how to do
+              it better & faster.
+            </p>
+            <nuxt-link to="/venture-service" class="btn-circle"
+              >Learn More</nuxt-link
+            >
           </v-col>
         </v-row>
       </v-container>
@@ -201,6 +163,7 @@
 import Vue from 'vue'
 
 export default {
+  layout: 'new',
   data() {
     return {
       result: false,
@@ -350,6 +313,14 @@ export default {
     },
     showQuiz() {
       this.quiz = true
+    },
+    scrollToElement(val) {
+      const el = this.$el.querySelector(val)
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
     },
   },
 }

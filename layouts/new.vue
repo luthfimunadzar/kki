@@ -26,12 +26,12 @@
       </ul>
     </v-navigation-drawer>
     <div class="header-new">
-      <nuxt-link to="/new">
+      <nuxt-link to="/">
         <img src="/logo.png" alt="" class="logo" />
       </nuxt-link>
       <ul class="main-menu">
         <li>
-          <nuxt-link to="/new">Home</nuxt-link>
+          <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
           <v-menu offset-y content-class="dropdown-menu-new">
@@ -45,12 +45,10 @@
               <v-row>
                 <v-col cols="12">
                   <v-list dark>
-                    <v-list-item link to="/new/venture-builder">
+                    <v-list-item link to="/venture-builder">
                       Venture Builder
                     </v-list-item>
-                    <v-list-item link to="/new/portfolio">
-                      Portofolio
-                    </v-list-item>
+                    <v-list-item link to="/portfolio"> Portofolio </v-list-item>
                   </v-list>
                 </v-col>
               </v-row>
@@ -69,19 +67,19 @@
               <v-row>
                 <v-col cols="12">
                   <v-list dark>
-                    <v-list-item link to="/new/service/finance">
+                    <v-list-item link to="/service/finance">
                       Financial & Tax
                     </v-list-item>
-                    <v-list-item link to="/new/service/content-design">
+                    <v-list-item link to="/service/content-design">
                       Content & Design
                     </v-list-item>
-                    <v-list-item link to="/new/service/human-resources">
+                    <v-list-item link to="/service/human-resources">
                       Human Resources
                     </v-list-item>
-                    <v-list-item link to="/new/service/impact-management">
+                    <v-list-item link to="/service/impact-management">
                       Impact Management
                     </v-list-item>
-                    <v-list-item link to="/new/service/fundraising-preparation">
+                    <v-list-item link to="/service/fundraising-preparation">
                       Fundraising Preparation
                     </v-list-item>
                   </v-list></v-col
@@ -102,10 +100,8 @@
               <v-row>
                 <v-col cols="12">
                   <v-list dark>
-                    <v-list-item link to="/new/manifesto">
-                      Manifesto
-                    </v-list-item>
-                    <v-list-item link to="/new/team"> Team </v-list-item>
+                    <v-list-item link to="/manifesto"> Manifesto </v-list-item>
+                    <v-list-item link to="/team"> Team </v-list-item>
                   </v-list></v-col
                 >
               </v-row>
@@ -123,20 +119,25 @@
     <v-main>
       <nuxt />
     </v-main>
-    <div class="footer-new">
+    <div class="contact-wrap">
       <v-container>
         <v-row>
           <v-col md="10" offset-md="1" cols="12" class="pb-0">
+            <h3>Contact Us</h3>
             <v-row>
               <v-col cols="12" md="6">
-                <h5>Sitemap</h5>
-                <nuxt-link to="" class="sitemap">Home</nuxt-link>
-                <nuxt-link to="" class="sitemap">Builder</nuxt-link>
-                <nuxt-link to="" class="sitemap">Venture Services</nuxt-link>
-                <nuxt-link to="" class="sitemap">About Us</nuxt-link>
-              </v-col>
-              <v-col cols="12" md="6">
-                <h5>Social Media</h5>
+                <h5>Bandung Home Base</h5>
+                <p>Jl. Taman Radio Dalam Raya no 28, Jakarta Selatan</p>
+                <h5>Say something nice</h5>
+                <a href="mailto:contact@kolaborasi.co"
+                  ><v-icon>far fa-envelope</v-icon> Contact@kolaborasi.co</a
+                >
+                <div class="clearfix"></div>
+                <a href="http://wa.link/pmub9a"
+                  ><v-icon>fab fa-whatsapp</v-icon> 087828469295</a
+                >
+
+                <h5 class="mt-4">Social Media</h5>
                 <a href="" class="socmed mr-2">
                   <v-icon> fab fa-linkedin </v-icon>
                 </a>
@@ -146,6 +147,56 @@
                 <a href="" class="socmed">
                   <v-icon> fab fa-twitter </v-icon>
                 </a>
+              </v-col>
+              <v-col cols="12" md="6">
+                <h5>Send Us a Message</h5>
+                <validation-observer ref="observer">
+                  <form id="contactForm" @submit.prevent="submit">
+                    <validation-provider
+                      v-slot="{ errors }"
+                      name="Your Name"
+                      rules="required"
+                    >
+                      <v-text-field
+                        v-model="form.name"
+                        :error-messages="errors"
+                        label="Your Name"
+                        name="name"
+                        required
+                      ></v-text-field>
+                    </validation-provider>
+                    <validation-provider
+                      v-slot="{ errors }"
+                      name="Your Email"
+                      rules="required|email"
+                    >
+                      <v-text-field
+                        v-model="form.email"
+                        :error-messages="errors"
+                        label="Your E-mail"
+                        name="email"
+                        required
+                      ></v-text-field>
+                    </validation-provider>
+                    <validation-provider
+                      v-slot="{ errors }"
+                      name="Your Message"
+                      rules="required"
+                    >
+                      <v-textarea
+                        v-model="form.message"
+                        :error-messages="errors"
+                        label="Your Message"
+                        name="message"
+                        required
+                        auto-grow
+                      ></v-textarea>
+                    </validation-provider>
+                    <button class="btn btn-primary yellow mt-5" type="submit">
+                      <span>Send Message</span>
+                    </button>
+                  </form>
+                </validation-observer>
               </v-col>
             </v-row>
           </v-col>

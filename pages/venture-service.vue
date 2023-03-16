@@ -1,159 +1,209 @@
 <template>
   <div>
-    <div class="hero-new">
-      <div class="wrap">
-        <h1>Best Partner for Founders</h1>
-        <p>
-          Empowering founders to build enduring great <br />
-          business that inﬂuence positive change for humanity.
-        </p>
-      </div>
-      <a
-        href="javascript:void(0);"
-        class="scroll-bot"
-        @click="scrollToElement('#growth')"
-        ><img src="/arrow-bot.png" alt=""
-      /></a>
-    </div>
-    <div id="growth" class="growth-new">
+    <div class="hero-vb">
       <v-container>
         <v-row>
-          <v-col md="6" offset-md="3" cols="12">
-            <h4>We are a venture builder company, offering a better</h4>
-            <h5>way to build & grow your business</h5>
-            <p>
-              Built by founders for founders. We believe founders are the
-              ultimate agents of positive and transformational change across
-              every aspect of our society & economy. Our mission is to spur this
-              progress forward. So every single aspect of our company, every
-              part of our culture, and every decision we take, is designed with
-              the ambition of helping founders succeed.
-            </p>
-            <div class="stat">
-              <h3>9+</h3>
-              <span>Years of experience</span>
-            </div>
-            <div class="stat">
-              <h3>12+</h3>
-              <span>Portfolios supported</span>
-            </div>
-            <div class="stat">
-              <h3>30+</h3>
-              <span>Cofounder involved </span>
-            </div>
-            <div class="stat big">
-              <h3>USD 10 Mio</h3>
-              <span>External investment raised in all portfolios combined</span>
+          <v-col cols="12" md="5" offset-md="1" class="py-0">
+            <div class="desc-fly first">
+              <span>Hassle Free</span>
+              <p>
+                By outsourcing your management function to us, you can focus
+                your resources & time to the most important aspect of your
+                business : Your product & your customer
+              </p>
             </div>
           </v-col>
+          <v-col cols="12" md="5" class="py-0 d-flex align-end">
+            <div class="desc-fly second">
+              <span>Outsourcing Service</span>
+              <p>
+                Our experienced team will work side-by-side with your internal
+                team. From planning what to achieve, discussing strategy on how
+                to do it better, to executing it swiftly on day-to-day basis.
+                You’ll get good value for money with subscription based payment.
+              </p>
+            </div>
+          </v-col>
+          <v-col cols="12" class="py-0">
+            <div class="red-slogan">
+              <p>Venture Service</p>
+              Hassle Free <span class="underline">Outsourcing Service</span> to
+              Get Things Done Better
+            </div>
+          </v-col>
+          <v-col cols="12" md="6" offset-md="3" class="py-0">
+            <div class="desc-fly third">
+              <span>Get things done better </span>
+              <p>
+                Stop worrying about the low-standard output from your employee.
+                With 10+ years of experience, our team goes beyond a good
+                execution, but will also set up a strong foundation & robust
+                system for each management function that we handle
+              </p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="vb-for">
+      <h2>Who is Venture Service for?</h2>
+      <v-container>
+        <v-row>
+          <v-col cols="12" md="6" class="px-16">
+            <img src="/vb1.png" alt="" />
+            <h4 class="mb-3">Starting up with small-sized team</h4>
+            <p>
+              When your employee is &lt;20 people, your team should focus on
+              building great product & delivering to customer. You can outsource
+              other activities to us and get better-than-hire performance &
+              working output.
+            </p>
+          </v-col>
+          <v-col cols="12" md="6" class="px-16">
+            <img src="/vb2.png" alt="" />
+            <h4 class="mb-3">Growth focus medium-sized team</h4>
+            <p>
+              When your organisation grow to 50+ team, your focus will be on the
+              growth & development. You can outsource some function to us so we
+              can set up the system & strategy for other function to support
+              your overall company growth.
+            </p>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="evo">
+      <v-container>
+        <v-row>
           <v-col cols="12">
-            <div class="portfolio-new">
-              <h5>Our Portfolios</h5>
-              <div class="portfolio-item">
-                <img src="/p1.png" alt="" />
-                <p>Menjadimanusia.id</p>
-                <span>Media + Content</span>
+            <h2>How does it works?</h2>
+            <div class="timeline five">
+              <div class="timeline-item">
+                <h6>Stage 1</h6>
+                <h4>Strategize & Plan</h4>
+
+                <p>
+                  Discuss what your overall business objectives, and define your
+                  expectations on what needs to be done in the function you want
+                  to outsource
+                </p>
               </div>
-              <div class="portfolio-item">
-                <img src="/p2.png" alt="" />
-                <p>Crowde.co</p>
-                <span>Agritech + Fintech</span>
+              <div class="timeline-item right first">
+                <h6>Stage 2</h6>
+                <h4>Decide & Define Task</h4>
+
+                <p>
+                  We will propose a set of task & activities to be done, and
+                  then we will discuss & define which one the most suitable for
+                  your business.
+                </p>
               </div>
-              <div class="portfolio-item">
-                <img src="/p3.png" alt="" />
-                <p>Lingkaran.co</p>
-                <span>Edtech</span>
+              <div class="timeline-item">
+                <h6>Stage 3</h6>
+                <h4>Track & Manage Progress</h4>
+
+                <p>
+                  We will put all activities on a project management tools, so
+                  you can see which task is on progress and all the detailed
+                  timeline
+                </p>
               </div>
-              <div class="portfolio-item">
-                <img src="/p4.png" alt="" />
-                <p>@suneatercoven</p>
-                <span>Music Agency</span>
+              <div class="timeline-item right second">
+                <h6>Stage 4</h6>
+                <h4>Deliver & Coordinate</h4>
+
+                <p>
+                  When the task is completed, you’ll be notified and every week
+                  you can sync up with our team to review & approve the task
+                </p>
               </div>
-              <div class="portfolio-item">
-                <img src="/p5.png" alt="" />
-                <p>Cityplan.id</p>
-                <span>SaaS + Proptech</span>
-              </div>
-              <div class="portfolio-item">
-                <img src="/p6.png" alt="" />
-                <p>Lexar.id</p>
-                <span>Regulation Technology</span>
-              </div>
-              <div class="portfolio-item">
-                <img src="/p7.png" alt="" />
-                <p>@tenniskuy</p>
-                <span>Sports Community</span>
-              </div>
-              <div class="portfolio-item">
-                <img src="/p8.png" alt="" />
-                <p>Brocode Barbershop</p>
-                <span>Lifestyle Service</span>
-              </div>
-              <div class="portfolio-item">
-                <img src="/p9.png" alt="" />
-                <p>bacapibo.com</p>
-                <span>Edtech + Content</span>
-              </div>
-              <div class="portfolio-item">
-                <img src="/p10.png" alt="" />
-                <p>Robonesia.id</p>
-                <span>Education + Robotics</span>
-              </div>
-              <div class="portfolio-item">
-                <img src="/p11.png" alt="" />
-                <p>Berdaya.co</p>
-                <span>Village Development</span>
+              <div class="timeline-item mb-0">
+                <h6>Stage 5</h6>
+                <h4>Evaluate & Adjust</h4>
+
+                <p>
+                  At the end of every month, we will evaluate not only the work
+                  output, but also the workin approach and find a better way to
+                  improve it.
+                </p>
               </div>
             </div>
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <div class="image-sect-new">
-      <div class="bg" style="background-image: url('/sect1.png')"></div>
+    <div class="other-service">
       <v-container>
         <v-row>
-          <v-col md="6">
-            <h2>Venture Builder</h2>
-            <h5>Building Tomorrow, Today</h5>
-            <p>
-              Our signature program, where we partner up with ambitious founder,
-              the rule-breakers who want to be the leader in their category, the
-              world-shapers who want to fundamentally shift the way we live
-              today. Venture Builder Is a lifetime support for early to product
-              stage startup. We’ll act as a venture partner for your company.
-              Get our skins in the game and work directly with your team within
-              multiple role to achieve your next growth objectives.
-            </p>
-            <nuxt-link to="/new/venture-builder" class="btn-circle"
-              >Learn More</nuxt-link
+          <v-col cols="10" offset="1">
+            <h2 class="title-service text-center">
+              Function & Activities to Outsource
+            </h2>
+            <a href="/service/finance">Financal & Tax</a>
+            <a href="/service/content-design">Content & Design</a>
+            <a href="/service/human-resources">Human Resources</a>
+            <a href="/service/impact-management">Impact Management</a>
+            <a href="/service/fundraising-preparation"
+              >Fundraising Preparation</a
             >
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <div class="image-sect-new reverse">
-      <div class="bg" style="background-image: url('/sect2.png')"></div>
+    <div class="vb-ora">
+      <h2>Benefit of outsourcing</h2>
       <v-container>
         <v-row>
-          <v-col md="6" offset-md="6">
-            <h2>Venture Service</h2>
-            <h5>Get Things Done, Better</h5>
-            <p>
-              Our signature service, where we provide a Business Process
-              Outsourcing (BPO) service tailored to early stage business. With
-              monthly subscription scheme, you can get professional services in
-              Marketing, Finance, HR, Legal, Fundraising & Impact Management
-              tailored to your business needs. With the best practices gathered
-              from our 10 years of experiences handling businesses in various
-              industries, we know exactly what needs to be done, and how to do
-              it better & faster.
-            </p>
-            <nuxt-link to="/new/venture-service" class="btn-circle"
-              >Learn More</nuxt-link
+          <v-col cols="12" md="4">
+            <div class="ora-item">
+              <span class="numeric">1</span>
+              <img src="/ra1.png" alt="" />
+              <h4>Value for Money</h4>
+              <p>
+                Pay with the budget of fresh graduates, but get a team with 10+
+                years experiences in handling startup.
+              </p>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div class="ora-item">
+              <span class="numeric">2</span>
+              <img src="/ra2.png" alt="" />
+              <h4>Reliable</h4>
+              <p>
+                No sick days, no paid leaves, no bad-mood day. Our worker
+                consist of a professional team, that will always ready on duty
+                to deliver high quality work.
+              </p>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div class="ora-item">
+              <span class="numeric">3</span>
+              <img src="/ra2.png" alt="" />
+              <h4>Flexible</h4>
+              <p>
+                When the workload increase, you don’t have to hire new person!
+                Just top up your subscription package and get more done. Vica
+                versa, when the workload decrease, you can shift back to cheaper
+                package
+              </p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="contact-new">
+      <v-container>
+        <v-row>
+          <v-col md="5">
+            <h3>Ready to take your business to another level?</h3>
+            <a href="http://wa.link/pmub9a" target="_blank"
+              ><img src="/wa.png" alt="" /> Consult Now</a
             >
           </v-col>
         </v-row>
+        <div class="image-wrap"></div>
       </v-container>
     </div>
   </div>
@@ -268,7 +318,7 @@ export default {
   },
   head() {
     return {
-      title: 'Kolaborasi.co',
+      title: 'Kolaborasi.co | Venture Service',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
@@ -277,7 +327,11 @@ export default {
           content:
             'Empowering HYPER Founders to build enduring great business that influence positive change for humanity.',
         },
-        { hid: 'og:title', name: 'og:title', content: 'Kolaborasi.co' },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Kolaborasi.co | Venture Service',
+        },
         {
           hid: 'keywords',
           name: 'keywords',

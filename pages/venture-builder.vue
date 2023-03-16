@@ -341,7 +341,9 @@
         <v-row>
           <v-col md="5">
             <h3>Ready to take your business to another level?</h3>
-            <a href=""><img src="/wa.png" alt="" /> Consult Now</a>
+            <a href="http://wa.link/pmub9a" target="_blank"
+              ><img src="/wa.png" alt="" /> Consult Now</a
+            >
           </v-col>
         </v-row>
         <div class="image-wrap"></div>
@@ -459,7 +461,7 @@ export default {
   },
   head() {
     return {
-      title: 'Kolaborasi.co',
+      title: 'Kolaborasi.co | Venture Builder',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
@@ -468,7 +470,11 @@ export default {
           content:
             'Empowering HYPER Founders to build enduring great business that influence positive change for humanity.',
         },
-        { hid: 'og:title', name: 'og:title', content: 'Kolaborasi.co' },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Kolaborasi.co | Venture Builder',
+        },
         {
           hid: 'keywords',
           name: 'keywords',
