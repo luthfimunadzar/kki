@@ -546,12 +546,20 @@
             <h2 class="title-service text-center">
               Explore Our Other Services
             </h2>
-            <a href="/service/finance">Financal & Tax</a>
-            <a href="/service/content-design">Content & Design</a>
-            <a href="/service/human-resources">Human Resources</a>
-            <a href="/service/impact-management">Impact Management</a>
+            <a href="/service/finance"
+              ><img src="/ft.png" alt="" /> Financal & Tax</a
+            >
+            <a href="/service/content-design"
+              ><img src="/cd.png" alt="" /> Content & Design</a
+            >
+            <a href="/service/human-resources"
+              ><img src="/hr.png" alt="" /> Human Resources</a
+            >
+            <a href="/service/impact-management"
+              ><img src="/im.png" alt="" /> Impact Management</a
+            >
             <a href="/service/fundraising-preparation"
-              >Fundraising Preparation</a
+              ><img src="/fp.png" alt="" /> Fundraising Preparation</a
             >
           </v-col>
         </v-row>
