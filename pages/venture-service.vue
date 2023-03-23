@@ -1,9 +1,16 @@
 <template>
   <div>
-    <div class="hero-vb">
+    <div class="hero-vb blue-version">
       <v-container>
         <v-row>
-          <v-col cols="12" md="5" offset-md="1" class="py-0">
+          <v-col cols="12" order-md="3" class="py-0">
+            <div class="red-slogan">
+              <p>Venture Service</p>
+              Hassle Free <span class="underline">Outsourcing Service</span> to
+              Get Things Done Better
+            </div>
+          </v-col>
+          <v-col cols="12" md="5" offset-md="1" order-md="1" class="py-0">
             <div class="desc-fly first">
               <span>Hassle Free</span>
               <p>
@@ -13,7 +20,7 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="12" md="5" class="py-0 d-flex align-end">
+          <v-col cols="12" md="5" order-md="2" class="py-0 d-flex align-end">
             <div class="desc-fly second">
               <span>Outsourcing Service</span>
               <p>
@@ -24,14 +31,7 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="12" class="py-0">
-            <div class="red-slogan">
-              <p>Venture Service</p>
-              Hassle Free <span class="underline">Outsourcing Service</span> to
-              Get Things Done Better
-            </div>
-          </v-col>
-          <v-col cols="12" md="6" offset-md="3" class="py-0">
+          <v-col cols="12" md="6" offset-md="3" order-md="4" class="py-0">
             <div class="desc-fly third">
               <span>Get things done better </span>
               <p>
@@ -45,7 +45,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="vb-for">
+    <div class="vb-for blue-version">
       <h2>Who is Venture Service for?</h2>
       <v-container>
         <v-row>
@@ -72,7 +72,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="evo">
+    <div class="evo blue-version">
       <v-container>
         <v-row>
           <v-col cols="12">
@@ -158,7 +158,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="vb-ora">
+    <div class="vb-ora blue-version">
       <h2>Benefit of outsourcing</h2>
       <v-container>
         <v-row>
@@ -188,7 +188,7 @@
           <v-col cols="12" md="4">
             <div class="ora-item">
               <span class="numeric">3</span>
-              <img src="/ra2.png" alt="" />
+              <img src="/ra1.png" alt="" />
               <h4>Flexible</h4>
               <p>
                 When the workload increase, you don’t have to hire new person!

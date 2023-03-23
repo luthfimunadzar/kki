@@ -1,27 +1,43 @@
 <template>
-  <v-app dark>
-    <v-navigation-drawer v-model="drawer" left absolute temporary>
+  <v-app dark class="overflow-x-hidden">
+    <v-navigation-drawer v-model="drawer" right absolute temporary>
       <ul class="main-menu-sidebar">
         <li>
           <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/programs">Programs & Services</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/telepath">Telepath</nuxt-link>
+          <nuxt-link to="/venture-builder">Venture Builder</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/portfolio">Portofolio</nuxt-link>
         </li>
         <li>
+          <nuxt-link to="/service/finance">Financial & Tax</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/service/content-design">Content & Design</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/service/human-resources">Human Resources</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/service/impact-management"
+            >Impact Management</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/service/fundraising-preparation"
+            >Fundraising Preparation</nuxt-link
+          >
+        </li>
+        <li>
           <nuxt-link to="/manifesto">Manifesto</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/profile">Proﬁle</nuxt-link>
+          <nuxt-link to="/team">Team</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact">Contact Us</nuxt-link>
+          <nuxt-link to="">Contact Us</nuxt-link>
         </li>
       </ul>
     </v-navigation-drawer>
@@ -29,6 +45,9 @@
       <nuxt-link to="/">
         <img src="/logo.png" alt="" class="logo" />
       </nuxt-link>
+      <a class="toggle" @click.stop="drawer = !drawer">
+        <v-icon> mdi-menu </v-icon>
+      </a>
       <ul class="main-menu">
         <li>
           <nuxt-link to="/">Home</nuxt-link>

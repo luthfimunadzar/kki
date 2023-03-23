@@ -3,28 +3,7 @@
     <div class="hero-vb">
       <v-container>
         <v-row>
-          <v-col cols="12" md="5" offset-md="1" class="py-0">
-            <div class="desc-fly first">
-              <span>Venture Building SUPPORT</span>
-              <p>
-                We sharpen our method backed by our 9+ years of experiences in
-                venture building +15 ventures in various industries, generating
-                millions in revenues while attracting another millions of
-                investment along the way.
-              </p>
-            </div>
-          </v-col>
-          <v-col cols="12" md="5" class="py-0 d-flex align-end">
-            <div class="desc-fly second">
-              <span>Backing the HYPER Founder</span>
-              <p>
-                We improve the odds of success by leveraging founder expertise &
-                experience then combine it with our pools of learning &
-                resources in all of our business portfolios.
-              </p>
-            </div>
-          </v-col>
-          <v-col cols="12" class="py-0">
+          <v-col cols="12" order-md="3" class="py-0">
             <div class="red-slogan">
               <p>Venture Builder</p>
               <span class="underline">Supporting</span>
@@ -36,7 +15,28 @@
               ventures
             </div>
           </v-col>
-          <v-col cols="12" md="5" offset-md="1" class="py-0">
+          <v-col cols="12" md="5" offset-md="1" order-md="1" class="py-0">
+            <div class="desc-fly first">
+              <span>Venture Building SUPPORT</span>
+              <p>
+                We sharpen our method backed by our 9+ years of experiences in
+                venture building +15 ventures in various industries, generating
+                millions in revenues while attracting another millions of
+                investment along the way.
+              </p>
+            </div>
+          </v-col>
+          <v-col cols="12" md="5" order-md="2" class="py-0 d-flex align-end">
+            <div class="desc-fly second">
+              <span>Backing the HYPER Founder</span>
+              <p>
+                We improve the odds of success by leveraging founder expertise &
+                experience then combine it with our pools of learning &
+                resources in all of our business portfolios.
+              </p>
+            </div>
+          </v-col>
+          <v-col cols="12" md="5" offset-md="1" order-md="4" class="py-0">
             <div class="desc-fly third">
               <span>Risk ALIGNED Approaches</span>
               <p>
@@ -47,7 +47,7 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="12" md="5" class="py-0">
+          <v-col cols="12" md="5" order-md="5" class="py-0">
             <div class="desc-fly four">
               <span>INVESTABLE Venture</span>
               <p>
@@ -64,7 +64,7 @@
       <h2>Who is Venture Builder for?</h2>
       <v-container>
         <v-row>
-          <v-col cols="12" md="6" class="px-16">
+          <v-col cols="12" md="6" class="px-md-16">
             <img src="/vb1.png" alt="" />
             <h4>Idea - Prototype</h4>
             <h6>Stage Startup Founders</h6>
@@ -76,7 +76,7 @@
               like-minded founders, and a clear pathway to launch your business.
             </p>
           </v-col>
-          <v-col cols="12" md="6" class="px-16">
+          <v-col cols="12" md="6" class="px-md-16">
             <img src="/vb2.png" alt="" />
             <h4>Product to Growth</h4>
             <h6>Stage Startup Founders</h6>
@@ -196,7 +196,7 @@
     <div class="growth-new">
       <v-container>
         <v-row>
-          <v-col md="6" offset-md="3" cols="12">
+          <v-col sm="8" md="6" offset-sm="2" offset-md="3" cols="12">
             <h4>We are a venture builder company, offering a better</h4>
             <h5>way to build & grow your business</h5>
             <p>

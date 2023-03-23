@@ -1,5 +1,9 @@
 .service-head-new{
   padding: 140px 0;
+  @media screen and (max-width: 991px) {
+    padding: 30px 0;
+    text-align: center;
+  }
   .image-circle{
     width: 360px;
     height: 360px;
@@ -7,6 +11,11 @@
     background-color: #2d47c9;
     background-size: contain;
     background-position: center center;
+    @media screen and (max-width: 991px) {
+      width: 280px;
+      height: 280px;
+      margin: 0 auto;
+    }
     &.cd{
       background-color: #eb6619;
     }
@@ -24,6 +33,9 @@
     font-size: 16px;
     color: #1e1e1e;
     margin-bottom: 20px;
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -33,11 +45,18 @@
   font-weight: 400;
   margin-bottom: 20px;
   color: #1e1e1e;
+  @media screen and (max-width: 991px) {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
 }
 
 .service-business{
   padding: 60px 0;
   position: relative;
+  @media screen and (max-width: 991px) {
+    padding: 30px 0;
+  }
   &::before{
     content: "";
     width: 100%;
@@ -50,6 +69,10 @@
     background-image: linear-gradient(to bottom, #2d47c9, #173c8f);
     border-bottom-left-radius: 60%;
     border-bottom-right-radius: 60%;
+    @media screen and (max-width: 599px) {
+      border-bottom-left-radius: 0%;
+      border-bottom-right-radius: 0%;
+    }
   }
   .image-circle{
     position: relative;
@@ -61,6 +84,10 @@
     background-color: #1e1e1e;
     background-size: contain;
     background-position: center center;
+    @media screen and (max-width: 991px) {
+      width: 160px;
+      height: 160px;
+    }
   }
   .title-service{
     position: relative;
@@ -74,18 +101,27 @@
     border-radius: 25px;
     transition: all 0.3s ease;
     background-color: #969696;
+    @media screen and (max-width: 991px) {
+      padding: 10px 20px;
+    }
     h4{
       font-size: 24px;
       color: #FFF;
       margin-bottom: 0;
       font-family: $j;
       font-weight: normal;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+      }
     }
     p{
       font-size: 18px;
       color: #1e1e1e;
       display: none;
       margin-bottom: 0;
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+      }
     }
     &.active{
       background-color: #FFF;
@@ -117,6 +153,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media screen and (max-width: 991px) {
+      padding: 20px;
+    }
     .image-circle{
       background-color: #2d47c9;
       border-radius: 50%;
@@ -182,7 +221,10 @@
 }
 
 .subscribe{
-  padding: 60px;
+  padding: 60px 0;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
   .subscribe-item{
     padding-left: 75px;
     margin-bottom: 30px;
@@ -216,8 +258,11 @@
 }
 
 .price-new{
-  padding: 60px;
+  padding: 60px 0;
   background-image: linear-gradient(to bottom, #2d47c9, #173c8f);
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
   .subtitle-service{
     color: #FFF;
     font-size: 16px;
@@ -238,12 +283,18 @@
       justify-content: center;
       flex-direction: column;
       text-align: center;
+      @media screen and (max-width: 991px) {
+        height: 120px;
+      }
       h5{
         font-family: $j;
         font-size: 18px;
         font-weight: 400;
         margin-bottom: 0;
         color: #1e1e1e;
+        @media screen and (max-width: 991px) {
+          font-size: 16px;
+        }
       }
       h3{
         font-family: $j;
@@ -251,6 +302,9 @@
         font-weight: 400;
         margin-bottom: 0;
         color: #1e1e1e;
+        @media screen and (max-width: 991px) {
+          font-size: 22px;
+        }
       }
       &:after{
         content: "";
@@ -273,6 +327,9 @@
       margin-bottom: 80px;
       display: block;
       padding: 0 15px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 30px;
+      }
       li{
         list-style: none;
         font-size: 18px;
@@ -342,12 +399,25 @@
   padding: 125px 0;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 991px) {
+    text-align: center;
+    padding: 30px 0 300px 0;
+  }
   h3{
     color: #FFF;
     font-weight: normal;
     font-size: 28px;
     font-family: $j;
     margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    @media screen and (max-width: 991px) {
+      width: 50%;
+      margin: 0 auto 15px auto;
+    }
+    @media screen and (max-width: 599px) {
+      width: 90%;
+    }
   }
   a{
     border: none;
@@ -359,6 +429,8 @@
     color: #FFF !important;
     text-decoration: none;
     background-color: #128C7E;
+    position: relative;
+    z-index: 2;
     img{
       margin-right: 10px;
       display: inline-block;
@@ -375,15 +447,29 @@
     bottom: -150px;
     background-size: contain;
     background-position: center bottom;
+    z-index: 1;
+    @media screen and (max-width: 1199px) {
+      right: 30px;
+    }
+    @media screen and (max-width: 991px) {
+      width: 400px;
+      height: 400px;
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 .other-service{
   padding: 60px 0;
   text-align: center;
+  @media screen and (max-width: 991px) {
+    padding: 30px 0;
+  }
   a{
     display: inline-block;
-    margin: 0 10px 15px 10px  ;
+    margin: 0 10px 15px 10px;
     text-decoration: none;
     border: 1px solid #1e1e1e;
     border-radius: 40px;
@@ -391,6 +477,9 @@
     font-size: 18px;
     color: #1e1e1e !important;
     background-color: transparent;
+    @media screen and (max-width: 991px) {
+      padding: 10px 25px;
+    }
     img{
       margin-right: 10px;
       display: inline-block;

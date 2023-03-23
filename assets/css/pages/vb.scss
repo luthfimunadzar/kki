@@ -1,8 +1,14 @@
 .hero-vb{
   padding: 50px 0;
+  @media screen and (max-width: 991px) {
+    padding: 20px 0;
+  }
   .desc-fly{
     padding-left: 10px;
     border-left: 1px solid rgba($color: #1e1e1e, $alpha: 0.4);
+    @media screen and (max-width: 991px) {
+      margin-bottom: 15px;
+    }
     span{
       color: $pri;
       font-size: 16px;
@@ -13,18 +19,33 @@
       font-size: 16px;
       display: block; 
       color: #1e1e1e;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 0px;
+      }
     }
     &.first{
       padding-bottom: 60px;
+      @media screen and (max-width: 991px) {
+        padding-bottom: 0px;
+      }
     }
     &.second{
       padding-bottom: 30px;
+      @media screen and (max-width: 991px) {
+        padding-bottom: 0px;
+      }
     }
     &.third{
       padding-top: 30px;
+      @media screen and (max-width: 991px) {
+        padding-top: 0px;
+      }
     }
     &.four{
       padding-top: 70px;
+      @media screen and (max-width: 991px) {
+        padding-top: 0px;
+      }
     }
   } 
   .red-slogan{
@@ -35,14 +56,32 @@
     font-size: 27px;
     font-family: $j;
     text-align: center;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 25px;
+      font-size: 22px;
+      padding: 25px 30px;
+    }
     p{
       font-size: 16px;
       color: #FFF;
       text-align: center;
       margin-bottom: 0;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
     }
     .underline{
       text-decoration: underline;
+    }
+  }
+  &.blue-version{
+    .desc-fly{
+      span{
+        color: #09a5a2;
+      } 
+    }
+    .red-slogan{
+      background-color: #09a5a2;
     }
   }
 }
@@ -50,6 +89,9 @@
 .vb-for{
   padding: 60px 0;
   position: relative;
+  @media screen and (max-width: 991px) {
+    padding: 30px 0;
+  }
   &::before{
     content: "";
     position: absolute;
@@ -61,6 +103,12 @@
     background-size: cover;
     background-position: center center;
     background-image: url('/vb-bg1.png');
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      height: 50%;
+      right: 0;
+      bottom: auto;
+    }
   }
   &::after{
     content: "";
@@ -73,6 +121,12 @@
     background-size: cover;
     background-position: center center;
     background-image: url('/vb-bg2.png');
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      height: 50%;
+      top: auto;
+      right: 0;
+    }
   }
   h2{
     text-align: center;
@@ -83,6 +137,10 @@
     margin-bottom: 25px;
     font-size: 36px;
     font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
   }
   h4{
     font-size: 36px;
@@ -92,6 +150,9 @@
     position: relative;
     z-index: 2;
     color: #1e1e1e;
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+    }
   }
   h6{
     font-size: 24px;
@@ -101,6 +162,10 @@
     position: relative;
     z-index: 2;
     color: #1e1e1e;
+    @media screen and (max-width: 991px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
   }
   p{
     font-size: 16px;
@@ -108,12 +173,27 @@
     position: relative;
     z-index: 2;
     color: #1e1e1e;
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+    }
+  }
+  &.blue-version{
+    h2{
+      color: #09a5a2;
+    }
+    img{
+      filter: invert(41%) sepia(67%) saturate(1668%) hue-rotate(148deg) brightness(94%) contrast(93%);
+    }
   }
 }
 
 .evo{
   position: relative;
   padding: 90px 0 40px 0;
+  @media screen and (max-width: 991px) {
+    padding: 25px 0 20px 0;
+    background-color: #1e1e1e;
+  }
   &::before{
     content: "";
     width: 100%;
@@ -126,6 +206,9 @@
     background-color: #1e1e1e;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   }
   h2{
     position: relative;
@@ -136,6 +219,10 @@
     font-size: 36px;
     font-family: $j;
     font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   .timeline{
     position: relative;
@@ -149,6 +236,9 @@
       transform: translateX(-50%);
       height: 79%;
       background-color: $pri;
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
     }
     &::after{
       content: "";
@@ -160,6 +250,9 @@
       top: -45px;
       left: 50%;
       transform: translateX(-50%);
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
     }
     .timeline-item{
       padding: 45px;
@@ -170,12 +263,20 @@
       margin-bottom: 140px;
       box-shadow: 0 5px 30px rgba($color: #000000, $alpha: 0.15);
       position: relative;
+      @media screen and (max-width: 991px) {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 30px;
+      }
       h6{
         font-size: 24px;
         font-family: $j;
         margin-bottom: 0px;
         font-weight: normal;
         color: #1e1e1e;
+        @media screen and (max-width: 991px) {
+          font-size: 20px;
+        }
       }
       h4{
         font-size: 36px;
@@ -183,24 +284,41 @@
         margin-bottom: 20px;
         font-weight: normal;
         color: #1e1e1e;
+        @media screen and (max-width: 991px) {
+          margin-bottom: 10px;
+          font-size: 26px;
+        }
       }
       span.red{
         background-color: transparent !important;
         color: $pri;
         display: block;
         font-size: 16px;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+        }
       }
       p{
         font-size: 16px;
         margin-bottom: 20px;
         color: #1e1e1e;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
       }
       ul{
         padding-left: 17px;
         margin-bottom: 20px;
+        @media screen and (max-width: 991px) {
+          margin-bottom: 10px;
+        }
         li{
           font-size: 16px;
           color: #1e1e1e;
+          @media screen and (max-width: 991px) {
+            font-size: 14px;
+          }
         }
       }
       &::before{
@@ -212,6 +330,12 @@
         top: 50%;
         right: -9%;
         transform: translateY(-50%);
+        @media screen and (max-width: 1199px) {
+          right: -11.3%;
+        }
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
       }
       &::after{
         content: "";
@@ -223,6 +347,12 @@
         top: 50%;
         right: -14.5%;
         transform: translateY(-50%);
+        @media screen and (max-width: 1199px) {
+          right: -15.5%;
+        }
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
       }
       &.right{
         position: absolute;
@@ -230,13 +360,35 @@
         right: 0;
         transform: translateY(-50%);
         margin-bottom: 0;
+        @media screen and (max-width: 991px) {
+          position: relative;
+          top: auto;
+          right: auto;
+          transform: translateY(0%);
+          margin-bottom: 30px;
+        }
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
         &::before{
           right: auto;
           left: -9%;
+          @media screen and (max-width: 1199px) {
+            left: -11.3%;
+          }
+          @media screen and (max-width: 991px) {
+            display: none;
+          }
         }
         &::after{
           right: auto;
           left: -14.5%;
+          @media screen and (max-width: 1199px) {
+            left: -15.5%;
+          }
+          @media screen and (max-width: 991px) {
+            display: none;
+          }
         }
       }
     }
@@ -256,6 +408,18 @@
       }
     }
   }
+  &.blue-version{
+    .timeline{
+      &::before, &::after{
+        background-color: #09a5a2;
+      }
+      .timeline-item{
+        &::before, &::after{
+          background-color: #09a5a2;
+        }
+      }
+    }
+  }
 }
 
 .vb-ora{
@@ -264,6 +428,9 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+  @media screen and (max-width: 991px) {
+    padding: 30px 0;
+  }
   &::before{
     content: "";
     position: absolute;
@@ -283,6 +450,10 @@
     font-size: 36px;
     font-family: $j;
     font-weight: normal;
+    @media screen and (max-width: 991px) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
   .ora-item{
     background-color: #FFFF;
@@ -291,6 +462,9 @@
     position: relative;
     z-index: 2;
     min-height: 100%;
+    @media screen and (max-width: 991px) {
+      padding: 15px 25px;
+    }
     .numeric{
       font-size: 65px;
       font-family: $j;
@@ -302,30 +476,50 @@
     }
     img{
       margin-bottom: 15px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 0px;
+      }
     }
     h4{
       font-size: 24px;
       font-family: $j;
       margin-bottom: 10px;
       color: #1e1e1e;
+      @media screen and (max-width: 991px) {
+        font-size: 20px;
+      }
     }
     ul{
       margin-bottom: 0;
       li{
         font-size: 16px;
         color: #1e1e1e;
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+        }
       }
     }
     p{
       margin-bottom: 0;
       font-size: 15px;
       color: #1e1e1e;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+  }
+  &.blue-version{
+    img{
+      filter: invert(41%) sepia(67%) saturate(1668%) hue-rotate(148deg) brightness(94%) contrast(93%);
     }
   }
 }
 
 .vb-graph{
   padding: 70px 0;
+  @media screen and (max-width: 991px) {
+    padding: 35px 0;
+  }
   h2{
     font-weight: normal;
     font-family: $j;
@@ -333,6 +527,10 @@
     text-align: center;
     margin-bottom: 40px;
     color: #1e1e1e;
+    @media screen and (max-width: 991px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
     .reded{
       color: $pri;
     }

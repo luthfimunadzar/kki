@@ -18,7 +18,7 @@
     <div id="growth" class="growth-new">
       <v-container>
         <v-row>
-          <v-col md="6" offset-md="3" cols="12">
+          <v-col sm="8" md="6" offset-sm="2" offset-md="3" cols="12">
             <h4>We are a venture builder company, offering a better</h4>
             <h5>way to build & grow your business</h5>
             <p>
@@ -113,7 +113,7 @@
       <div class="bg" style="background-image: url('/sect1.png')"></div>
       <v-container>
         <v-row>
-          <v-col md="6">
+          <v-col sm="6">
             <h2>Venture Builder</h2>
             <h5>Building Tomorrow, Today</h5>
             <p>
@@ -136,7 +136,7 @@
       <div class="bg" style="background-image: url('/sect2.png')"></div>
       <v-container>
         <v-row>
-          <v-col md="6" offset-md="6">
+          <v-col sm="6" offset-sm="6">
             <h2>Venture Service</h2>
             <h5>Get Things Done, Better</h5>
             <p>

@@ -69,9 +69,11 @@
         </v-row>
         <v-row class="d-flex justify-center">
           <v-col cols="12">
-            <h2 class="title-service text-center mt-16">Our Services</h2>
+            <h2 class="title-service text-center mt-5 mt-md-16">
+              Our Services
+            </h2>
           </v-col>
-          <v-col v-for="(ser, i) in services" :key="i" cols="4">
+          <v-col v-for="(ser, i) in services" :key="i" cols="12" sm="6" md="4">
             <div class="service-item">
               <h6>{{ ser.title }}</h6>
               <vue-markdown :source="ser.list" />
@@ -120,7 +122,7 @@
             </h2>
           </v-col>
           <v-col v-if="$route.params.id === 'impact-management'" cols="12">
-            <div class="price-wrap">
+            <div class="price-wrap d-none d-md-block">
               <v-row>
                 <v-col cols="3">
                   <div class="title no-border"></div>
@@ -201,9 +203,74 @@
                 >
               </v-row>
             </div>
+            <div class="price-wrap d-block d-md-block mb-3">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 1</h5>
+                    <h3>Entry Level</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Impact & Program Advisory Weekly</li>
+                    <li>Impact Metrics Creationg 6 Hours Consultation</li>
+                    <li>1 Data Collection Tools</li>
+                    <li>1 Data Visualisation</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR7,000,000/Month
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-block mb-3">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 2</h5>
+                    <h3>Intermediate</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Impact & Program Advisory Weekly</li>
+                    <li>Impact Metrics Creationg 10 Hours Consultation</li>
+                    <li>Framework Creation</li>
+                    <li>2 Data Collection Tools</li>
+                    <li>2 Data Visualisation</li>
+                    <li>2 Pages Impact Reporting</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR10,000,000/Month
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-block">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 3</h5>
+                    <h3>Advance</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Impact & Program Advisory Weekly</li>
+                    <li>Impact Metrics Creation 15 Hours Consultation</li>
+                    <li>Framework Creation</li>
+                    <li>3 Data Collection Tools</li>
+                    <li>Data Cleansing & Processing</li>
+                    <li>3 Data Visualisation</li>
+                    <li>6 Pages Impact Reporting</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR15,000,000/Month
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
           </v-col>
           <v-col v-if="$route.params.id === 'content-design'" cols="12">
-            <div class="price-wrap">
+            <div class="price-wrap d-none d-md-block">
               <v-row>
                 <v-col cols="4">
                   <div class="title">
@@ -254,9 +321,68 @@
                 >
               </v-row>
             </div>
+            <div class="price-wrap d-block d-md-none mb-3">
+              <v-row>
+                <v-col cols="12">
+                  <div class="title">
+                    <h3>New Branding Package</h3>
+                  </div>
+                  <ul>
+                    <li>1 Logo & 1 Brand Book</li>
+                    <li>10 Marketing Design Template</li>
+                    <li>2 Set of Stationary Design</li>
+                    <li>5 Set of Illustrative / Icon Assets</li>
+                    <li class="text-price font-weight-bold">
+                      1 Months @Rp18.000.000
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-none mb-3">
+              <v-row>
+                <v-col cols="12">
+                  <div class="title">
+                    <h3>Report & Presentation Design Package</h3>
+                  </div>
+                  <ul>
+                    <li>10 pages of presentation designs</li>
+                    <li>10 pages of business copywriting</li>
+                    <li>2 Mini infographic</li>
+                    <li>2 Unique Graphic Assets / Custom Illustration</li>
+                    <li class="text-price font-weight-bold">
+                      1 Months @Rp12.000.000
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-none">
+              <v-row>
+                <v-col cols="12">
+                  <div class="title">
+                    <h3>Socmed Content Package</h3>
+                  </div>
+                  <ul>
+                    <li>
+                      15 social media images
+                      <em>(feed, story, poster, ad banner)</em>
+                    </li>
+                    <li>
+                      15 social media copywriting
+                      <em>(caption, poster copy) </em>
+                    </li>
+                    <li>1 Content guideline</li>
+                    <li class="text-price font-weight-bold">
+                      1 Months @Rp4.000.000
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
           </v-col>
           <v-col v-if="$route.params.id === 'finance'" cols="12">
-            <div class="price-wrap">
+            <div class="price-wrap d-none d-md-block">
               <v-row>
                 <v-col cols="3">
                   <div class="title no-border"></div>
@@ -355,11 +481,76 @@
                 >
               </v-row>
             </div>
+            <div class="price-wrap d-block d-md-none mb-3">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 1</h5>
+                    <h3>Hands-on Service</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Bookkeeping</li>
+                    <li>Tax Handling</li>
+                    <li>Secretarial Documents</li>
+                    <li>Cash flow Management</li>
+                    <li>Strategic Finance</li>
+                    <li>2 Services Limit</li>
+                    <li>1 Dedicated Team</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR3,500,000 (exclude Jurnal account)
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-none mb-3">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 2</h5>
+                    <h3>On-Demand Service</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Bookkeeping</li>
+                    <li>Tax Handling</li>
+                    <li>Secretarial Documents</li>
+                    <li>Cash flow Management</li>
+                    <li>Strategic Finance</li>
+                    <li>5 Services Limit</li>
+                    <li>2 Dedicated Team</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR6,000,000 (exclude Jurnal account)
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-none">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 3</h5>
+                    <h3>Advisory / Chief Services</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation</li>
+                    <li>Cash flow Management</li>
+                    <li>Strategic Finance</li>
+                    <li>1 Dedicated Team</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR1,500,000/slot or IDR5,000,000/month
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
           </v-col>
           <v-col v-if="$route.params.id === 'human-resources'" cols="12">
             <v-row>
-              <v-col cols="9">
-                <div class="price-wrap">
+              <v-col cols="12" md="9">
+                <div class="price-wrap d-none d-md-block">
                   <v-row>
                     <v-col cols="4">
                       <div class="title no-border"></div>
@@ -401,9 +592,47 @@
                       </ul></v-col
                     >
                   </v-row>
-                </div></v-col
-              >
-              <v-col cols="3">
+                </div>
+                <div class="price-wrap d-block d-md-none mb-3">
+                  <v-row>
+                    <v-col cols="12" class="border-left">
+                      <div class="title">
+                        <h5>Package 1</h5>
+                        <h3>(up to 15 employees)</h3>
+                      </div>
+                      <ul>
+                        <li>Employee Administration : Rp200,000/employee</li>
+                        <li>Employee Management : Rp200,000/employee</li>
+                        <li>Organization Development : Rp2,500,000/month</li>
+                        <li class="text-price font-weight-bold">
+                          Bundling Package : IDR300,000/pax
+                          <em>(exclude Organization Development)</em>
+                        </li>
+                      </ul></v-col
+                    >
+                  </v-row>
+                </div>
+                <div class="price-wrap d-block d-md-none">
+                  <v-row>
+                    <v-col cols="12" class="border-left">
+                      <div class="title">
+                        <h5>Package 2</h5>
+                        <h3>(up to 30 employees)</h3>
+                      </div>
+                      <ul>
+                        <li>Employee Administration : Rp200,000/employee</li>
+                        <li>Employee Management : Rp200,000/employee</li>
+                        <li>Organization Development : Rp4,000,000/month</li>
+                        <li class="text-price font-weight-bold">
+                          Bundling Package : IDR300,000/pax
+                          <em>(exclude Organization Development)</em>
+                        </li>
+                      </ul></v-col
+                    >
+                  </v-row>
+                </div>
+              </v-col>
+              <v-col cols="12" md="3">
                 <div class="price-wrap solo">
                   <div class="title">
                     <h3>Recruitment</h3>
@@ -419,12 +648,13 @@
                   </ul>
                 </div>
               </v-col>
-            </v-row> </v-col
-          ><v-col
+            </v-row>
+          </v-col>
+          <v-col
             v-if="$route.params.id === 'fundraising-preparation'"
             cols="12"
           >
-            <div class="price-wrap">
+            <div class="price-wrap d-none d-md-block">
               <v-row>
                 <v-col cols="3">
                   <div class="title no-border"></div>
@@ -514,6 +744,69 @@
                     <li>2</li>
                     <li class="text-price font-weight-bold">
                       IDR30,000,000/month + 1% closing fee
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-none mb-3">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 1</h5>
+                    <h3>Fundraising Strategy</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Strategic Advisory</li>
+                    <li>Legal Assistance By request</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR3,500,000/session
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-none mb-3">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 2</h5>
+                    <h3>Entry Package</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Strategic Advisory</li>
+                    <li>Data Room Building</li>
+                    <li>Due Diligence Preparation</li>
+                    <li>Compliance</li>
+                    <li>Legal Assistance By request</li>
+                    <li>1 Dedicated Team</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR15,000,000/month
+                    </li>
+                  </ul></v-col
+                >
+              </v-row>
+            </div>
+            <div class="price-wrap d-block d-md-none">
+              <v-row>
+                <v-col cols="12" class="border-left">
+                  <div class="title">
+                    <h5>Package 3</h5>
+                    <h3>Advisory / Chief Services</h3>
+                  </div>
+                  <ul>
+                    <li>First Consultation Free</li>
+                    <li>Strategic Advisory</li>
+                    <li>Data Room Building</li>
+                    <li>Due Diligence Preparation</li>
+                    <li>Compliance</li>
+                    <li>Investor Relations</li>
+                    <li>Legal Assistance By request</li>
+                    <li>2 Dedicated Team</li>
+                    <li class="text-price font-weight-bold">
+                      Price : IDR30,000,000/month + 1% closing fee
                     </li>
                   </ul></v-col
                 >

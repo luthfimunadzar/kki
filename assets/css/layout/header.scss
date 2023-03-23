@@ -134,15 +134,38 @@ header {
 
 .header-new{
   position: relative;
-  z-index: 9;
+  z-index: 2;
   border-bottom: 1px solid #1e1e1e;
   .logo{
     width: 245px;
     float: left;
     margin: 24px 0 0 30px;
+    @media screen and (max-width: 991px) {
+      width: 200px;
+      margin: 25px 0 20px 10px;
+    }
+  }
+  .toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 991px) {
+      display: block;
+    }
+    i {
+      font-size: 40px !important;
+      &:before {
+        color: $pri;
+      }
+    }
   }
   .main-menu{
     float: right;
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
     li{
       display: inline-block;
       a{
