@@ -42,7 +42,7 @@
 .title-service{
   font-family: $j;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 20px;
   color: #1e1e1e;
   @media screen and (max-width: 991px) {
@@ -336,6 +336,7 @@
         margin-bottom: 10px;
         min-height: 30px;
         color: #1e1e1e;
+        text-align: center;
         img{
           display: block;
         }
@@ -351,6 +352,7 @@
           font-size: 16px;
           display: flex;
           align-items: center;
+          text-align: left;
         }
       }
     }
@@ -405,7 +407,7 @@
   }
   h3{
     color: #FFF;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 28px;
     font-family: $j;
     margin-bottom: 15px;

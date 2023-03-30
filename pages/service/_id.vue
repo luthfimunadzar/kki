@@ -203,7 +203,7 @@
                 >
               </v-row>
             </div>
-            <div class="price-wrap d-block d-md-block mb-3">
+            <div class="price-wrap d-block d-md-none mb-3">
               <v-row>
                 <v-col cols="12" class="border-left">
                   <div class="title">
@@ -223,7 +223,7 @@
                 >
               </v-row>
             </div>
-            <div class="price-wrap d-block d-md-block mb-3">
+            <div class="price-wrap d-block d-md-none mb-3">
               <v-row>
                 <v-col cols="12" class="border-left">
                   <div class="title">
@@ -245,7 +245,7 @@
                 >
               </v-row>
             </div>
-            <div class="price-wrap d-block d-md-block">
+            <div class="price-wrap d-block d-md-none">
               <v-row>
                 <v-col cols="12" class="border-left">
                   <div class="title">

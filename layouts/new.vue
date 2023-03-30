@@ -211,7 +211,7 @@
                         auto-grow
                       ></v-textarea>
                     </validation-provider>
-                    <button class="btn btn-primary yellow mt-5" type="submit">
+                    <button class="btn btn-rounded mt-5" type="submit">
                       <span>Send Message</span>
                     </button>
                   </form>

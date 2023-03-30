@@ -910,10 +910,10 @@
   }
   h3 {
     font-size: 43px;
-    font-family: $b;
+    font-family: $j;
     color: $sec;
     margin-bottom: 40px;
-    font-weight: normal;
+    font-weight: bold;
     @media screen and (max-width: 991px) {
       font-size: 33px;
       margin-bottom: 20px;
@@ -924,8 +924,8 @@
   }
   h5 {
     font-size: 20px;
-    font-family: $b;
-    font-weight: normal;
+    font-family: $j;
+    font-weight: bold;
     color: $wt;
     margin-bottom: 10px;
     @media screen and (max-width: 991px) {
@@ -979,11 +979,20 @@
       background-color: $sec;
     }
   }
-  .btn-primary.yellow {
-    span {
-      @media screen and (max-width: 991px) {
-        font-size: 14px;
-      }
+  .btn-rounded {
+    border-radius: 30px;
+    font-family: $j;
+    font-size: 15px;
+    padding: 13px 25px;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFF !important;
+    font-weight: 600;
+    border: 1px solid #FFF;
+    transition: all 0.3s ease;
+    &:hover, &:focus{
+      background-color: #FFF;
+      color: #1e1e1e !important;
     }
   }
   &.white {
@@ -1035,6 +1044,8 @@
       display: block;
       font-weight: normal;
       line-height: normal;
+      font-family: $o;
+      font-weight: bold;
       @media screen and (max-width: 991px) {
         font-size: 40px;
       }
@@ -1231,7 +1242,7 @@
   h2{
     color: $pri;
     font-family: $j;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 48px;
     margin-bottom: 0;
     @media screen and (max-width: 991px) {
