@@ -140,7 +140,7 @@
               Function & Activities to Outsource
             </h2>
             <a href="/service/finance"
-              ><img src="/ft.png" alt="" /> Financal & Tax</a
+              ><img src="/ft.png" alt="" /> Financial & Tax</a
             >
             <a href="/service/content-design"
               ><img src="/cd.png" alt="" /> Content & Design</a

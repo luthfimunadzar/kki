@@ -840,7 +840,7 @@
               Explore Our Other Services
             </h2>
             <a href="/service/finance"
-              ><img src="/ft.png" alt="" /> Financal & Tax</a
+              ><img src="/ft.png" alt="" /> Financial & Tax</a
             >
             <a href="/service/content-design"
               ><img src="/cd.png" alt="" /> Content & Design</a
@@ -987,7 +987,7 @@ export default {
       this.bgLanding = '/Impact-Management-Service-Landing-Page.png'
       this.bgWhy = '/Impact-Management-Why-its-better-with-us.png'
     } else if (this.$route.params.id === 'finance') {
-      this.title = 'Financal & Tax'
+      this.title = 'Financial & Tax'
       this.slogan = 'Track your number accurately, make decision effectively'
       this.p1 =
         '“Cash is king” so they said. So understanding how financial works in your business is far more important than it seems. We will help to ensure that every single of your business decisions has the best impact on your business’ financial condition and ultimately generate more profit for you. '
