@@ -60,38 +60,193 @@ footer.v-footer {
   }
 }
 
+.subscribe{
+  background-image: url('/bg-subscribe.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #FFF, $alpha: 0.85);
+  }
+  #mc_embed_shell{
+    #mc_embed_signup{
+      background-color: transparent;
+      text-align: center;
+      h2{
+        color: $pri;
+        font-size: 42px;
+        font-family: $j;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+        line-height: 1;
+        text-align: right;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 15px 0 0;
+        @media screen and (max-width: 991px) {
+          font-size: 36px;
+          margin: 0 0 20px 0;
+        }
+      }
+      form{
+        width: 700px;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        @media screen and (max-width: 1199px) {
+          width: 540px;
+        }
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+        .mc-field-group{
+          padding-bottom: 0;
+          margin-bottom: 0px;
+          border-radius: 8px;
+          display: block;
+          @media screen and (max-width: 991px) {
+            width: 100%;
+          }
+          input[type="email"]{
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border: none !important;
+            display: inline-block;
+            vertical-align: middle;
+            width: 80%;
+            background-color: #FFF;
+            padding: 16px 10px;
+            font-size: 16px;
+          }
+          #mc-embedded-subscribe{
+            display: inline-block;
+            vertical-align: middle;
+            width: 18%;
+            margin-left: -1%;
+            margin: 0 0 0 -3px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            height: 50.4px;
+            @media screen and (max-width: 991px) {
+              width: 19%;
+            }
+          }
+          .mce_inline_error{
+            background-color: transparent;
+            margin-bottom: 0;
+          }
+        }
+        #mce-responses{
+          margin: 0;
+          padding: 0;
+          #mce-success-response{
+            margin: 0;
+            padding-bottom: 15px;
+          }
+        }
+        .optionalParent{
+          #mc-embedded-subscribe{
+            margin: 0;
+            font-family: $r;
+            height: 36px;
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
+  h4{
+    color: $pri;
+    font-size: 26px;
+    position: relative;
+    z-index: 2;
+    font-family: $j;
+    font-weight: bold;
+    margin-top: 40px;
+    @media screen and (max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
+  h6{
+    color: $fiv;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+    font-family: $j;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  p{
+    position: relative;
+    z-index: 2;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+}
+
 .footer-new{
-  padding: 20px 0;
+  padding: 30px 0;
   background-color: #1e1e1e;
-  h5{
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  .logo{
+    width: 230px;
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+      width: 80%;
+    }
+  }
+  h3{
     font-size: 18px;
     margin-bottom: 15px;
     color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: $pri;
   }
-  .sitemap{
-    clear: both;
-    float: left;
-    color: #FFF;
-    font-size: 16px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    &:hover, &:focus{
-      text-decoration: underline;
+  ul{
+    padding: 0 !important;
+    margin: 0;
+    li{
+      list-style: none;
+      padding: 0;
+      a{
+        display: inline-block;
+        text-align: center;
+        color: #FFF;
+        text-decoration: none;
+      }
     }
   }
   .socmed{
-    border-radius: 50%;
-    width: 43px;
-    height: 43px;
+    width: 36px;
+    height: 36px;
+    background-color: #FFF;
+    font-size: 26px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: $pri;
-    margin-right: 15px;
+    margin-right: 5px;
     text-decoration: none;
     transition: all 0.3s ease;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 10px;
+    }
     .v-icon{
-      color: #FFF !important;
+      color: #1e1e1e !important;
     }
     &:hover, &:focus{
       background-color: $sec;
