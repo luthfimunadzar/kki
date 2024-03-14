@@ -1155,7 +1155,7 @@
   .stat{
     display: inline-block;
     vertical-align: middle;
-    width: 31%;
+    width: 20%;
     margin: 0 0.5%;
     h3{
       color: $pri;
@@ -1175,8 +1175,7 @@
       }
     }
     &.big{
-      width: 100%;
-      margin-top: 20px;
+      width: 34%;
     }
   }
   .portfolio-new{
@@ -1284,5 +1283,8 @@
     h2{
       color: $fiv;
     }
+  }
+  &.border-top{
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
   }
 }

@@ -18,7 +18,7 @@
     <div id="growth" class="growth-new">
       <v-container>
         <v-row>
-          <v-col sm="8" md="6" offset-sm="2" offset-md="3" cols="12">
+          <v-col sm="8" md="8" offset-sm="2" offset-md="2" cols="12">
             <h4>We are a venture builder company, offering a better</h4>
             <h5>way to build & grow your business</h5>
             <p>
@@ -104,12 +104,17 @@
                 <p>Berdaya.co</p>
                 <span>Village Development</span>
               </div>
+              <div class="portfolio-item">
+                <img src="/p12.png" alt="" class="img-fluid" />
+                <p>LindungiHutan.com</p>
+                <span>Climate Tech</span>
+              </div>
             </div>
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <div class="image-sect-new">
+    <div class="image-sect-new border-top">
       <div class="bg" style="background-image: url('/sect1.png')"></div>
       <v-container>
         <v-row>

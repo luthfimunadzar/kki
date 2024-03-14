@@ -53,8 +53,13 @@
           <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
+          <nuxt-link to="/portfolio">Portofolio</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/venture-builder">Venture Builder</nuxt-link>
+        </li>
+        <!-- <li>
           <v-menu offset-y content-class="dropdown-menu-new">
-            <!-- eslint-disable-next-line vue/v-slot-style -->
             <template v-slot:activator="{ on, attrs }">
               <a href="javascript:void(0);" v-bind="attrs" v-on="on"
                 >Builder <span class="caret"></span>
@@ -73,7 +78,7 @@
               </v-row>
             </v-container>
           </v-menu>
-        </li>
+        </li> -->
         <li>
           <v-menu offset-y content-class="dropdown-menu-new">
             <!-- eslint-disable-next-line vue/v-slot-style -->
@@ -128,7 +133,11 @@
           </v-menu>
         </li>
         <li>
-          <nuxt-link to="">Contact Us</nuxt-link>
+          <a
+            href="https://api.whatsapp.com/send?phone=6287828469295&text=Hello%20Kolaborasi%2C%20saya%20tertarik%20dengan%20..."
+            target="_blank"
+            >Contact Us</a
+          >
         </li>
       </ul>
       <a class="toggle d-none" @click.stop="drawer = !drawer">
