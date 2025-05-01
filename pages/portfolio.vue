@@ -13,7 +13,7 @@
       </v-container>
       <v-container class="mb-10">
         <v-row>
-          <v-col cols="12" md="10" offset-md="1">
+          <!-- <v-col cols="12" md="10" offset-md="1">
             <div class="item-new-portfolio">
               <img class="logo" src="/p2.png" alt="" />
               <h3>Yohanes Sugihtononugroho</h3>
@@ -37,7 +37,7 @@
                 style="background-image: url('/people9.png')"
               ></div>
             </div>
-          </v-col>
+          </v-col> -->
           <v-col cols="12" md="10" offset-md="1">
             <div class="item-new-portfolio second reverse">
               <img class="logo" src="/p1.png" alt="" />
@@ -330,7 +330,7 @@
               <img class="logo" src="/p8.png" alt="" />
               <h3>Brocode Barber</h3>
               <p class="pr-0">
-                BrocodeBarber is a barbershop that cater the needs of man’s
+                BrocodeBarber is a barbershop that cater the needs of man's
                 grooming experiences. Established in 2014, currently we have 8
                 branches in several cities across Indonesia, serving more than
                 1000 customer every month. We also launch a series of self-brand
